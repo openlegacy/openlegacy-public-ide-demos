@@ -1,0 +1,22 @@
+{
+  "opolcs2Input" : {
+    "filler4477313939875417" : "",
+    "inPut" : {
+      "actiPolicyNum" : "",
+      "actiCustName" : "",
+      "actiCustAddr" : "",
+      "actiCustCity" : "",
+      "actiCustState" : "",
+      "actiCustZip" : "",
+      "actiCustPhone" : "",
+      "actiBirthDate" : "",
+      "actiCreateDate" : "",
+      "actiEndDate" : "",
+      "actiPolicyType" : "",
+      "actiMonthlyPymt" : 0,
+      "actiQuarteryPymt" : 0,
+      "actiYearlyPymt" : 0,
+      "actiIsactive" : ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "policyNum": "2498641116",
+    "custName": "JOHN DOE",
+    "custAddr": "111 CHERRY LANE",
+    "custCity": "Albany",
+    "custState": "NY",
+    "custZip": "1234",
+    "custPhone": "623-668-3432",
+    "birthDate": "02021994",
+    "createDate": "02022020",
+    "endDate": "02022022",
+    "policyType": "FULL LIFE",
+    "monthlyPymt": 2234,
+    "quarterlyPymt": 4567,
+    "yearlyPymt": 2345,
+    "isactive": "Y"
+}

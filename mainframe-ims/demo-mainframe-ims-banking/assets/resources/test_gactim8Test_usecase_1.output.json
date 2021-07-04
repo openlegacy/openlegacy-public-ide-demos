@@ -1,0 +1,24 @@
+{
+  "gactim8Output" : {
+    "convTran" : "",
+    "rtMsg" : "GET      SUCCESSFUL:",
+    "accountOut" : {
+      "actoAccountId" : "65906882668",
+      "actoCustomerId" : "2105200530054005",
+      "actoCustomerName" : "John Smith U",
+      "actoIban" : "IS2I000200000127352000000",
+      "actoCntryCd" : "US",
+      "actoBnkId" : "0002",
+      "actoBrnchId" : 2345,
+      "actoTypcd" : "P",
+      "actoTypeName" : "Personal",
+      "actoSubTypcd" : "MM",
+      "actoTypeDescription" : "Money Market Account",
+      "actoBalance" : 50.55,
+      "actoCurrency" : "USD",
+      "actoCrtDt" : null,
+      "actoUpdtDt" : null,
+      "actoLocked" : "N"
+    }
+  }
+}

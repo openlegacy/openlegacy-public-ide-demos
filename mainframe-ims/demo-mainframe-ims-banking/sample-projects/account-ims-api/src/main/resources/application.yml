@@ -1,0 +1,93 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: 
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# accountImsSdk
+ol:
+  ims:
+    project:
+      accountImsSdk:
+        host: mainframe.openlegacy.com
+        port: 9999
+        username: DEMO001
+        password: Legacy
+        code-page: CP037
+        data-store-name: IVP1 
+        connection-timeout: 5000
+        group-name: GROUP1 
+        ssl-properties:
+          ssl-enabled: false
+        transaction-properties:
+          commit-mode: COMMIT_AND_SEND
+          user-message-exit-identifier: HWSSMPL1
+          transaction-timeout: 5000
+        connector-type: java
+        irm-header:
+          irmArch: IRM_ARCH0
+          irmArchitecture0:
+            irm-f0: irm-f0-default
+            irm-id: HWSSMPL1           # User Message Exit
+            irm-f5: "42"
+            irm-timer: "67"
+            irm-client-id: "16580844"
+            irm-f1: IRM_F1_NO_MFS
+            irm-f2: "COMMIT_THEN_SEND"                     # Commit mode
+            irm-f3: NONE
+            irm-f4: ACK
+            irm-imsdestid: IVP1                     # DataStore
+            irm-lterm: "ARIHTER"
+            irm-racf-userid: DEMO001                # RACF User
+            irm-racf-pw: LEGACY                  # RACF Password
+            irm-racf-grname: GROUP1               # RACF Group
+  license:
+    key: 
+
+

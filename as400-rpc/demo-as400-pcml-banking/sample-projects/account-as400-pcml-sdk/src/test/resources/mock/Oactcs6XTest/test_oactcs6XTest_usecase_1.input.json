@@ -1,0 +1,19 @@
+{
+    "dsAccount" : "75906882668",
+    "dsCustid" : "100520053005400",
+    "dsCustname" : "Jane Doe",
+    "dsIban" : "0002000009",
+    "dsBankid" : "02",
+    "dsBranchid" : "647292130",
+    "dsCntrycd" : "00",
+    "dsTypcd" : "P",
+    "dsSubtypcd" : "6",
+    "dsTypename" : "Personal",
+    "dsTypedesc" : "Savings",
+    "dsBalance" : "1835",
+    "dsCurrency" : "USD",
+    "dsCrtdt" : "",
+    "dsUpdtdt" : "",
+    "dsLocked" : "N",
+    "output" : ""
+}

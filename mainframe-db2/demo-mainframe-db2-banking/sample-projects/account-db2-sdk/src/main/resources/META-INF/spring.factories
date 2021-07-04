@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.account_db2_sdk.openlegacy.AccountDb2SdkAutoConfiguration

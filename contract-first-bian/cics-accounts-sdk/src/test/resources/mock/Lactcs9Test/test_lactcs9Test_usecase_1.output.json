@@ -1,0 +1,199 @@
+{
+  "dfhcommarea" : {
+    "inPut" : null,
+    "outPut" : {
+      "rtMsg" : "SUCCESSFUL LIST",
+      "accountArray" : [ {
+        "actoDetails" : {
+          "actoAccountId" : "11122234914",
+          "actoCustomerId" : "1008200830084033",
+          "actoCustomerName" : "ROBERT SMITH",
+          "actoIban" : "US2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 73589986,
+          "actoTypcd" : "P",
+          "actoTypeName" : "S  Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Savings Account",
+          "actoBalance" : 44835.28,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "68841327752",
+          "actoCustomerId" : "1002200230024002",
+          "actoCustomerName" : "GEORGE MANSFIELD",
+          "actoIban" : "IS2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 80923106,
+          "actoTypcd" : "P",
+          "actoTypeName" : "IRAPersonal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Investment Retirement Account",
+          "actoBalance" : 8642.23,
+          "actoCurrency" : "SHK",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "14775538273",
+          "actoCustomerId" : "1004200430044004",
+          "actoCustomerName" : "SAMANTHA JACOBS",
+          "actoIban" : "US2I0002000004",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 299427042,
+          "actoTypcd" : "P",
+          "actoTypeName" : "IRAPersonal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Investment Retirement Account",
+          "actoBalance" : 6543.31,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "22277234914",
+          "actoCustomerId" : "1008200830084008",
+          "actoCustomerName" : "MAX LIPTON",
+          "actoIban" : "US2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 89711842,
+          "actoTypcd" : "P",
+          "actoTypeName" : "S  Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Savings Account",
+          "actoBalance" : 99423.28,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "75906882668",
+          "actoCustomerId" : "1005200530054005",
+          "actoCustomerName" : "MARTY BOSMAN",
+          "actoIban" : "IS2I0002000004",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 299420130,
+          "actoTypcd" : "P",
+          "actoTypeName" : "MM Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Money Market Account",
+          "actoBalance" : 867.28,
+          "actoCurrency" : "SHK",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "57640110254",
+          "actoCustomerId" : "1006200630064006",
+          "actoCustomerName" : "FRED MAXWELL",
+          "actoIban" : "US2I0002000009",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 647292130,
+          "actoTypcd" : "P",
+          "actoTypeName" : "S  Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Savings Account",
+          "actoBalance" : 1835.28,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "59707720911",
+          "actoCustomerId" : "1001200130014001",
+          "actoCustomerName" : "FRANK GRANT",
+          "actoIban" : "US2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 80930018,
+          "actoTypcd" : "P",
+          "actoTypeName" : "MM Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Money Market Account",
+          "actoBalance" : 5555.99,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "88652641002",
+          "actoCustomerId" : "1007200730074007",
+          "actoCustomerName" : "BARNEY JONES",
+          "actoIban" : "US2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 80930018,
+          "actoTypcd" : "B",
+          "actoTypeName" : "MM Business",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Money Market Account",
+          "actoBalance" : 1234.56,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "89618973088",
+          "actoCustomerId" : "1003200330034003",
+          "actoCustomerName" : "AMANDA LITTLE",
+          "actoIban" : "UK2I0002000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "02",
+          "actoBrnchId" : 80930002,
+          "actoTypcd" : "P",
+          "actoTypeName" : "S  Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Savings Account",
+          "actoBalance" : 703.4,
+          "actoCurrency" : "LBS",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "34435234914",
+          "actoCustomerId" : "1008200830084011",
+          "actoCustomerName" : "JANE DOE",
+          "actoIban" : "IS2I0001000001",
+          "actoCntryCd" : "00",
+          "actoBnkId" : "01",
+          "actoBrnchId" : 87411170,
+          "actoTypcd" : "P",
+          "actoTypeName" : "S  Personal",
+          "actoSubTypcd" : null,
+          "actoTypeDescription" : "Savings Account",
+          "actoBalance" : 99835.28,
+          "actoCurrency" : "USD",
+          "actoCrtDt" : "20210221",
+          "actoUpdtDt" : "20210221",
+          "actoLocked" : "N"
+        }
+      } ]
+    }
+  }
+}

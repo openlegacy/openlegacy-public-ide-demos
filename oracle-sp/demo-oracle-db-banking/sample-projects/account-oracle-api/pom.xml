@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>account-oracle-api</groupId>
+    <artifactId>account-oracle-api</artifactId>
+    <version>0.1</version>
+    <name>account-oracle-api</name>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>org.openlegacy</groupId>
+        <artifactId>demo-build-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../../../../pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- H2 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+        <!-- OpenLegacy -->
+        <dependency>
+            <groupId>org.openlegacy.impl</groupId>
+            <artifactId>impl-common</artifactId>
+            <version>${openlegacy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openlegacy</groupId>
+            <artifactId>openlegacy-actuator</artifactId>
+            <version>${openlegacy.version}</version>
+        </dependency>
+        <!--  Swagger -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+        </dependency>
+
+        <!-- OpenLegacy.SDK -->
+        <dependency>
+            <groupId>account-oracle-sdk</groupId>
+            <artifactId>account-oracle-sdk</artifactId>
+            <version>0.1</version>
+        </dependency>
+         <!-- For handling validation annotations -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+         <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <version>${spring-security.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- OpenLegacy.Test-->
+        <dependency>
+            <groupId>org.openlegacy.tests</groupId>
+            <artifactId>tests-api</artifactId>
+            <version>${openlegacy.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <annotationProcessorPaths>
+                        <annotationProcessorPath>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </annotationProcessorPath>
+                        <annotationProcessorPath>
+                            <groupId>io.ol</groupId>
+                            <artifactId>codegen</artifactId>
+                            <version>${openlegacy.version}</version>
+                        </annotationProcessorPath>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.basedir}/src/main/java</source>
+                                <source>${project.basedir}/src/main/kotlin</source>
+                                <source>${project.basedir}/target/generated-sources/annotations</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>add-test-sources</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.basedir}/src/test/java</source>
+                                <source>${project.basedir}/src/test/kotlin</source>
+                                <source>${project.basedir}/target/generated-test-sources/test-annotations</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

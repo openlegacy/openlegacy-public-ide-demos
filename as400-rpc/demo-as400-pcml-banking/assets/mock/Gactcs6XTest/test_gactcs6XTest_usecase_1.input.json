@@ -1,0 +1,19 @@
+{
+    "input" : "75906882668",
+    "account" : "",
+    "custid" : "",
+    "custname" : "",
+    "iban" : "",
+    "bankid" : "",
+    "brnchid" : 0,
+    "cntrycd" : "",
+    "typcd" : "",
+    "subtypcd" : "",
+    "typename" : "",
+    "typedesc" : "",
+    "balance" : 0,
+    "currency" : "",
+    "crtdt" : 0,
+    "updtdt" : 0,
+    "locked" : ""
+}

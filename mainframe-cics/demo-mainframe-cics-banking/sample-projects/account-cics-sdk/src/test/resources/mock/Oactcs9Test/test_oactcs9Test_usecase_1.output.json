@@ -1,0 +1,38 @@
+{
+  "dfhcommarea" : {
+    "inPut" : {
+      "actiAccountId" : "69941327752",
+      "actiCustomerId" : "1002200230024992",
+      "actiCustomerName" : "John Doe",
+      "actiTypcd" : "P",
+      "actiSubTypcd" : "MM",
+      "actiCntryCd" : "US",
+      "actiBnkId" : "0002",
+      "actiBrnchId" : 1334,
+      "actiInitialDeposit" : 3.99,
+      "actiCurrency" : "USD"
+    },
+    "accountOut" : {
+      "outRecord" : {
+        "actoAccountId" : "69941327752",
+        "actoCustomerId" : "1002200230024992",
+        "actoCustomerName" : "John Doe",
+        "actoIban" : "US2I0002000001",
+        "actoCntryCd" : "US",
+        "actoBnkId" : "0002",
+        "actoBrnchId" : 1334,
+        "actoTypcd" : "P",
+        "actoTypeName" : "Personal",
+        "actoSubTypcd" : "MM",
+        "actoTypeDescription" : "Money Market Account",
+        "actoBalance" : 3.99,
+        "actoCurrency" : "USD",
+        "actoCrtDt" : "20210329",
+        "actoUpdtDt" : "20210329",
+        "actoLocked" : "N"
+      },
+      "rtcd" : 0,
+      "rtMsg" : "SUCCESSFUL INSERT"
+    }
+  }
+}

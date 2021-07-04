@@ -1,0 +1,10 @@
+ol:
+  storedproc:
+    project:
+      accountOracleSdk:
+        url: jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        username: openlegacy_team
+        password: '{cipher}5c341ba85fc283ddcf6efebec6fba6c94da26c7e8064e49d008d17928228153d'
+  license:
+    key: 

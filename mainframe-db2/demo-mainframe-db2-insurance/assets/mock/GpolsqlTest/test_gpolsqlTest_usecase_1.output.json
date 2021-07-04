@@ -1,0 +1,19 @@
+{
+  "resultSet" : {
+    "acctPolicyNum" : "2498641116 ",
+    "acctCustName" : "JOHN DOE        ",
+    "acctCustAddr" : "111 CHERRY LANE ",
+    "acctCustCity" : "Albany          ",
+    "acctCustState" : "NY",
+    "acctCustZip" : "1234 ",
+    "acctCustPhone" : "623-668-3432    ",
+    "acctBirthDate" : "02021994",
+    "acctCreateDate" : "02022020",
+    "acctEndDate" : "02022022",
+    "acctPolicyType" : "FULL LIFE   ",
+    "acctMonthlyPymt" : "2234.000",
+    "acctQuarterlyPymt" : "4567.000",
+    "acctYearlyPymt" : "2345.000",
+    "acctIsactive" : "Y"
+  }
+}

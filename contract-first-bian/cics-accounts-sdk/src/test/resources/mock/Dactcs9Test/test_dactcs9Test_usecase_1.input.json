@@ -1,0 +1,26 @@
+{
+  "inPut" : {
+    "actiAccountId" : "69941327752"
+  },
+  "accountOut" : {
+    "rtMsg" : "",
+    "accountDetails2" : {
+      "actoAccountId" : "",
+      "actoCustomerId" : "",
+      "actoCustomerName" : "",
+      "actoIban" : "",
+      "actoCntryCd" : "",
+      "actoBnkId" : "",
+      "actoBrnchId" : 0,
+      "actoTypcd" : "",
+      "actoTypeName" : "",
+      "actoSubTypcd" : "",
+      "actoTypeDescription" : "",
+      "actoBalance" : 0,
+      "actoCurrency" : "",
+      "actoCrtDt" : "",
+      "actoUpdtDt" : "",
+      "actoLocked" : ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<pcml version="4.0">
+   <!-- RPG program: OACTCS6X  -->
+   <!-- created: 2021-02-25-13.31.43 -->
+   <!-- source: RMR2L1/QRPGLESRC(OACTCS6X) -->
+   <program name="OACTCS6X" path="/QSYS.LIB/RMR2L1.lib/OACTCS6X.PGM">
+      <data name="DS_ACCOUNT" type="char" length="11" usage="inputoutput" />
+      <data name="DS_CUSTID" type="char" length="16" usage="inputoutput" />
+      <data name="DS_CUSTNAME" type="char" length="16" usage="inputoutput" />
+      <data name="DS_IBAN" type="char" length="32" usage="inputoutput" />
+      <data name="DS_BANKID" type="char" length="4" usage="inputoutput" />
+      <data name="DS_BRANCHID" type="char" length="9" usage="inputoutput" />
+      <data name="DS_CNTRYCD" type="char" length="2" usage="inputoutput" />
+      <data name="DS_TYPCD" type="char" length="1" usage="inputoutput" />
+      <data name="DS_SUBTYPCD" type="char" length="3" usage="inputoutput" />
+      <data name="DS_TYPENAME" type="char" length="12" usage="inputoutput" />
+      <data name="DS_TYPEDESC" type="char" length="40" usage="inputoutput" />
+      <data name="DS_BALANCE" type="char" length="8" usage="inputoutput" />
+      <data name="DS_CURRENCY" type="char" length="3" usage="inputoutput" />
+      <data name="DS_CRTDT" type="char" length="8" usage="inputoutput" />
+      <data name="DS_UPDTDT" type="char" length="8" usage="inputoutput" />
+      <data name="DS_LOCKED" type="char" length="1" usage="inputoutput" />
+      <data name="OUTPUT" type="char" length="30" usage="inputoutput" />
+   </program>
+</pcml>

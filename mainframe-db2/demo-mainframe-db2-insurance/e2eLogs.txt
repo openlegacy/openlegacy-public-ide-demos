@@ -1,0 +1,122 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for policy-db2-api:policy-db2-api:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 174, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< policy-db2-api:policy-db2-api >--------------------
+[INFO] Building policy-db2-api 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ policy-db2-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:clean (flatten.clean) @ policy-db2-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\.flattened-pom.xml
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.4.4:run (default-cli) > test-compile @ policy-db2-api >>>
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ policy-db2-api ---
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\src\main\java added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\src\main\kotlin added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ policy-db2-api ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ policy-db2-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:flatten (flatten) @ policy-db2-api ---
+[INFO] Generating flattened POM of project policy-db2-api:policy-db2-api:jar:0.1...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ policy-db2-api ---
+[INFO] Compiling 21 source files to C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target\classes
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/mainframe-db2/demo-mainframe-db2-insurance/sample-projects/policy-db2-api/src/main/java/com/policy_db2_api/openlegacy/services/DeletePolicyServiceImpl.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/mainframe-db2/demo-mainframe-db2-insurance/sample-projects/policy-db2-api/src/main/java/com/policy_db2_api/openlegacy/services/DeletePolicyServiceImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ policy-db2-api ---
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\src\test\java added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\src\test\kotlin added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ policy-db2-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ policy-db2-api ---
+[INFO] Compiling 6 source files to C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target\test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.4.4:run (default-cli) < test-compile @ policy-db2-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.4:run (default-cli) @ policy-db2-api ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.4)
+
+2021-05-10 18:53:14.656  INFO 12848 --- [           main] c.p.openlegacy.PolicyDb2ApiApplication   : Starting PolicyDb2ApiApplication using Java 11.0.2 on DESKTOP-BPRN3AE with PID 12848 (C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api\target\classes started by User in C:\Users\User\git\openlegacy-ide-demos\mainframe-db2\demo-mainframe-db2-insurance\sample-projects\policy-db2-api)
+2021-05-10 18:53:14.659  INFO 12848 --- [           main] c.p.openlegacy.PolicyDb2ApiApplication   : No active profile set, falling back to default profiles: default
+2021-05-10 18:53:16.659  INFO 12848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-10 18:53:16.668  INFO 12848 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-10 18:53:16.669  INFO 12848 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-10 18:53:16.810  INFO 12848 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-10 18:53:16.810  INFO 12848 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2102 ms
+2021-05-10 18:53:17.469  INFO 12848 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-10 18:53:18.430  INFO 12848 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2021-05-10 18:53:18.474  INFO 12848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-10 18:53:18.518  INFO 12848 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-10 18:53:20.021  INFO 12848 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-10 18:53:20.040  INFO 12848 --- [           main] c.p.openlegacy.PolicyDb2ApiApplication   : Started PolicyDb2ApiApplication in 5.94 seconds (JVM running for 7.249)
+2021-05-10 18:53:20.077  INFO 12848 --- [           main] LoggerFactory$PropertiesEncryptionLogger : Starting PropertiesEncryptionEnvironmentPostProcessor...
+2021-05-10 18:53:20.077  WARN 12848 --- [           main] LoggerFactory$PropertiesEncryptionLogger : 
+
+*****************************************************************************************************************
+
+                      WARNING!
+
+You are using default properties encryption key. Its not recommended to use default key in production environment.
+Please set either `encryption.key` or `encryption.key-store.*` properties in order to define encryption key.
+
+******************************************************************************************************************
+
+2021-05-10 18:53:20.078  INFO 12848 --- [           main] LoggerFactory$PropertiesEncryptionLogger : PropertiesEncryptionEnvironmentPostProcessor finished
+2021-05-10 18:53:32.606  INFO 12848 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-10 18:53:32.606  INFO 12848 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-10 18:53:32.609  INFO 12848 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-05-10 18:53:32.941  INFO 12848 --- [nio-8080-exec-1] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.RPOLSQL()}
+2021-05-10 18:53:33.406  WARN 12848 --- [nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
+2021-05-10 18:53:33.751  INFO 12848 --- [nio-8080-exec-3] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.LPOLSQL()}
+2021-05-10 18:53:34.113  INFO 12848 --- [nio-8080-exec-4] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.OPOLSQL(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}
+2021-05-10 18:53:34.422  INFO 12848 --- [nio-8080-exec-5] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.GPOLSQL(?)}
+2021-05-10 18:53:34.735  INFO 12848 --- [nio-8080-exec-6] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.UPOLSQL(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}
+2021-05-10 18:53:35.014  INFO 12848 --- [nio-8080-exec-7] i.o.p.f.s.statement.StatementSerializer  : Query - {call DEMO001.DPOLSQL(?)}
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.799 s
+[INFO] Finished at: 2021-05-10T18:53:37+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.4.4:run (default-cli) on project policy-db2-api: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

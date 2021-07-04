@@ -1,0 +1,17 @@
+{
+  "resultSet" : [ {
+    "id" : 0,
+    "firstName" : "",
+    "lastName" : "",
+    "gender" : "",
+    "email" : "",
+    "countryCode" : "",
+    "country" : "",
+    "address" : "",
+    "creditCardNumber" : "",
+    "creditCardType" : "",
+    "currency" : "",
+    "balance" : "",
+    "expiryDate" : "01.10.2020"
+  } ]
+}

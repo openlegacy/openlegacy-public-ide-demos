@@ -1,0 +1,35 @@
+{
+  "crtAccountIn" : {
+    "actiCustomerId" : "",
+    "actiCustomerName" : "",
+    "actiTypcd" : "",
+    "actiSubTypcd" : "",
+    "actiCntryCd" : "",
+    "actiBnkId" : "",
+    "actiBranchId" : "",
+    "actiInitialDeposit" : 0,
+    "actiCurrency" : ""
+  },
+  "accountOut" : {
+    "rtcd" : 0,
+    "rtMsg" : "",
+    "accountDetails" : {
+      "actoIban" : "",
+      "actoAccountId" : "",
+      "actoCntryCd" : "",
+      "actoBnkId" : "",
+      "actoBranchId" : "",
+      "actoCustomerId" : "",
+      "actoCustomerName" : "",
+      "actoTypcd" : "",
+      "actoTypeName" : "",
+      "actoSubTypcd" : "",
+      "actoTypeDescription" : "",
+      "actoBalance" : 0,
+      "actoCurrency" : "",
+      "actoCrtDt" : "",
+      "actoUpdtDt" : "",
+      "actoLocked" : ""
+    }
+  }
+}

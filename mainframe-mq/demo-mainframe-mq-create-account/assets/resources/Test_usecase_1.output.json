@@ -1,0 +1,35 @@
+{
+  "crtAccountIn" : {
+    "actiCustomerId" : "1003200330034003",
+    "actiCustomerName" : "AMANDA LITTLE",
+    "actiTypcd" : "P",
+    "actiSubTypcd" : "S",
+    "actiCntryCd" : "UK",
+    "actiBnkId" : "0002",
+    "actiBranchId" : "1234",
+    "actiInitialDeposit" : 703.4,
+    "actiCurrency" : "LBS"
+  },
+  "accountOut" : {
+    "accountDetails" : {
+      "actoIban" : "OPNACT4 1003200330034003AMANDA L",
+      "actoAccountId" : "ITTLE   PS",
+      "actoCntryCd" : "U",
+      "actoBnkId" : "K000",
+      "actoBranchId" : "21234",
+      "actoCustomerId" : "ø\fLBS",
+      "actoCustomerName" : null,
+      "actoTypcd" : null,
+      "actoTypeName" : null,
+      "actoSubTypcd" : null,
+      "actoTypeDescription" : null,
+      "actoBalance" : null,
+      "actoCurrency" : null,
+      "actoCrtDt" : null,
+      "actoUpdtDt" : null,
+      "actoLocked" : null
+    },
+    "rtcd" : null,
+    "rtMsg" : null
+  }
+} 

@@ -1,0 +1,8 @@
+<pcml version="4.0">
+   <!-- RPG program: DACTCS6X  -->
+   <!-- created: 2021-02-25-13.30.57 -->
+   <!-- source: RMR2L1/QRPGLESRC(DACTCS6X) -->
+   <program name="DACTCS6X" path="/QSYS.LIB/RMR2L1.lib/DACTCS6X.PGM">
+      <data name="INPUT" type="char" length="11" usage="inputoutput" />
+   </program>
+</pcml>

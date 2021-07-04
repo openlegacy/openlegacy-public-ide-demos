@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+<booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
+<stringAttribute key="M2_GOALS" value="clean spring-boot:run -Dspring.profiles.active=dev -DskipTests"/>
+<booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
+<booleanAttribute key="M2_OFFLINE" value="true"/>
+<stringAttribute key="M2_PROFILES" value=""/>
+<listAttribute key="M2_PROPERTIES">
+<listEntry value="org.openlegacy.trail.path=${workspace_loc:account-ims-api}/src/test/resources/trails"/>
+<listEntry value="org.openlegacy.designtime=true"/>
+<listEntry value="org.openlegacy.configuration.path=${eclipse_home}/"/>
+<listEntry value="org.openlegacy.is_ide=true"/>
+</listAttribute>
+<stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
+<booleanAttribute key="M2_SKIP_TESTS" value="false"/>
+<intAttribute key="M2_THREADS" value="1"/>
+<booleanAttribute key="M2_UPDATE_SNAPSHOTS" value="false"/>
+<stringAttribute key="M2_USER_SETTINGS" value=""/>
+<booleanAttribute key="M2_WORKSPACE_RESOLUTION" value="false"/>
+<stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.m2e.launching.MavenSourceLocator"/>
+<stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;sourceLookupDirector&gt;&#13;&#10;&lt;sourceContainers duplicates=&quot;false&quot;&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;workspace/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.workspace&quot;/&gt;&#13;&#10;&lt;/sourceContainers&gt;&#13;&#10;&lt;/sourceLookupDirector&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.debug.ui.ATTR_CONSOLE_ENCODING" value="UTF-8"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Dspring-boot.run.fork=false"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:account-ims-api}"/>
+</launchConfiguration>

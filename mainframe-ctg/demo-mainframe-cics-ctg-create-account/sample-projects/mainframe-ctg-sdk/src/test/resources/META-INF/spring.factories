@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.mainframe_ctg_sdk.openlegacy.MainframeCtgSdkAutoConfiguration

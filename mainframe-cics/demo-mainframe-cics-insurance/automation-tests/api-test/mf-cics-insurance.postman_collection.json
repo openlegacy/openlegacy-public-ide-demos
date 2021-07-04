@@ -1,0 +1,568 @@
+{
+	"info": {
+		"_postman_id": "5848af53-d54b-4202-a989-d44741ada2c9",
+		"name": "policy-cics-api",
+		"description": "policy-cics-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ResetPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Succeeded adding accounts\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.rpolcs2;\r",
+									"\r",
+									"    pm.expect(resp.outPut.rtMsg).to.eql('04   ACCOUNTS ADDED');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response is an array\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.rpolcs2;\r",
+									"\r",
+									"    pm.expect(resp.inPut.policyArray).to.be.an(\"array\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"rpolcs2\" : {\n    \"outPut\" : {\n      \"rtMsg\" : \"\"\n    },\n    \"inPut\" : {\n      \"policyArray\" : [ {\n        \"policyDetails\" : {\n        \"actiPolicyNum\" : \"1498640006\",\n        \"actiCustName\" : \"FRANK BRADY\",\n        \"actiCustAddr\" : \"156 CHERRY LANE\",\n        \"actiCustCity\" : \"COLUMBUS\",\n        \"actiCustState\" : \"OH\",\n        \"actiCustZip\" : \"43201\",\n        \"actiCustPhone\" : \"614-668-3343\",\n        \"actiBirthDate\" : \"06021974\",\n        \"actiCreateDate\" : \"02022020\",\n        \"actiEndDate\" : \"02022022\",\n        \"actiPolicyType\" : \"FULL LIFE\",\n        \"actiMonthlyPymt\" : 1340.43,\n        \"actiQuarteryPymt\" : 5361.72,\n        \"actiYearlyPymt\" : 16085.16,\n        \"actiIsactive\" : \"Y\"\n        }\n      }, {\n        \"policyDetails\" : {\n        \"actiPolicyNum\" : \"5693001544\",\n        \"actiCustName\" : \"JERRY MOSSMAN\",\n        \"actiCustAddr\" : \"20 MAIN STREETE\",\n        \"actiCustCity\" : \"TAMPA\",\n        \"actiCustState\" : \"FL\",\n        \"actiCustZip\" : \"33605\",\n        \"actiCustPhone\" : \"813-550-2344\",\n        \"actiBirthDate\" : \"03031965\",\n        \"actiCreateDate\" : \"03062018\",\n        \"actiEndDate\" : \"03062022\",\n        \"actiPolicyType\" : \"TERM LIFE\",\n        \"actiMonthlyPymt\" : 643.44,\n        \"actiQuarteryPymt\" : 1930.32,\n        \"actiYearlyPymt\" : 7721.28,\n        \"actiIsactive\" : \"Y\"\n         }\n      }, {\n        \"policyDetails\" : {\n        \"actiPolicyNum\" : \"5569823033\",\n        \"actiCustName\" : \"WALLACE MACKIE\",\n        \"actiCustAddr\" : \"55 VENTURA BLVD\",\n        \"actiCustCity\" : \"LOS ANGELESE\",\n        \"actiCustState\" : \"CA\",\n        \"actiCustZip\" : \"90006\",\n        \"actiCustPhone\" : \"213-664-1456\",\n        \"actiBirthDate\" : \"02091973\",\n        \"actiCreateDate\" : \"01052020\",\n        \"actiEndDate\" : \"01052022\",\n        \"actiPolicyType\" : \"FULL LIFE\",\n        \"actiMonthlyPymt\" : 873.65,\n        \"actiQuarteryPymt\" : 2620.95,\n        \"actiYearlyPymt\" : 16085.16,\n        \"actiIsactive\" : \"Y\"\n         }\n      }, {\n        \"policyDetails\" : {\n        \"actiPolicyNum\" : \"8409275601\",\n        \"actiCustName\" : \"BOB MATTHEWS\",\n        \"actiCustAddr\" : \"75 ELMWOOD RD\",\n        \"actiCustCity\" : \"AUSTIN\",\n        \"actiCustState\" : \"TX\",\n        \"actiCustZip\" : \"73301\",\n        \"actiCustPhone\" : \"512-876-3798\",\n        \"actiBirthDate\" : \"03091973\",\n        \"actiCreateDate\" : \"03092019\",\n        \"actiEndDate\" : \"03092024\",\n        \"actiPolicyType\" : \"TERM LIFE\",\n        \"actiMonthlyPymt\" : 101.0,\n        \"actiQuarteryPymt\" : 303.0,\n        \"actiYearlyPymt\" : 909.0,\n        \"actiIsactive\" : \"Y\"\n         }\n      }, {\n        \"policyDetails\" : { }\n      }, {\n        \"policyDetails\" : { }\n      }, {\n        \"policyDetails\" : { }\n      }, {\n        \"policyDetails\" : { }\n      }, {\n        \"policyDetails\" : { }\n      }, {\n        \"policyDetails\" : { }\n      } ]\n  }\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/resetpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resetpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rpolcs2\": {\n        \"outPut\": {\n            \"rtMsg\": \"in\"\n        },\n        \"inPut\": {\n            \"policyArray\": [\n                {\n                    \"policyDetails\": {\n                        \"actiPolicyNum\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustName\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustAddr\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustCity\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustState\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustZip\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustPhone\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiBirthDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCreateDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiEndDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiPolicyType\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiMonthlyPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiQuarteryPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiYearlyPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiIsactive\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        }\n                    }\n                },\n                {\n                    \"policyDetails\": {\n                        \"actiPolicyNum\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustName\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustAddr\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustCity\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustState\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustZip\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCustPhone\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiBirthDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiCreateDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiEndDate\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiPolicyType\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiMonthlyPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiQuarteryPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiYearlyPymt\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        },\n                        \"actiIsactive\": {\n                            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                        }\n                    }\n                }\n            ]\n        }\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/resetpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"resetpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"rpolcs2\": {\n  \"outPut\": {\n   \"rtMsg\": \"in\"\n  },\n  \"inPut\": {\n   \"policyArray\": [\n    {\n     \"policyDetails\": {\n      \"actiPolicyNum\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustName\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustAddr\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustCity\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustState\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustZip\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustPhone\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiBirthDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCreateDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiEndDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiPolicyType\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiMonthlyPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiQuarteryPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiYearlyPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiIsactive\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    },\n    {\n     \"policyDetails\": {\n      \"actiPolicyNum\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustName\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustAddr\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustCity\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustState\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustZip\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCustPhone\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiBirthDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiCreateDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiEndDate\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiPolicyType\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiMonthlyPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiQuarteryPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiYearlyPymt\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"actiIsactive\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    }\n   ]\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "ListPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Successful list retrieval\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseJson.lpolcs2Output.outPut.rtMsg).to.eql('SUCCESSFUL LIST');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response is an array\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseJson.lpolcs2Output.outPut.policyArray).to.be.an(\"array\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"lpolcs2Input\": {\n    \"inPut\": {\n      \"onechar\": \"\"\n    },\n    \"filler8338313574540664\": \"\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/listpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"listpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lpolcs2Input\": {\n        \"inPut\": {\n            \"onechar\": \"elit\"\n        },\n        \"filler8338313574540664\": \"in nisi ullamco tempor\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/listpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"listpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"lpolcs2Output\": {\n  \"inPut\": {\n   \"onechar\": \"pariatur Ut ad et ex\"\n  },\n  \"outPut\": {\n   \"rtMsg\": \"id dolore\",\n   \"policyArray\": [\n    {\n     \"actoPolicyNum\": \"non sunt sit\",\n     \"actoCustName\": \"esse culpa\",\n     \"actoCustAddr\": \"magna aliqua\",\n     \"actoCustCity\": \"Excepteur sint aliqua ex Lorem\",\n     \"actoCustState\": \"dolor\",\n     \"actoCustZip\": \"elit commodo nulla mollit in\",\n     \"actoCustPhone\": \"est nulla eiusmod ut\",\n     \"actoBirthDate\": \"velit ut adipisicing \",\n     \"actoCreateDate\": \"velit consequat voluptate\",\n     \"actoEndDate\": \"sunt pariatur irure\",\n     \"actoPolicyType\": \"consectetur Excepteur do ad\",\n     \"actoMonthlyPymt\": -67937972.49290568,\n     \"actoQuarteryPymt\": 30653651.43465808,\n     \"actoYearlyPymt\": -20485237.506193772,\n     \"actoIsactive\": \"dolore velit aliqua Excepteur\"\n    },\n    {\n     \"actoPolicyNum\": \"ad exer\",\n     \"actoCustName\": \"sunt ipsum est\",\n     \"actoCustAddr\": \"esse Excepteur aliqua\",\n     \"actoCustCity\": \"ut incididunt cillum aliquip\",\n     \"actoCustState\": \"consequat id Ut tempor minim\",\n     \"actoCustZip\": \"sit Duis\",\n     \"actoCustPhone\": \"minim ullamco\",\n     \"actoBirthDate\": \"dolore ipsum eiusmod aliqua cupidatat\",\n     \"actoCreateDate\": \"non\",\n     \"actoEndDate\": \"o\",\n     \"actoPolicyType\": \"cupidatat ut consec\",\n     \"actoMonthlyPymt\": 73427035.0636479,\n     \"actoQuarteryPymt\": 32589071.617275283,\n     \"actoYearlyPymt\": -8495126.338156387,\n     \"actoIsactive\": \"nulla aliqua quis veniam\"\n    }\n   ]\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "OpenPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Successful open policy\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.opolcs2Output.outPut;\r",
+									"    pm.expect(resp.rtMsg).to.eql('SUCCESSFUL OPEN POLICY');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"opolcs2Input\": {\n    \"inPut\": {\n      \"actiPolicyNum\" : \"5693001545\",\n      \"actiCustName\" : \"JERRY Cohen\",\n      \"actiCustAddr\" : \"20 MAIN STREET\",\n      \"actiCustCity\" : \"TAMPA\",\n      \"actiCustState\" : \"FL\",\n      \"actiCustZip\" : \"33605\",\n      \"actiCustPhone\" : \"813-550-2344\",\n      \"actiBirthDate\" : \"03031965\",\n      \"actiCreateDate\" : \"03062018\",\n      \"actiEndDate\" : \"03062022\",\n      \"actiPolicyType\" : \"TERM LIFE\",\n      \"actiMonthlyPymt\" :643.44,\n      \"actiQuarteryPymt\" :1930.32,\n      \"actiYearlyPymt\" : 7721.28,\n      \"actiIsactive\" : \"Y\"\n    },\n    \"filler4477313939875417\": \"string\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"opolcs2Input\": {\n        \"inPut\": {\n            \"actiPolicyNum\": \"sunt\",\n            \"actiCustName\": \"qui Excepteur officia sed\",\n            \"actiCustAddr\": \"dolore irure\",\n            \"actiCustCity\": \"proident anim\",\n            \"actiCustState\": \"mollit sed in\",\n            \"actiCustZip\": \"sunt Lorem dolor dolore\",\n            \"actiCustPhone\": \"aute est\",\n            \"actiBirthDate\": \"nulla\",\n            \"actiCreateDate\": \"cillum qui\",\n            \"actiEndDate\": \"cupidatat quis mollit\",\n            \"actiPolicyType\": \"voluptate\",\n            \"actiMonthlyPymt\": 14731398.726380765,\n            \"actiQuarteryPymt\": -52529113.81646821,\n            \"actiYearlyPymt\": -70497128.80936977,\n            \"actiIsactive\": \"aliquip ullamco exercitation\"\n        },\n        \"filler4477313939875417\": \"ullamco aliqua\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/openpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"openpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"opolcs2Output\": {\n  \"inPut\": {\n   \"actiPolicyNum\": \"in eiusmo\",\n   \"actiCustName\": \"in dolore Excepteur Duis anim\",\n   \"actiCustAddr\": \"elit consequat\",\n   \"actiCustCity\": \"est ipsum\",\n   \"actiCustState\": \"nisi nulla\",\n   \"actiCustZip\": \"Excepteur ea \",\n   \"actiCustPhone\": \"do in sint\",\n   \"actiBirthDate\": \"fugiat nostrud\",\n   \"actiCreateDate\": \"pariatur nisi deserunt\",\n   \"actiEndDate\": \"cillum\",\n   \"actiPolicyType\": \"sed consequat nostrud tempor labore\",\n   \"actiMonthlyPymt\": 74320366.71501926,\n   \"actiQuarteryPymt\": 26697482.75861594,\n   \"actiYearlyPymt\": 41222576.50912434,\n   \"actiIsactive\": \"sit pariatur reprehenderit\"\n  },\n  \"outPut\": {\n   \"actoPolicyNum\": \"labore dolor consequat sit qui\",\n   \"actoCustName\": \"minim labore \",\n   \"actoCustAddr\": \"nostrud exercitation cupidatat amet\",\n   \"actoCustCity\": \"pariatur ut\",\n   \"actoCustState\": \"ea commodo dolore aliqua\",\n   \"actoCustZip\": \"cillum ipsum Lorem ea\",\n   \"actoCustPhone\": \"cupidatat\",\n   \"actoBirthDate\": \"ut\",\n   \"actoCreateDate\": \"sed velit ex officia\",\n   \"actoEndDate\": \"id Ut ut cillum qui\",\n   \"actoPolicyType\": \"adipisicing dolore sit fugiat\",\n   \"actoMonthlyPymt\": -59397342.96690258,\n   \"actoQuarteryPymt\": 86756239.0879919,\n   \"actoYearlyPymt\": -84632817.95861772,\n   \"actoIsactive\": \"aliqua in velit s\",\n   \"rtMsg\": \"consectetur Duis\"\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Successful policy retrieval\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.gpolcs2Output.outPut.rtMsg).to.eql('GET POLICY SUCCESSFUL.');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"gpolcs2Input\": {\n    \"inPut\": {\n      \"actiPolicyNum\" : \"5693001545\"\n    },\n    \"filler011902926959585947\": \"string\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"gpolcs2Input\": {\n        \"inPut\": {\n            \"actiPolicyNum\": \"adipisicing nisi\"\n        },\n        \"filler011902926959585947\": \"qui exercitation dolore culpa\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/getpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"getpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"gpolcs2Output\": {\n  \"inPut\": {\n   \"actiPolicyNum\": \"nostrud veniam\"\n  },\n  \"outPut\": {\n   \"actoPolicyNum\": \"ullamco occaecat cupidatat\",\n   \"actoCustName\": \"exercitation\",\n   \"actoCustAddr\": \"ipsum id dolor anim\",\n   \"actoCustCity\": \"anim id\",\n   \"actoCustState\": \"deserunt do nostrud aliquip\",\n   \"actoCustZip\": \"in ullamco\",\n   \"actoCustPhone\": \"non reprehenderit Ut dolor\",\n   \"actoBirthDate\": \"fugiat deserunt ad quis sint\",\n   \"actoCreateDate\": \"quis eu\",\n   \"actoEndDate\": \"velit veniam\",\n   \"actoPolicyType\": \"ullamco voluptate\",\n   \"actoMonthlyPymt\": 32520589.256770417,\n   \"actoQuarteryPymt\": 76022311.97877577,\n   \"actoYearlyPymt\": -62192563.8274325,\n   \"actoIsactive\": \"sed velit laboris\",\n   \"rtMsg\": \"Ut deserunt cillum\"\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdatePolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has name propertie\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.upolcs2Output.outPut.outPolicy;\r",
+									"    pm.expect(resp.actoCustName).to.eql('JERRY Cohen');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response is an object\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.upolcs2Output.outPut.outPolicy;\r",
+									"    pm.expect(resp).to.be.an(\"object\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"upolcs2Input\": {\n    \"inPut\": {\n      \"inPolicy\": {\n        \"actiPolicyNum\" : \"5693001545\",\n      \"actiCustName\" : \"JERRY Cohen\",\n      \"actiCustAddr\" : \"20 MAIN STREET\",\n      \"actiCustCity\" : \"TAMPA\",\n      \"actiCustState\" : \"FL\",\n      \"actiCustZip\" : \"33605\",\n      \"actiCustPhone\" : \"813-550-2344\",\n      \"actiBirthDate\" : \"03031965\",\n      \"actiCreateDate\" : \"03062018\",\n      \"actiEndDate\" : \"03062022\",\n      \"actiPolicyType\" : \"TERM LIFE\",\n      \"actiMonthlyPymt\" :643.44,\n      \"actiQuarteryPymt\" :1930.32,\n      \"actiYearlyPymt\" : 7721.28,\n      \"actiIsactive\" : \"Y\"\n      }\n    },\n    \"filler8072898275465462\": \"string\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updatepolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updatepolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"upolcs2Input\": {\n        \"inPut\": {\n            \"inPolicy\": {\n                \"actiPolicyNum\": \"minim exercitation fugiat nisi eu\",\n                \"actiCustName\": \"labore non eiusmod veniam des\",\n                \"actiCustAddr\": \"laboris sint magna Duis\",\n                \"actiCustCity\": \"Excepteur proident Lorem occaecat\",\n                \"actiCustState\": \"et dolore sit\",\n                \"actiCustZip\": \"laborum\",\n                \"actiCustPhone\": \"sed nisi\",\n                \"actiBirthDate\": \"ut occaecat velit nisi\",\n                \"actiCreateDate\": \"eiusmod amet \",\n                \"actiEndDate\": \"dolore magna\",\n                \"actiPolicyType\": \"nulla consequat eu\",\n                \"actiMonthlyPymt\": 5419425.224358723,\n                \"actiQuarteryPymt\": -87490738.74410573,\n                \"actiYearlyPymt\": -79253579.68567885,\n                \"actiIsactive\": \"eiusmod Excepteur i\"\n            }\n        },\n        \"filler8072898275465462\": \"do mollit elit Lorem\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/updatepolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"updatepolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"upolcs2Output\": {\n  \"inPut\": {\n   \"inPolicy\": {\n    \"actiPolicyNum\": \"in eu\",\n    \"actiCustName\": \"sunt ea\",\n    \"actiCustAddr\": \"tempor anim\",\n    \"actiCustCity\": \"in incididunt\",\n    \"actiCustState\": \"enim veniam irure Lorem\",\n    \"actiCustZip\": \"sed commodo in\",\n    \"actiCustPhone\": \"deserunt dolore\",\n    \"actiBirthDate\": \"exercitation nulla id pariatur irure\",\n    \"actiCreateDate\": \"non\",\n    \"actiEndDate\": \"esse ad\",\n    \"actiPolicyType\": \"officia consequat ipsum\",\n    \"actiMonthlyPymt\": 59724968.07856417,\n    \"actiQuarteryPymt\": -85892331.89950506,\n    \"actiYearlyPymt\": -97550643.98146404,\n    \"actiIsactive\": \"tempor\"\n   }\n  },\n  \"outPut\": {\n   \"outPolicy\": {\n    \"actoPolicyNum\": \"ipsum commodo\",\n    \"actoCustName\": \"est\",\n    \"actoCustAddr\": \"est\",\n    \"actoCustCity\": \"incididunt exercitation\",\n    \"actoCustState\": \"aute commodo\",\n    \"actoCustZip\": \"Duis proident sint ut\",\n    \"actoCustPhone\": \"in irure ullamco\",\n    \"actoBirthDate\": \"et\",\n    \"actoCreateDate\": \"reprehenderit et ad culpa\",\n    \"actoEndDate\": \"dolore in eiusmod\",\n    \"actoPolicyType\": \"incididunt culpa non sunt dolor\",\n    \"actoMonthlyPymt\": -69980969.03001328,\n    \"actoQuarteryPymt\": 40353797.82591507,\n    \"actoYearlyPymt\": -68482414.49820329,\n    \"actoIsactive\": \"dolore adipisicing\"\n   },\n   \"rtMsg\": \"magna sit cupidatat non\"\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "DeletePolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Deleted policy successfully\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.dpolcs2Output.rtMsg).to.eql('5693001545 DELETE POLICY SUCCESSFUL.');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"dpolcs2Input\": {\n    \"inPut\": {\n      \"actiPolicyNum\" : \"5693001545\"\n    },\n    \"filler9954700493648504\": \"string\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deletepolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deletepolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"dpolcs2Input\": {\n        \"inPut\": {\n            \"actiPolicyNum\": \"Excepteur veniam\"\n        },\n        \"filler9954700493648504\": \"proident anim pariatur\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/deletepolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"deletepolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"dpolcs2Output\": {\n  \"rtMsg\": \"in culpa sint deserunt laboris\"\n }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

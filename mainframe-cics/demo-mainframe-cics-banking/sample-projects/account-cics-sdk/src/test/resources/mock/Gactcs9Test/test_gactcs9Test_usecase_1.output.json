@@ -1,0 +1,28 @@
+{
+  "gactcs9Output" : {
+    "inPut" : {
+      "actiAccountId" : "69941327752"
+    },
+    "accountOut" : {
+      "accountDetails" : {
+        "actoAccountId" : "69941327752",
+        "actoCustomerId" : "1002200230024992",
+        "actoCustomerName" : "John Doe",
+        "actoIban" : "US2I0002000001",
+        "actoCntryCd" : "US",
+        "actoBnkId" : "0002",
+        "actoBrnchId" : 1334,
+        "actoTypcd" : "P",
+        "actoTypeName" : "Personal",
+        "actoSubTypcd" : "MM",
+        "actoTypeDescription" : "Money Market Account",
+        "actoBalance" : 3.99,
+        "actoCurrency" : "USD",
+        "actoCrtDt" : "20210329",
+        "actoUpdtDt" : "20210329",
+        "actoLocked" : "N"
+      },
+      "rtMsg" : "SUCCESSFUL GET"
+    }
+  }
+}

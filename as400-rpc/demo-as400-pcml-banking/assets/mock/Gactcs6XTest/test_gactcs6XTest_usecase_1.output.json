@@ -1,0 +1,19 @@
+{
+  "input" : "75906882668",
+  "account" : "75906882668",
+  "custid" : "100520053005400",
+  "custname" : "Jane Doe",
+  "iban" : "0002000009",
+  "bankid" : "02",
+  "brnchid" : 647292130,
+  "cntrycd" : "00",
+  "typcd" : "P",
+  "subtypcd" : "6",
+  "typename" : "Business",
+  "typedesc" : "Market",
+  "balance" : 18350.0,
+  "currency" : "USD",
+  "crtdt" : 0,
+  "updtdt" : 0,
+  "locked" : "N"
+}

@@ -1,0 +1,23 @@
+{
+  "dactcs9Output" : {
+    "accountDetails" : {
+      "actoAccountId" : "69941327752",
+      "actoCustomerId" : "",
+      "actoCustomerName" : "",
+      "actoIban" : "",
+      "actoCntryCd" : "",
+      "actoBnkId" : "",
+      "actoBrnchId" : 0,
+      "actoTypcd" : "",
+      "actoTypeName" : "",
+      "actoSubTypcd" : "",
+      "actoTypeDescription" : "",
+      "actoBalance" : 0.0,
+      "actoCurrency" : "",
+      "actoCrtDt" : "",
+      "actoUpdtDt" : "",
+      "actoLocked" : ""
+    },
+    "rtMsg" : "SUCCESSFUL DELETE"
+  }
+}

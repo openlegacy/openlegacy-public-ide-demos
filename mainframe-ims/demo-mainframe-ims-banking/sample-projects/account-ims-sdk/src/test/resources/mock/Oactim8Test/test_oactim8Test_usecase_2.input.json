@@ -1,0 +1,14 @@
+{
+  "oactim8Input" : {
+    "actiAccountId" : "",
+    "actiCustomerId" : "",
+    "actiCustomerName" : "",
+    "actiTypcd" : "",
+    "actiSubTypcd" : "",
+    "actiCntryCd" : "",
+    "actiBnkId" : "",
+    "actiBrnchId" : 0,
+    "actiInitialDeposit" : 0,
+    "actiCurrency" : ""
+  }
+}

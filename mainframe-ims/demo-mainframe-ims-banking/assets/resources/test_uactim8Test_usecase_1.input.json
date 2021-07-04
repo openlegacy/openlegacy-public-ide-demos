@@ -1,0 +1,21 @@
+{
+  "uactim8Input" : {
+  "actiAccountId" : "65906882668",
+    "actiCustomerId" : "2105200530054005",
+    "actiCustomerName" : "John Smith U",
+    "actiIban" : "IS2I000200000127352000000",
+    "actiCntryCd" : "US",
+    "actiBnkId" : "0002",
+    "actiBrnchId" : 2345,
+    "actiTypcd" : "P",
+    "actiTypeName" : "Personal",
+    "actiSubTypcd" : "MM",
+    "actiTypeDescription" : "Money Market Account",
+    "actiBalance" : 50.55,
+    "actiCurrency" : "USD",
+    "actiCrtDt" : "",
+    "actiUpdtDt" : "",
+    "actiLocked" : "N"
+  
+  }
+}

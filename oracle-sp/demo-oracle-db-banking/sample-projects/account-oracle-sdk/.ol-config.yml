@@ -1,0 +1,40 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.account_oracle_sdk.openlegacy"
+    webPackage: "com.account_oracle_sdk.openlegacy.web"
+    provider: "openlegacy-db-stored-proc"
+    sourceFetcher: "jdbcSourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "STORED_PROCEDURES"
+    frontendSolution: "JAVA"
+    userName: "openlegacy_team"
+    password: "gp#6KN!yBiV"
+    hostName: "jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL"
+    dbDialect: "org.hibernate.dialect.OracleDialect"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

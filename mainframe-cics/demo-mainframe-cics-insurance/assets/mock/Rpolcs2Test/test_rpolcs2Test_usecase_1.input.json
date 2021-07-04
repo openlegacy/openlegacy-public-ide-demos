@@ -1,0 +1,103 @@
+{
+    "outPut": {
+      "rtMsg": ""
+    },
+    "inPut": {
+      "policyArray": [
+        {
+          "policyDetails": {
+            "actiPolicyNum": "1498640006",
+            "actiCustName": "FRANK BRADY",
+            "actiCustAddr": "156 CHERRY LANE",
+            "actiCustCity": "COLUMBUS",
+            "actiCustState": "OH",
+            "actiCustZip": "43201",
+            "actiCustPhone": "614-668-3343",
+            "actiBirthDate": "06021974",
+            "actiCreateDate": "02022020",
+            "actiEndDate": "02022022",
+            "actiPolicyType": "FULL LIFE",
+            "actiMonthlyPymt": 1340.43,
+            "actiQuarteryPymt": 5361.72,
+            "actiYearlyPymt": 16085.16,
+            "actiIsactive": "Y"
+          }
+        },
+        {
+          "policyDetails": {
+            "actiPolicyNum": "5693001544",
+            "actiCustName": "JERRY MOSSMAN",
+            "actiCustAddr": "20 MAIN STREETE",
+            "actiCustCity": "TAMPA",
+            "actiCustState": "FL",
+            "actiCustZip": "33605",
+            "actiCustPhone": "813-550-2344",
+            "actiBirthDate": "03031965",
+            "actiCreateDate": "03062018",
+            "actiEndDate": "03062022",
+            "actiPolicyType": "TERM LIFE",
+            "actiMonthlyPymt": 643.44,
+            "actiQuarteryPymt": 1930.32,
+            "actiYearlyPymt": 7721.28,
+            "actiIsactive": "Y"
+          }
+        },
+        {
+          "policyDetails": {
+            "actiPolicyNum": "5569823033",
+            "actiCustName": "WALLACE MACKIE",
+            "actiCustAddr": "55 VENTURA BLVD",
+            "actiCustCity": "LOS ANGELESE",
+            "actiCustState": "CA",
+            "actiCustZip": "90006",
+            "actiCustPhone": "213-664-1456",
+            "actiBirthDate": "02091973",
+            "actiCreateDate": "01052020",
+            "actiEndDate": "01052022",
+            "actiPolicyType": "FULL LIFE",
+            "actiMonthlyPymt": 873.65,
+            "actiQuarteryPymt": 2620.95,
+            "actiYearlyPymt": 16085.16,
+            "actiIsactive": "Y"
+          }
+        },
+        {
+          "policyDetails": {
+            "actiPolicyNum": "8409275601",
+            "actiCustName": "BOB MATTHEWS",
+            "actiCustAddr": "75 ELMWOOD RD",
+            "actiCustCity": "AUSTIN",
+            "actiCustState": "TX",
+            "actiCustZip": "73301",
+            "actiCustPhone": "512-876-3798",
+            "actiBirthDate": "03091973",
+            "actiCreateDate": "03092019",
+            "actiEndDate": "03092024",
+            "actiPolicyType": "TERM LIFE",
+            "actiMonthlyPymt": 101.0,
+            "actiQuarteryPymt": 303.0,
+            "actiYearlyPymt": 909.0,
+            "actiIsactive": "Y"
+          }
+        },
+        {
+          "policyDetails": {}
+        },
+        {
+          "policyDetails": {}
+        },
+        {
+          "policyDetails": {}
+        },
+        {
+          "policyDetails": {}
+        },
+        {
+          "policyDetails": {}
+        },
+        {
+          "policyDetails": {}
+        }
+      ]
+    }
+  }

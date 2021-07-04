@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "b9b947ed-32aa-4770-90f3-50050a4d6135",
+		"name": "policy-as400-cobol-api",
+		"description": "policy-as400-cobol-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "AllPolicies GET operation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    var success = jsonData.policyOut.success;\r",
+									"    var operation = jsonData.policyOut.operation;\r",
+									"\r",
+									"\r",
+									"    pm.expect(success).to.equal(\"Y\");\r",
+									"    pm.expect(operation).to.equal(\"CC\");\r",
+									" \r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"AddPolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/allpolicies",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"allpolicies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/allpolicies",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"allpolicies"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"policyOut\": {\n  \"policyRecOut\": [\n   {\n    \"policyNumOut\": \"ut commodo\",\n    \"custNameOut\": \"sint voluptate\",\n    \"custAddrOut\": \"amet ut nisi magna\",\n    \"custCityOut\": \"officia non veniam\",\n    \"custStateOut\": \"ipsum est laboris\",\n    \"custZipOut\": \"ullamco in Ut id Lorem\",\n    \"custPhoneOut\": \"Ut id sit mollit\",\n    \"birthDateOut\": \"do nisi dolore\",\n    \"createDateOut\": \"ipsum dolor amet tempor\",\n    \"endDateOut\": \"irure\",\n    \"policyTypeOut\": \"consequat Excepteur aliquip ut\",\n    \"monthlyPymtOut\": 39021110.66723788,\n    \"quarteryPymtOut\": 77502685.92364433,\n    \"yearlyPymtOut\": 19551808.923289523,\n    \"isActiveOut\": \"aute minim\"\n   },\n   {\n    \"policyNumOut\": \"in irure\",\n    \"custNameOut\": \"no\",\n    \"custAddrOut\": \"esse pari\",\n    \"custCityOut\": \"velit magna cillum\",\n    \"custStateOut\": \"eiusmod\",\n    \"custZipOut\": \"ullamco\",\n    \"custPhoneOut\": \"Excepteur mollit occaecat non\",\n    \"birthDateOut\": \"deserunt in esse minim\",\n    \"createDateOut\": \"enim ullamco minim\",\n    \"endDateOut\": \"non\",\n    \"policyTypeOut\": \"amet\",\n    \"monthlyPymtOut\": -92150681.85018197,\n    \"quarteryPymtOut\": -93495741.36400504,\n    \"yearlyPymtOut\": 76166278.79055637,\n    \"isActiveOut\": \"aute amet anim fugiat\"\n   }\n  ],\n  \"success\": \"in non\",\n  \"operation\": \"eu proident aliqua\",\n  \"recCount\": 49905982,\n  \"resultSqlcodeSign\": \"labore in aliquip in\",\n  \"resultSqlcode\": \"eiusmod ex\",\n  \"resultSqlstate\": \"nulla ipsum\",\n  \"resultSqlerrmc\": \"qui dolor est id\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "AddPolicy Post operation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    var success = jsonData.pol2addOutput.success;\r",
+									"  var id = jsonData.pol2addOutput.policyRecOut.policyNumOut;\r",
+									"\r",
+									"\r",
+									"    pm.expect(success).to.equal(\"Y\");\r",
+									"    pm.expect(id).to.equal(\"11\");\r",
+									" \r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"UpdatePolicy\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pol2addInput\" : {\n    \"policyNumIn\" : \"11\",\n    \"custNameIn\" : \"Avi Zehavi\",\n    \"custAddrIn\" : \"Hashalom\",\n    \"custCityIn\" : \"Tel Aviv\",\n    \"custStateIn\" : \"IL\",\n    \"custZipIn\" : \"90210\",\n    \"custPhoneIn\" : \"123-456-789\",\n    \"birthDateIn\" : \"19900309\",\n    \"createDateIn\" : \"20210309\",\n    \"endDateIn\" : \"20220309\",\n    \"policyTypeIn\" : \"car\",\n    \"monthlyPymtIn\" : 10.0,\n    \"quarteryPymtIn\" : 40.0,\n    \"yearlyPymtIn\" : 120.0,\n    \"isActiveIn\" : \"Y\"\n  }\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/addpolicy",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pol2addInput\": {\n        \"policyNumIn\": \"sint cillum in\",\n        \"custNameIn\": \"in exercitation\",\n        \"custAddrIn\": \"elit in nostrud sit esse\",\n        \"custCityIn\": \"c\",\n        \"custStateIn\": \"ex\",\n        \"custZipIn\": \"amet in\",\n        \"custPhoneIn\": \"dolore quis Excepteur\",\n        \"birthDateIn\": \"e\",\n        \"createDateIn\": \"id ut dolor adipisicing\",\n        \"endDateIn\": \"voluptate dolore eu\",\n        \"policyTypeIn\": \"adipisicing anim ut\",\n        \"monthlyPymtIn\": -62114672.052752964,\n        \"quarteryPymtIn\": 76151450.34017769,\n        \"yearlyPymtIn\": 6259069.713889927,\n        \"isActiveIn\": \"anim nulla commodo\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/addpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"addpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"pol2addOutput\": {\n  \"policyRecOut\": {\n   \"policyNumOut\": \"tempor non ipsum\",\n   \"custNameOut\": \"eiusmod\",\n   \"custAddrOut\": \"dolore occaecat voluptate est\",\n   \"custCityOut\": \"reprehenderit Lorem\",\n   \"custStateOut\": \"nulla\",\n   \"custZipOut\": \"velit quis\",\n   \"custPhoneOut\": \"ex veniam cillum reprehenderit\",\n   \"birthDateOut\": \"cupidatat Lorem in dolore voluptate\",\n   \"createDateOut\": \"mollit\",\n   \"endDateOut\": \"fugiat dolor culpa\",\n   \"policyTypeOut\": \"dolor\",\n   \"monthlyPymtOut\": -87949551.7045188,\n   \"quarteryPymtOut\": -88655718.7301995,\n   \"yearlyPymtOut\": 93484731.69886506,\n   \"isActiveOut\": \"officia sunt irure\"\n  },\n  \"success\": \"veniam eiusmod aute ut reprehenderit\",\n  \"resultSqlcodeSign\": \"irure do et fugiat esse\",\n  \"resultSqlcode\": \"do\",\n  \"resultSqlstate\": \"dolore tempor irure ad ea\",\n  \"resultSqlerrmc\": \"ex pariatur labore aliquip\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdatePolicy GET operation",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"GetPolicy\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    var success = jsonData.pol2updOutput.success;\r",
+									"  var id = jsonData.pol2updOutput.policyRecOut.policyNumOut;\r",
+									"var active = jsonData.pol2updOutput.policyRecOut.isActiveOut;\r",
+									"\r",
+									"\r",
+									"    pm.expect(success).to.equal(\"Y\");\r",
+									"    pm.expect(active).to.equal(\"N\");\r",
+									"    pm.expect(id).to.equal(\"11\");\r",
+									" \r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pol2updInput\" : {\n    \"policyNumIn\" : \"11\",\n    \"custNameIn\" : \"Avi Zehavi\",\n    \"custAddrIn\" : \"Hashalom\",\n    \"custCityIn\" : \"Tel Aviv\",\n    \"custStateIn\" : \"IL\",\n    \"custZipIn\" : \"90210\",\n    \"custPhoneIn\" : \"123-456-789\",\n    \"birthDateIn\" : \"19900309\",\n    \"createDateIn\" : \"20210309\",\n    \"endDateIn\" : \"20220309\",\n    \"policyTypeIn\" : \"Car\",\n    \"monthlyPymtIn\" : 10.0,\n    \"quarteryPymtIn\" : 40.0,\n    \"yearlyPymtIn\" : 120.0,\n    \"isActiveIn\" : \"N\"\n  }\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/updatepolicy",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"updatepolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pol2updInput\": {\n        \"policyNumIn\": \"aliqua velit\",\n        \"custNameIn\": \"in officia irure enim sed\",\n        \"custAddrIn\": \"sunt tempor\",\n        \"custCityIn\": \"ex consequat\",\n        \"custStateIn\": \"Duis proident nulla\",\n        \"custZipIn\": \"anim aliquip nostrud laboris sunt\",\n        \"custPhoneIn\": \"est nostrud\",\n        \"birthDateIn\": \"culpa \",\n        \"createDateIn\": \"culpa ipsum esse\",\n        \"endDateIn\": \"aute sunt mollit\",\n        \"policyTypeIn\": \"con\",\n        \"monthlyPymtIn\": -5711083.634017691,\n        \"quarteryPymtIn\": -99483959.82659197,\n        \"yearlyPymtIn\": -18422376.50423257,\n        \"isActiveIn\": \"fugiat aute elit\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/updatepolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"updatepolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"pol2updOutput\": {\n  \"policyRecOut\": {\n   \"policyNumOut\": \"non veniam culpa\",\n   \"custNameOut\": \"aliquip enim\",\n   \"custAddrOut\": \"velit\",\n   \"custCityOut\": \"exercitation in fugiat\",\n   \"custStateOut\": \"ut\",\n   \"custZipOut\": \"sed\",\n   \"custPhoneOut\": \"minim reprehenderit\",\n   \"birthDateOut\": \"non\",\n   \"createDateOut\": \"voluptate aliqua esse\",\n   \"endDateOut\": \"dolore\",\n   \"policyTypeOut\": \"fugiat in\",\n   \"monthlyPymtOut\": 53281332.89217657,\n   \"quarteryPymtOut\": -22212513.073328525,\n   \"yearlyPymtOut\": -10007305.785325468,\n   \"isActiveOut\": \"consectetur ullamco Ut\"\n  },\n  \"success\": \"sint Lorem fugiat\",\n  \"resultSqlcodeSign\": \"eiusmod commodo\",\n  \"resultSqlcode\": \"et eu incididunt\",\n  \"resultSqlstate\": \"dolor labore occaecat\",\n  \"resultSqlerrmc\": \"sint consequat\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetPolicy GET operation",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"DeletePolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    var success = jsonData.pol2getOutput.success;\r",
+									"  var id = jsonData.pol2getOutput.policyRecOut.policyNumOut;\r",
+									"var active = jsonData.pol2getOutput.policyRecOut.isActiveOut;\r",
+									"\r",
+									"\r",
+									"    pm.expect(success).to.equal(\"Y\");\r",
+									"    pm.expect(active).to.equal(\"N\");\r",
+									"    pm.expect(id).to.equal(\"11\");\r",
+									" \r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pol2getInput\": {\n        \"policyNumIn\": \"11\"\n    }\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/getpolicy",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getpolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pol2getInput\": {\n        \"policyNumIn\": \"p\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/getpolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"getpolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"pol2getOutput\": {\n  \"policyRecOut\": {\n   \"policyNumOut\": \"sint\",\n   \"custNameOut\": \"labore ut\",\n   \"custAddrOut\": \"dolore non\",\n   \"custCityOut\": \"sint et\",\n   \"custStateOut\": \"id velit\",\n   \"custZipOut\": \"anim laboris\",\n   \"custPhoneOut\": \"cillum reprehenderit ex\",\n   \"birthDateOut\": \"exercitation laborum\",\n   \"createDateOut\": \"enim culpa\",\n   \"endDateOut\": \"adipisicing consequat sit incidid\",\n   \"policyTypeOut\": \"aliquip\",\n   \"monthlyPymtOut\": -92572362.26404974,\n   \"quarteryPymtOut\": 75508009.36729741,\n   \"yearlyPymtOut\": 18361338.577707455,\n   \"isActiveOut\": \"ut reprehenderit commodo\"\n  },\n  \"success\": \"ipsum\",\n  \"resultSqlcodeSign\": \"ullamco in\",\n  \"resultSqlcode\": \"Ut et sit ut pariatur\",\n  \"resultSqlstate\": \"Lorem\",\n  \"resultSqlerrmc\": \"aute adipisicing\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "DeletePolicy GET operation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    var success = jsonData.pol2delOutput.success;\r",
+									"\r",
+									"\r",
+									"\r",
+									"    pm.expect(success).to.equal(\"Y\");\r",
+									"  \r",
+									" \r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pol2delInput\": {\n        \"policyNumIn\": \"11\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deletepolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deletepolicy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pol2delInput\": {\n        \"policyNumIn\": \"pariatur id sunt\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/deletepolicy",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"deletepolicy"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"pol2delOutput\": {\n  \"policyRecOut\": {\n   \"policyNumOut\": \"dolore sed elit dolor\",\n   \"custNameOut\": \"velit laborum\",\n   \"custAddrOut\": \"reprehenderit culpa id qui\",\n   \"custCityOut\": \"in nulla qui \",\n   \"custStateOut\": \"nostrud Lorem \",\n   \"custZipOut\": \"sit exercitation esse fugiat commodo\",\n   \"custPhoneOut\": \"ve\",\n   \"birthDateOut\": \"ut quis voluptate Excepteur\",\n   \"createDateOut\": \"proident\",\n   \"endDateOut\": \"deserunt Excepteur id\",\n   \"policyTypeOut\": \"qui elit ipsum est\",\n   \"monthlyPymtOut\": 18903064.719643623,\n   \"quarteryPymtOut\": 54788784.11383888,\n   \"yearlyPymtOut\": 18662728.89696777,\n   \"isActiveOut\": \"sunt officia\"\n  },\n  \"success\": \"nisi reprehenderit dolor\",\n  \"resultSqlcodeSign\": \"in et deserunt ad sed\",\n  \"resultSqlcode\": \"voluptate dolore labore exercitation\",\n  \"resultSqlstate\": \"in officia ut eiusmod quis\",\n  \"resultSqlerrmc\": \"velit occaecat anim ad\"\n }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

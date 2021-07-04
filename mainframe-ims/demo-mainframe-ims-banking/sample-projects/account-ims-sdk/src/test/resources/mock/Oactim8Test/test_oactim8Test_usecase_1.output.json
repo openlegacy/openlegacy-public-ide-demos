@@ -1,0 +1,25 @@
+{
+  "oactim8Output" : {
+    "convTran" : "",
+    "accountDetails" : {
+      "actoAccountId" : "65906882668",
+      "actoCustomerId" : "2105200530054005",
+      "actoCustomerName" : "John Smith",
+      "actoIban" : "IS2I000200000168553500000",
+      "actoCntryCd" : "IS",
+      "actoBnkId" : "0002",
+      "actoBrnchId" : 1234,
+      "actoTypcd" : "P",
+      "actoTypeName" : "Personal",
+      "actoSubTypcd" : "MM",
+      "actoTypeDescription" : "Money Market Account",
+      "actoBalance" : 100.79,
+      "actoCurrency" : "SHK",
+      "actoCrtDt" : "20210331",
+      "actoUpdtDt" : "20210331",
+      "actoLocked" : "N"
+    },
+    "rtcd" : 0,
+    "rtMsg" : "OPEN     SUCCESSFUL:"
+  }
+}

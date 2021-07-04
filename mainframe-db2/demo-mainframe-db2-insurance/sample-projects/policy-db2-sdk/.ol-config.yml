@@ -1,0 +1,40 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.policy_db2_sdk.openlegacy"
+    webPackage: "com.policy_db2_sdk.openlegacy.web"
+    provider: "openlegacy-db-stored-proc"
+    sourceFetcher: "jdbcSourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "STORED_PROCEDURES"
+    frontendSolution: "JAVA"
+    userName: "DEMO001"
+    password: "LEGACY"
+    hostName: "jdbc:db2://mainframe.openlegacy.com:5035/DALLASB"
+    dbDialect: "org.hibernate.dialect.DB2Dialect"
+    db2Type: "ZOS"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

@@ -1,0 +1,20 @@
+{
+  "bankAccountObj" : {
+    "accountId" : "29572000010",
+    "customerId" : "1001200130014010",
+    "customerName" : "John Doe",
+    "iban" : "IL2I000200000129572000009",
+    "countryCode" : "IL",
+    "bankId" : "01",
+    "brnchId" : "89930018",
+    "typcd" : "P",
+    "typeName" : "MM Personal",
+    "subTypcd" : "A",
+    "typeDescription" : "Money Market Account",
+    "balance" : "115555.99",
+    "currency" : "USD",
+    "createdDate" : "2021-03-29 12:00:00",
+    "lastUpdate" : "2021-03-29 12:00:00",
+    "locked" : "N"
+  }
+}

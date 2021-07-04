@@ -1,0 +1,17 @@
+  
+{
+    "paccountId": "29572000010",
+    "pcustomerId": "1001200130013333",
+    "pcustomerName": "John Doe U",
+    "piban": "IL2I000200000129572003333",
+    "pcountryCode": "US",
+    "pbankId": "01",
+    "pbrnchId": "89930333",
+    "ptypcd": "P",
+    "ptypeName": "IRAPersonal",
+    "psubTypcd": "A",
+    "ptypeDescription": "Investment Retirement Account",
+    "pbalance": 113333.99,
+    "pcurrency": "EUR",
+    "plocked": "N"
+}

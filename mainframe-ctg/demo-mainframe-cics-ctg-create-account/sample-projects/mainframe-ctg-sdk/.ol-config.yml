@@ -1,0 +1,36 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.mainframe_ctg_sdk.openlegacy"
+    webPackage: "com.mainframe_ctg_sdk.openlegacy.web"
+    provider: "openlegacy-mf-ctg"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "MF_CTG"
+    frontendSolution: "JAVA"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

@@ -1,0 +1,20 @@
+{
+  "uactim8Input" : {
+    "actiAccountId" : "",
+    "actiCustomerId" : "",
+    "actiCustomerName" : "",
+    "actiIban" : "",
+    "actiCntryCd" : "",
+    "actiBnkId" : "",
+    "actiBrnchId" : 0,
+    "actiTypcd" : "",
+    "actiTypeName" : "",
+    "actiSubTypcd" : "",
+    "actiTypeDescription" : "",
+    "actiBalance" : 0,
+    "actiCurrency" : "",
+    "actiCrtDt" : "",
+    "actiUpdtDt" : "",
+    "actiLocked" : ""
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "sdks" : {
+    "cicsAccountsSdk" : {
+      "entitiesCount" : 6,
+      "entitiesCountByType" : {
+        "screens" : 0,
+        "rpc" : 6
+      },
+      "apisCount" : 0,
+      "apisCountByType" : {
+        "rest" : {
+          "POST" : 0,
+          "PUT" : 0,
+          "DELETE" : 0,
+          "GET" : 0
+        },
+        "soap" : 0,
+        "grpc" : 0,
+        "odata" : 0
+      }
+    }
+  },
+  "api" : {
+    "entitiesCount" : 0,
+    "entitiesCountByType" : {
+      "screens" : 0,
+      "rpc" : 0
+    },
+    "apisCount" : 0,
+    "apisCountByType" : {
+      "rest" : {
+        "POST" : 0,
+        "PUT" : 0,
+        "DELETE" : 0,
+        "GET" : 0
+      },
+      "soap" : 0,
+      "grpc" : 0,
+      "odata" : 0
+    }
+  }
+}

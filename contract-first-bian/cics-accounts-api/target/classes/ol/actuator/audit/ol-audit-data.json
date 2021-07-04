@@ -1,0 +1,22 @@
+{
+  "sdks" : { },
+  "api" : {
+    "entitiesCount" : 0,
+    "entitiesCountByType" : {
+      "screens" : 0,
+      "rpc" : 0
+    },
+    "apisCount" : 36,
+    "apisCountByType" : {
+      "rest" : {
+        "POST" : 8,
+        "PUT" : 16,
+        "DELETE" : 0,
+        "GET" : 12
+      },
+      "soap" : 0,
+      "grpc" : 0,
+      "odata" : 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "inPut" : {
+    "actiAccountId" : "11122234914"
+  },
+  "accountOut" : {
+    "accountDetails2" : {
+      "actoAccountId" : "11122234914",
+      "actoCustomerId" : "1008200830084033",
+      "actoCustomerName" : "ROBERT SMITH",
+      "actoIban" : "US2I0002000001",
+      "actoCntryCd" : "US",
+      "actoBnkId" : "0002",
+      "actoBrnchId" : 1122,
+      "actoTypcd" : "P",
+      "actoTypeName" : "Personal",
+      "actoSubTypcd" : "S",
+      "actoTypeDescription" : "Savings Account",
+      "actoBalance" : 44835.28,
+      "actoCurrency" : "USD",
+      "actoCrtDt" : "20210221",
+      "actoUpdtDt" : "20210221",
+      "actoLocked" : "N"
+    },
+    "rtMsg" : "SUCCESSFUL GET"
+  }
+}

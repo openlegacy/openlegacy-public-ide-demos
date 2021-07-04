@@ -1,0 +1,34 @@
+ PLITEMS: PROCEDURE(DFHCOMMP) OPTIONS(MAIN);
+ DECLARE DFHCOMMP PTR;
+ DECLARE 
+   01 DFHCOMM BASED(DFHCOMMP),
+     02 ALL_RECORDS(5), 
+       03 ITEM_NUMBER FIXED BINARY(15),
+       03 ITEM_NAME   CHAR(16),
+       03 DESCRIPTION CHAR(28);
+ ;
+ MAIN: ENTRY;
+ DISPLAY ('ENTERING PLITEMS');
+ ;
+ ITEM_NUMBER(1) = 1000;
+ ITEM_NAME(1)   = 'Kid Guitar';
+ DESCRIPTION(1) = 'Kids Guitar - Musical Toys ';
+ ;
+ ITEM_NUMBER(2) = 1001;
+ ITEM_NAME(2)   = 'Ball Pool';
+ DESCRIPTION(2) = 'Ball Pool - Novelty Toys';
+ ;
+ ITEM_NUMBER(3) = 1002;
+ ITEM_NAME(3)   = 'Water Ball';
+ DESCRIPTION(3) = 'Water Ball - Balls';
+ ;
+ ITEM_NUMBER(4) = 1003;
+ ITEM_NAME(4)   = 'Frisbee';
+ DESCRIPTION(4) = 'Dog Frisbee - Pet Toys';
+ ;
+ ITEM_NUMBER(5) = 1004;
+ ITEM_NAME(5)   = 'Pig Bank';
+ DESCRIPTION(5) = 'Pig Saving Bank - Ceramics';
+ ; 
+ EXEC CICS RETURN;
+ END PLITEMS;

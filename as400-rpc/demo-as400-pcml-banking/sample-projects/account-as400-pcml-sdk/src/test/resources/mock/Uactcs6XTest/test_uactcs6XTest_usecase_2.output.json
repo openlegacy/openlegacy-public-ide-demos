@@ -1,0 +1,19 @@
+{
+  "dsAccount" : "",
+  "dsCustid" : "",
+  "dsCustname" : "",
+  "dsIban" : "",
+  "dsBankid" : "",
+  "dsBranchid" : "",
+  "dsCntrycd" : "",
+  "dsTypcd" : "",
+  "dsSubtypcd" : "",
+  "dsTypename" : "",
+  "dsTypedesc" : "",
+  "dsBalance" : "",
+  "dsCurrency" : "",
+  "dsCrtdt" : "",
+  "dsUpdtdt" : "",
+  "dsLocked" : "",
+  "output" : ""
+}

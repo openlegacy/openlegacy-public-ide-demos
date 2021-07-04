@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "0afd770d-1336-4f96-a392-1aab1a02c307",
+		"name": "Mainframe-MQ-Create-Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mainframe-mq-account",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c2867a5-1796-47a1-9aa4-6fa8ab46a38a",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Assert by values\", function () {\r",
+							"    var jsonData = responseBody;\r",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");\r",
+							"    pm.expect(jsonData).to.equal(jsonOutput);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d4c42ba6-78f1-4fc1-8377-4d578fad2589",
+						"exec": [
+							"const tokenUrl = 'http://127.0.0.1:8080/oauth/token';\r",
+							"const clientId = 'client_id';\r",
+							"const clientSecret = 'client_secret';\r",
+							"const getTokenRequest = {\r",
+							"  method: 'POST',\r",
+							"  url: tokenUrl,\r",
+							"  header:{\r",
+							"    'content-type': 'application/x-www-form-urlencoded',\r",
+							"    'Authorization': 'Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ='\r",
+							"  },\r",
+							"  body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"          { key: 'grant_type', value: 'client_credentials' },\r",
+							"          { key: 'client_id', value: clientId },\r",
+							"          { key: 'client_secret', value: clientSecret }\r",
+							"      ]\r",
+							"  }\r",
+							"};\r",
+							" \r",
+							"pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"    if(err === null)\r",
+							"    {\r",
+							"  const jsonResponse = response.json();\r",
+							"  const newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"  pm.variables.set('access_token', newAccessToken);\r",
+							"    }\r",
+							"    else console.log(formdata);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"crtAccountIn\": {\r\n    \"actiCustomerId\" : \"1003200330034003\",\r\n    \"actiCustomerName\" : \"AMANDA LITTLE\",\r\n    \"actiTypcd\" : \"P\",\r\n    \"actiSubTypcd\" : \"S\",\r\n    \"actiCntryCd\" : \"UK\",\r\n    \"actiBnkId\" : \"0002\",\r\n    \"actiBranchId\" : \"1234\",\r\n    \"actiInitialDeposit\" : 703.4,\r\n    \"actiCurrency\" : \"LBS\"  \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

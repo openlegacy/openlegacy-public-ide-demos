@@ -1,0 +1,14 @@
+{
+  "oactim8Input" : {
+    "actiAccountId" : "65906882668",
+    "actiCustomerId" : "2105200530054005",
+    "actiCustomerName" : "John Smith",
+    "actiTypcd" : "P",
+    "actiSubTypcd" : "MM",
+    "actiCntryCd" : "IS",
+    "actiBnkId" : "0002",
+    "actiBrnchId" : 1234,
+    "actiInitialDeposit" : 100.79,
+    "actiCurrency" : "SHK"
+  }
+}

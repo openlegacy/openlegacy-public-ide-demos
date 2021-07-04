@@ -1,0 +1,89 @@
+{
+  "lpolcs2Output" : {
+    "inPut" : null,
+    "outPut" : {
+      "rtMsg" : "SUCCESSFUL LIST",
+      "policyArray" : [ {
+        "actoPolicyNum" : "5569823033",
+        "actoCustName" : "WALLACE MACKIE",
+        "actoCustAddr" : "55 VENTURA BLVD",
+        "actoCustCity" : "LOS ANGELESE",
+        "actoCustState" : "CA",
+        "actoCustZip" : "90006",
+        "actoCustPhone" : "213-664-1456",
+        "actoBirthDate" : "02091973",
+        "actoCreateDate" : "01052020",
+        "actoEndDate" : "01052022",
+        "actoPolicyType" : "FULL LIFE",
+        "actoMonthlyPymt" : 873.65,
+        "actoQuarteryPymt" : 2620.95,
+        "actoYearlyPymt" : 16085.16,
+        "actoIsactive" : "Y"
+      }, {
+        "actoPolicyNum" : "1498640006",
+        "actoCustName" : "FRANK BRADY",
+        "actoCustAddr" : "156 CHERRY LANE",
+        "actoCustCity" : "COLUMBUS",
+        "actoCustState" : "OH",
+        "actoCustZip" : "43201",
+        "actoCustPhone" : "614-668-3343",
+        "actoBirthDate" : "06021974",
+        "actoCreateDate" : "02022020",
+        "actoEndDate" : "02022022",
+        "actoPolicyType" : "FULL LIFE",
+        "actoMonthlyPymt" : 1340.43,
+        "actoQuarteryPymt" : 5361.72,
+        "actoYearlyPymt" : 16085.16,
+        "actoIsactive" : "Y"
+      }, {
+        "actoPolicyNum" : "8409275601",
+        "actoCustName" : "BOB MATTHEWS",
+        "actoCustAddr" : "75 ELMWOOD RD",
+        "actoCustCity" : "AUSTIN",
+        "actoCustState" : "TX",
+        "actoCustZip" : "73301",
+        "actoCustPhone" : "512-876-3798",
+        "actoBirthDate" : "03091973",
+        "actoCreateDate" : "03092019",
+        "actoEndDate" : "03092024",
+        "actoPolicyType" : "TERM LIFE",
+        "actoMonthlyPymt" : 101.0,
+        "actoQuarteryPymt" : 303.0,
+        "actoYearlyPymt" : 909.0,
+        "actoIsactive" : "Y"
+      }, {
+        "actoPolicyNum" : "5693001544",
+        "actoCustName" : "JERRY MOSSMAN",
+        "actoCustAddr" : "20 MAIN STREETE",
+        "actoCustCity" : "TAMPA",
+        "actoCustState" : "FL",
+        "actoCustZip" : "33605",
+        "actoCustPhone" : "813-550-2344",
+        "actoBirthDate" : "03031965",
+        "actoCreateDate" : "03062018",
+        "actoEndDate" : "03062022",
+        "actoPolicyType" : "TERM LIFE",
+        "actoMonthlyPymt" : 643.44,
+        "actoQuarteryPymt" : 1930.32,
+        "actoYearlyPymt" : 7721.28,
+        "actoIsactive" : "Y"
+      }, {
+        "actoPolicyNum" : "",
+        "actoCustName" : "",
+        "actoCustAddr" : "",
+        "actoCustCity" : "",
+        "actoCustState" : "",
+        "actoCustZip" : "",
+        "actoCustPhone" : "",
+        "actoBirthDate" : "",
+        "actoCreateDate" : "",
+        "actoEndDate" : "",
+        "actoPolicyType" : "",
+        "actoMonthlyPymt" : 0.0,
+        "actoQuarteryPymt" : 0.0,
+        "actoYearlyPymt" : 0.0,
+        "actoIsactive" : ""
+      } ]
+    }
+  }
+}

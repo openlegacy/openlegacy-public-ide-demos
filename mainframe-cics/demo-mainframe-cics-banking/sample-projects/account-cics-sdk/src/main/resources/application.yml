@@ -1,0 +1,11 @@
+ol:
+  cics:
+    project:
+      accountCicsSdk:
+        base-url: http://192.86.32.238
+        port: 12345
+        uri-map: ol/demos
+        code-page: CP037
+  license:
+    key: 
+

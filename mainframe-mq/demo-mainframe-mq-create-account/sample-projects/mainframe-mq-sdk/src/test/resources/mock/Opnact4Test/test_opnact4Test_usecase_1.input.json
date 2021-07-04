@@ -1,0 +1,13 @@
+{
+  "crtAccountIn" : {
+    "actiCustomerId" : "1003200330034003",
+    "actiCustomerName" : "AMANDA LITTLE",
+    "actiTypcd" : "P",
+    "actiSubTypcd" : "S",
+    "actiCntryCd" : "UK",
+    "actiBnkId" : "0002",
+    "actiBranchId" : "1234",
+    "actiInitialDeposit" : 703.4,
+    "actiCurrency" : "LBS"
+  }
+}

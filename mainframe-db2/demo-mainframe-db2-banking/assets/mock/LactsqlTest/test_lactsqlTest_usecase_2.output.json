@@ -1,0 +1,20 @@
+{
+  "resultSet" : [ {
+    "acctAccountId" : "",
+    "acctCustomerId" : "",
+    "acctCustomerName" : "",
+    "acctIban" : "",
+    "acctBnkId" : "",
+    "acctBrnchId" : 0,
+    "acctCntryCd" : "",
+    "acctTypcd" : "",
+    "acctSubTypcd" : "",
+    "acctTypeName" : "",
+    "acctTypeDescription" : "",
+    "acctBalance" : "0",
+    "acctCurrency" : "",
+    "acctCrtDt" : "",
+    "acctUpdtDt" : "",
+    "acctLocked" : ""
+  } ]
+}

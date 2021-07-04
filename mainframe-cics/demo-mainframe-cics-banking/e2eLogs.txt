@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for account-cics-api:account-cics-api:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 129, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------< account-cics-api:account-cics-api >------------------
+[INFO] Building account-cics-api 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ account-cics-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:clean (flatten.clean) @ account-cics-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\.flattened-pom.xml
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.4.4:run (default-cli) > test-compile @ account-cics-api >>>
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ account-cics-api ---
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\src\main\java added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\src\main\kotlin added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ account-cics-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:flatten (flatten) @ account-cics-api ---
+[INFO] Generating flattened POM of project account-cics-api:account-cics-api:jar:0.1...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ account-cics-api ---
+[INFO] Compiling 21 source files to C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target\classes
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/mainframe-cics/demo-mainframe-cics-banking/sample-projects/account-cics-api/src/main/java/com/account_cics_api/openlegacy/services/ResetAccountServiceImpl.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/mainframe-cics/demo-mainframe-cics-banking/sample-projects/account-cics-api/src/main/java/com/account_cics_api/openlegacy/services/ResetAccountServiceImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ account-cics-api ---
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\src\test\java added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\src\test\kotlin added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ account-cics-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ account-cics-api ---
+[INFO] Compiling 6 source files to C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target\test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.4.4:run (default-cli) < test-compile @ account-cics-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.4:run (default-cli) @ account-cics-api ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.4)
+
+2021-05-10 18:46:18.775  INFO 8460 --- [           main] c.a.o.AccountCicsApiApplication          : Starting AccountCicsApiApplication using Java 11.0.2 on DESKTOP-BPRN3AE with PID 8460 (C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api\target\classes started by User in C:\Users\User\git\openlegacy-ide-demos\mainframe-cics\demo-mainframe-cics-banking\sample-projects\account-cics-api)
+2021-05-10 18:46:18.784  INFO 8460 --- [           main] c.a.o.AccountCicsApiApplication          : No active profile set, falling back to default profiles: default
+2021-05-10 18:46:20.808  INFO 8460 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-10 18:46:20.818  INFO 8460 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-10 18:46:20.818  INFO 8460 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-10 18:46:20.953  INFO 8460 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-10 18:46:20.953  INFO 8460 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2119 ms
+2021-05-10 18:46:21.582  INFO 8460 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-10 18:46:22.512  INFO 8460 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2021-05-10 18:46:22.558  INFO 8460 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-10 18:46:22.721  INFO 8460 --- [           main] c.a.o.AccountCicsApiApplication          : Started AccountCicsApiApplication in 4.481 seconds (JVM running for 5.72)
+2021-05-10 18:46:22.770  INFO 8460 --- [           main] LoggerFactory$PropertiesEncryptionLogger : Starting PropertiesEncryptionEnvironmentPostProcessor...
+2021-05-10 18:46:22.770  WARN 8460 --- [           main] LoggerFactory$PropertiesEncryptionLogger : 
+
+*****************************************************************************************************************
+
+                      WARNING!
+
+You are using default properties encryption key. Its not recommended to use default key in production environment.
+Please set either `encryption.key` or `encryption.key-store.*` properties in order to define encryption key.
+
+******************************************************************************************************************
+
+2021-05-10 18:46:22.770  INFO 8460 --- [           main] LoggerFactory$PropertiesEncryptionLogger : PropertiesEncryptionEnvironmentPostProcessor finished
+2021-05-10 18:46:37.302  INFO 8460 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-10 18:46:37.302  INFO 8460 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-10 18:46:37.304  INFO 8460 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-10 18:46:38.811  WARN 8460 --- [nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.466 s
+[INFO] Finished at: 2021-05-10T18:46:45+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.4.4:run (default-cli) on project account-cics-api: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

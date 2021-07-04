@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "7ff49fea-301c-4c1d-b861-5bd05eef75e4",
+		"name": "policy-db2-api",
+		"description": "policy-db2-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ResetPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"ListPolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rpolsql\": {}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/resetaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resetaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListPolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {resultSet} = responseJson;\r",
+									"    pm.expect(resultSet).to.be.an('array');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"OpenPolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/listpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"listpolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenPolicy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"GetPolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {policyNum} = responseJson;\r",
+									"    pm.expect(policyNum).to.eql(\"2498641116 \");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyNum\": \"2498641116\",\n    \"custName\": \"JOHN DOE\",\n    \"custAddr\": \"111 CHERRY LANE\",\n    \"custCity\": \"Albany\",\n    \"custState\": \"NY\",\n    \"custZip\": \"1234\",\n    \"custPhone\": \"623-668-3432\",\n    \"birthDate\": \"02021994\",\n    \"createDate\": \"02022020\",\n    \"endDate\": \"02022022\",\n    \"policyType\": \"FULL LIFE\",\n    \"monthlyPymt\": 2234,\n    \"quarterlyPymt\": 4567,\n    \"yearlyPymt\": 2345,\n    \"isactive\": \"Y\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openpolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPolicy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"UpdatePolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {resultSet} = responseJson;\r",
+									"    const {acctPolicyNum} = responseJson.resultSet;\r",
+									"    pm.expect(acctPolicyNum).to.eql(\"2498641116 \");\r",
+									"    pm.expect(resultSet).to.be.an('object');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyNum\": \"2498641116\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getpolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getpolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePolicy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"DeletePolicy\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {policyNum} = responseJson;\r",
+									"    pm.expect(policyNum).to.eql(\"2498641116 \");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyNum\": \"2498641116\",\n    \"custName\": \"JOHN DOE U\",\n    \"custAddr\": \"222 CHERRY LANE\",\n    \"custCity\": \"Cayuga\",\n    \"custState\": \"NY\",\n    \"custZip\": \"1234\",\n    \"custPhone\": \"623-668-3432\",\n    \"birthDate\": \"02021994\",\n    \"createDate\": \"02022020\",\n    \"endDate\": \"02022022\",\n    \"policyType\": \"TERM LIFE\",\n    \"monthlyPymt\": 2234,\n    \"quarterlyPymt\": 4567,\n    \"yearlyPymt\": 2345,\n    \"isactive\": \"Y\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updatepolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updatepolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePolicy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"null\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\": \"2498641116\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deletepolicy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deletepolicy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

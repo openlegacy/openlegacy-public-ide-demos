@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Jenkins Trigger
+#  refs/remotes/origin/automation-4.5.2
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  pull_request:
+    branches-ignore:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    if: github.actor != 'ol-demo-admin'
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Extract Repository Name
+        shell: bash
+        run: echo "##[set-output name=repository;]$(echo ${GITHUB_REPOSITORY#openlegacy/})"
+        id: extract_repository
+      - name: Install JQ
+        run: sudo apt-get install jq
+      - name: Get Version from Label
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        id: label_pr
+        run: echo "##[set-output name=version;]$(echo ${GITHUB_CONTEXT} | jq -r '.event | .pull_request | .labels | .[] | .name')"
+      - name: test
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo $GITHUB_CONTEXT | jq -r '.event | .pull_request | .labels | .[] | .name'
+      - name: jenkins-action-parametrized
+        uses: enflo/jenkins-action@0.1.2
+        with:
+          url: http://jenkins.demos.openlegacy.com:8080
+          user: github-demos
+          token: 116dfa82714296d34db3ad7a363fefdcf2
+          job: /job/rcp-testing-pipeline
+          parameters: repository=${{ steps.extract_repository.outputs.repository }}&branchName=${{ github.head_ref }}&olversion=${{ steps.label_pr.outputs.version }}

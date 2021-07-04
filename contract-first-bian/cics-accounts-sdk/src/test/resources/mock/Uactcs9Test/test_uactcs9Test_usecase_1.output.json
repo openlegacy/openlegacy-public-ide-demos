@@ -1,0 +1,45 @@
+{
+  "dfhcommarea" : {
+    "updateIn" : {
+      "inputRecord" : {
+        "actiAccountId" : "69941327752",
+        "actiCustomerId" : "1002200230024992",
+        "actiCustomerName" : "John Doe",
+        "actiIban" : "P",
+        "actiCntryCd" : "US",
+        "actiBnkId" : "0002",
+        "actiBrnchId" : 1334,
+        "actiTypcd" : "P",
+        "actiTypeName" : "Personal",
+        "actiSubTypcd" : "MM",
+        "actiTypeDescription" : "Money Market Account",
+        "actiBalance" : 10000.0,
+        "actiCurrency" : "USD",
+        "actiCrtDt" : "20210221",
+        "actiUpdtDt" : "20210221",
+        "actiLocked" : "N"
+      }
+    },
+    "updateOut" : {
+      "outputRecord" : {
+        "actoAccountId" : "69941327752",
+        "actoCustomerId" : "1002200230024992",
+        "actoCustomerName" : "John Doe",
+        "actoIban" : "P",
+        "actoCntryCd" : "US",
+        "actoBnkId" : "0002",
+        "actoBrnchId" : 1334,
+        "actoTypcd" : "P",
+        "actoTypeName" : "Personal",
+        "actoSubTypcd" : "MM",
+        "actoTypeDescription" : "Money Market Account",
+        "actoBalance" : 10000.0,
+        "actoCurrency" : "USD",
+        "actoCrtDt" : "20210221",
+        "actoUpdtDt" : "20210221",
+        "actoLocked" : "N"
+      },
+      "rtMsg" : "SUCCESSFUL UPDATE"
+    }
+  }
+}

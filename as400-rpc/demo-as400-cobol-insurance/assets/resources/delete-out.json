@@ -1,0 +1,27 @@
+{
+    "pol2delOutput" : {
+      "policyRecOut" : {
+        "policyNumOut" : "",
+        "custNameOut" : "",
+        "custAddrOut" : "",
+        "custCityOut" : "",
+        "custStateOut" : "",
+        "custZipOut" : "",
+        "custPhoneOut" : "",
+        "birthDateOut" : "",
+        "createDateOut" : "",
+        "endDateOut" : "",
+        "policyTypeOut" : "",
+        "monthlyPymtOut" : 0.0,
+        "quarteryPymtOut" : 0.0,
+        "yearlyPymtOut" : 0.0,
+        "isActiveOut" : ""
+      },
+      "success" : "Y",
+      "resultSqlcodeSign" : "",
+      "resultSqlcode" : "00000",
+      "resultSqlstate" : "00000",
+      "resultSqlerrmc" : "POLICY    \u0000POLICY"
+    }
+  }
+  

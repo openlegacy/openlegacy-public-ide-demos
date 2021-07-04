@@ -1,0 +1,135 @@
+{
+  "ractim8Input" : {
+    "accountArray" : [ {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    }, {
+      "actiDetails" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiTypcd" : "",
+        "actiSubTypcd" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiInitialDeposit" : 0,
+        "actiCurrency" : ""
+      }
+    } ]
+  }
+}

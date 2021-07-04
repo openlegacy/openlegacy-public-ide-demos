@@ -1,0 +1,17 @@
+{
+  "paccountId" : "29572000010",
+  "pcustomerId" : "1001200130014010",
+  "pcustomerName" : "John Doe",
+  "piban" : "IL2I000200000129572000009",
+  "pcountryCode" : "IL",
+  "pbankId" : "01",
+  "pbrnchId" : "89930018",
+  "ptypcd" : "P",
+  "ptypeName" : "MM Personal",
+  "psubTypcd" : "A",
+  "ptypeDescription" : "Money Market Account",
+  "pbalance" : "115555.99",
+  "pcurrency" : "USD",
+  "plocked" : "N"
+
+}

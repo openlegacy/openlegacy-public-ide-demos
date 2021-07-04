@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for account-oracle-api:account-oracle-api:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 116, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------------< account-oracle-api:account-oracle-api >----------------
+[INFO] Building account-oracle-api 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ account-oracle-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:clean (flatten.clean) @ account-oracle-api ---
+[INFO] Deleting C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\.flattened-pom.xml
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.4.4:run (default-cli) > test-compile @ account-oracle-api >>>
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ account-oracle-api ---
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\src\main\java added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\src\main\kotlin added.
+[INFO] Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ account-oracle-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.2.7:flatten (flatten) @ account-oracle-api ---
+[INFO] Generating flattened POM of project account-oracle-api:account-oracle-api:jar:0.1...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ account-oracle-api ---
+[INFO] Compiling 21 source files to C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target\classes
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/oracle-sp/demo-oracle-db-banking/sample-projects/account-oracle-api/src/main/java/com/account_oracle_api/openlegacy/services/OpenAccountServiceImpl.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/User/git/openlegacy-ide-demos/oracle-sp/demo-oracle-db-banking/sample-projects/account-oracle-api/src/main/java/com/account_oracle_api/openlegacy/services/OpenAccountServiceImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ account-oracle-api ---
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\src\test\java added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\src\test\kotlin added.
+[INFO] Test Source directory: C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ account-oracle-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ account-oracle-api ---
+[INFO] Compiling 1 source file to C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target\test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.4.4:run (default-cli) < test-compile @ account-oracle-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.4:run (default-cli) @ account-oracle-api ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.4)
+
+2021-05-11 10:11:52.411  INFO 16532 --- [           main] c.a.o.AccountOracleApiApplication        : Starting AccountOracleApiApplication using Java 11.0.2 on DESKTOP-BPRN3AE with PID 16532 (C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api\target\classes started by User in C:\Users\User\git\openlegacy-ide-demos\oracle-sp\demo-oracle-db-banking\sample-projects\account-oracle-api)
+2021-05-11 10:11:52.413  INFO 16532 --- [           main] c.a.o.AccountOracleApiApplication        : No active profile set, falling back to default profiles: default
+2021-05-11 10:11:54.430  INFO 16532 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-11 10:11:54.439  INFO 16532 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-11 10:11:54.440  INFO 16532 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-11 10:11:54.619  INFO 16532 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-11 10:11:54.620  INFO 16532 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2163 ms
+2021-05-11 10:11:55.207  INFO 16532 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 10:11:56.164  INFO 16532 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2021-05-11 10:11:56.206  INFO 16532 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-11 10:11:56.372  INFO 16532 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-11 10:11:56.379  WARN 16532 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-05-11 10:11:58.287  INFO 16532 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-11 10:11:58.321  INFO 16532 --- [           main] c.a.o.AccountOracleApiApplication        : Started AccountOracleApiApplication in 6.434 seconds (JVM running for 7.783)
+2021-05-11 10:11:58.326  INFO 16532 --- [           main] LoggerFactory$PropertiesEncryptionLogger : Starting PropertiesEncryptionEnvironmentPostProcessor...
+2021-05-11 10:11:58.327  WARN 16532 --- [           main] LoggerFactory$PropertiesEncryptionLogger : 
+
+*****************************************************************************************************************
+
+                      WARNING!
+
+You are using default properties encryption key. Its not recommended to use default key in production environment.
+Please set either `encryption.key` or `encryption.key-store.*` properties in order to define encryption key.
+
+******************************************************************************************************************
+
+2021-05-11 10:11:58.327  INFO 16532 --- [           main] LoggerFactory$PropertiesEncryptionLogger : PropertiesEncryptionEnvironmentPostProcessor finished
+2021-05-11 10:12:10.115  INFO 16532 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 10:12:10.115  INFO 16532 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-11 10:12:10.115  INFO 16532 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-11 10:12:10.425  INFO 16532 --- [nio-8080-exec-2] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.RESET_CUSTOMER_BANK_ACCOUNTS()}
+2021-05-11 10:12:11.043  WARN 16532 --- [nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [248] milliseconds.
+2021-05-11 10:12:11.415  INFO 16532 --- [nio-8080-exec-3] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.GET_ALL_CUSTOMER_BANK_ACCOUNTS(?)}
+2021-05-11 10:12:13.368  INFO 16532 --- [nio-8080-exec-4] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.OPEN_ACCOUNT(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}
+2021-05-11 10:12:14.303  INFO 16532 --- [nio-8080-exec-5] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.GET_ACCOUNT(?,?)}
+2021-05-11 10:12:14.599  INFO 16532 --- [nio-8080-exec-6] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.UPDATE_ACCOUNT(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}
+2021-05-11 10:12:14.886  INFO 16532 --- [nio-8080-exec-7] i.o.p.f.s.statement.StatementSerializer  : Query - {call OPENLEGACY_TEAM.BANK_ACCOUNTS_PACKAGE.DELETE_ACCOUNT(?)}
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  36.810 s
+[INFO] Finished at: 2021-05-11T10:12:17+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.4.4:run (default-cli) on project account-oracle-api: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "04e58c1d-62fe-4557-b589-7de3952103ab",
+		"name": "account-cics-api",
+		"description": "account-cics-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ResetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"const responseJson = pm.response.json();\r",
+									"const {rtMsg} = responseJson.ractcs9.dfhcommarea.outPut;\r",
+									"const {accountArray} = responseJson.ractcs9.dfhcommarea.inPut;\r",
+									"  pm.expect(rtMsg).to.eql(\"10   ACCOUNTS ADDED\");\r",
+									"  pm.expect(accountArray).to.be.an('array');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"ListAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ractcs9\": {\n       \"dfhcommarea\": {\n        \"inPut\": {\n            \"accountArray\": [\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"59707720911\",\n                        \"actiCustomerId\": \"1001200130014001\",\n                        \"actiCustomerName\": \"FRANK GRANT\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"MM\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1234,\n                        \"actiInitialDeposit\": 5555.99,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"68841327752\",\n                        \"actiCustomerId\": \"1002200230024002\",\n                        \"actiCustomerName\": \"GEORGE MANSFIELD\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"IRA\",\n                        \"actiCntryCd\": \"IS\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1234,\n                        \"actiInitialDeposit\": 8642.23,\n                        \"actiCurrency\": \"SHK\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"89618973088\",\n                        \"actiCustomerId\": \"1003200330034003\",\n                        \"actiCustomerName\": \"AMANDA LITTLE\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"S\",\n                        \"actiCntryCd\": \"UK\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1234,\n                        \"actiInitialDeposit\": 703.40,\n                        \"actiCurrency\": \"LBS\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"14775538273\",\n                        \"actiCustomerId\": \"1004200430044004\",\n                        \"actiCustomerName\": \"SAMANTHA JACOBS\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"IRA\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 4568,\n                        \"actiInitialDeposit\": 6543.31,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"75906882668\",\n                        \"actiCustomerId\": \"1005200530054005\",\n                        \"actiCustomerName\": \"MARTY BOSMAN\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"MM\",\n                        \"actiCntryCd\": \"IS\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 4568,\n                        \"actiInitialDeposit\": 867.28,\n                        \"actiCurrency\": \"SHK\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"57640110254\",\n                        \"actiCustomerId\": \"1006200630064006\",\n                        \"actiCustomerName\": \"FRED MAXWELL\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"S\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 9876,\n                        \"actiInitialDeposit\": 1835.28,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"88652641002\",\n                        \"actiCustomerId\": \"1007200730074007\",\n                        \"actiCustomerName\": \"BARNEY JONES\",\n                        \"actiTypcd\": \"B\",\n                        \"actiSubTypcd\": \"MM\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1234,\n                        \"actiInitialDeposit\": 1234.56,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"22277234914\",\n                        \"actiCustomerId\": \"1008200830084008\",\n                        \"actiCustomerName\": \"MAX LIPTON\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"S\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1368,\n                        \"actiInitialDeposit\": 99423.28,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"11122234914\",\n                        \"actiCustomerId\": \"1008200830084033\",\n                        \"actiCustomerName\": \"ROBERT SMITH\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"S\",\n                        \"actiCntryCd\": \"US\",\n                        \"actiBnkId\": \"0002\",\n                        \"actiBrnchId\": 1122,\n                        \"actiInitialDeposit\": 44835.28,\n                        \"actiCurrency\": \"USD\"\n                    }\n                },\n                {\n                    \"actiDetails\": {\n                        \"actiAccountId\": \"34435234914\",\n                        \"actiCustomerId\": \"1008200830084011\",\n                        \"actiCustomerName\": \"JANE DOE\",\n                        \"actiTypcd\": \"P\",\n                        \"actiSubTypcd\": \"S\",\n                        \"actiCntryCd\": \"IS\",\n                        \"actiBnkId\": \"0001\",\n                        \"actiBrnchId\": 1333,\n                        \"actiInitialDeposit\": 99835.28,\n                        \"actiCurrency\": \"USD\"\n                    }\n                }\n            ]\n        },\n        \"outPut\": {\n            \"rtMsg\": \"\"\n        }\n    }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/resetaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resetaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {rtMsg,outRecord} = responseJson.oactcs9.dfhcommarea.accountOut;\r",
+									"    const {actoAccountId} = responseJson.oactcs9.dfhcommarea.accountOut.outRecord;\r",
+									"    pm.expect(actoAccountId).to.eql(\"69941327752\");\r",
+									"    pm.expect(rtMsg).to.eql(\"SUCCESSFUL INSERT\");\r",
+									"    pm.expect(outRecord).to.be.an('object')\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"GetAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"oactcs9\": {\n        \"dfhcommarea\": {\n            \"inPut\": {\n                \"actiAccountId\": \"69941327752\",\n                \"actiCustomerId\": \"1002200230024992\",\n                \"actiCustomerName\": \"John Doe\",\n                \"actiTypcd\": \"P\",\n                \"actiSubTypcd\": \"MM\",\n                \"actiCntryCd\": \"US\",\n                \"actiBnkId\": \"0002\",\n                \"actiBrnchId\": \"1334\",\n                \"actiInitialDeposit\": 3.99,\n                \"actiCurrency\": \"USD\"\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {rtMsg} = responseJson.gactcs9Output.accountOut;\r",
+									"    const {actoAccountId,actoCustomerId,actoCustomerName} = responseJson.gactcs9Output.accountOut.accountDetails;\r",
+									"    pm.expect(actoAccountId).to.eql(\"89618973088\");\r",
+									"    pm.expect(actoCustomerId).to.eql(\"1003200330034003\");\r",
+									"    pm.expect(actoCustomerName).to.eql(\"AMANDA LITTLE\");\r",
+									"    pm.expect(rtMsg).to.eql(\"SUCCESSFUL GET\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"UpdateAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gactcs9Input\": {\n        \"actiAccountId\": \"89618973088\",\n        \"filler715024084409867\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {actoAccountId} = responseJson.dactcs9Output.accountDetails;\r",
+									"    const {rtMsg} = responseJson.dactcs9Output;\r",
+									"    pm.expect(actoAccountId).to.eql(\"69941327752\");\r",
+									"    pm.expect(rtMsg).to.eql(\"SUCCESSFUL DELETE\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"null\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dactcs9Input\": {\n        \"actiAccountId\": \"69941327752\",\n        \"filler8675802918892853\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deleteaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deleteaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {rtMsg,accountArray} = responseJson.lactcs9Output.outPut;\r",
+									"    pm.expect(rtMsg).to.eql(\"SUCCESSFUL LIST\");\r",
+									"    pm.expect(accountArray).to.be.an('array');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"OpenAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/listaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"listaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {rtMsg,outputRecord} = responseJson.uactcs9.dfhcommarea.updateOut;\r",
+									"    const {actoCustomerName,actoAccountId} = responseJson.uactcs9.dfhcommarea.updateOut.outputRecord;\r",
+									"    pm.expect(actoAccountId).to.eql(\"69941327752\");\r",
+									"    pm.expect(actoCustomerName).to.eql(\"Jonn Doe U\");\r",
+									"    pm.expect(rtMsg).to.eql(\"SUCCESSFUL UPDATE\");\r",
+									"    pm.expect(outputRecord).to.be.an('object')\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"DeleteAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uactcs9\": {\n        \"dfhcommarea\": {\n            \"updateIn\": {\n                \"inputRecord\": {\n                    \"actiAccountId\": \"69941327752\",\n                    \"actiCustomerId\": \"1002200230024992\",\n                    \"actiCustomerName\": \"Jonn Doe U\",\n                    \"actiIban\": \"US2I0002000001\",\n                    \"actiCntryCd\": \"US\",\n                    \"actiBnkId\": \"0002\",\n                    \"actiBrnchId\": 1334,\n                    \"actiTypcd\": \"P\",\n                    \"actiTypeName\": \"Personal\",\n                    \"actiSubTypcd\": \"MM\",\n                    \"actiTypeDescription\": \"Money Market Account\",\n                    \"actiBalance\": 999999990,\n                    \"actiCurrency\": \"USD\",\n                    \"actiCrtDt\": \"20210123\",\n                    \"actiUpdtDt\": \"20210123\",\n                    \"actiLocked\": \"N\"\n                }\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updateaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updateaccount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

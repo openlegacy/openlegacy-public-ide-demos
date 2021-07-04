@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "7ee2824e-96c7-4239-9684-f85579d9255e",
+		"name": "account-as400-pcml-api",
+		"description": "account-as400-pcml-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "OpenAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.output).to.eql('Accout created');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dsAccount\" : \"75906882668\",\n    \"dsCustid\" : \"100520053005400\",\n    \"dsCustname\" : \"Jane Doe\",\n    \"dsIban\" : \"0002000009\",\n    \"dsBankid\" : \"02\",\n    \"dsBranchid\" : \"647292130\",\n    \"dsCntrycd\" : \"00\",\n    \"dsTypcd\" : \"P\",\n    \"dsSubtypcd\" : \"6\",\n    \"dsTypename\" : \"Personal\",\n    \"dsTypedesc\" : \"Savings\",\n    \"dsBalance\" : \"1835\",\n    \"dsCurrency\" : \"USD\",\n    \"dsCrtdt\" : \"\",\n    \"dsUpdtdt\" : \"\",\n    \"dsLocked\" : \"N\",\n    \"output\" : \"\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"dsAccount\": \"aute incididunt minim\",\n    \"dsCustid\": \"anim fugiat veniam\",\n    \"dsCustname\": \"labore fugiat\",\n    \"dsIban\": \"in commodo amet\",\n    \"dsBankid\": \"commodo pariatur\",\n    \"dsBranchid\": \"et minim magna quis\",\n    \"dsCntrycd\": \"Duis\",\n    \"dsTypcd\": \"cillum magna\",\n    \"dsSubtypcd\": \"amet esse aliqua\",\n    \"dsTypename\": \"occaecat laboris\",\n    \"dsTypedesc\": \"ex minim\",\n    \"dsBalance\": \"fugiat in esse\",\n    \"dsCurrency\": \"Ut \",\n    \"dsCrtdt\": \"dolor laboris aliqua\",\n    \"dsUpdtdt\": \"eu\",\n    \"dsLocked\": \"deserunt eiusmod in do\",\n    \"output\": \"nostrud ad velit enim in\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/openaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"openaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"dsAccount\": \"proident consectetur Excepteur\",\n \"dsCustid\": \"non enim in est\",\n \"dsCustname\": \"Ut ea Lorem minim et\",\n \"dsIban\": \"tempor anim sunt\",\n \"dsBankid\": \"sint\",\n \"dsBranchid\": \"amet pariatur in labore\",\n \"dsCntrycd\": \"culpa pariatur\",\n \"dsTypcd\": \"e\",\n \"dsSubtypcd\": \"Lorem\",\n \"dsTypename\": \"enim amet voluptate\",\n \"dsTypedesc\": \"ex nisi enim\",\n \"dsBalance\": \"ad\",\n \"dsCurrency\": \"sit reprehenderit eu\",\n \"dsCrtdt\": \"consequat ea eu mollit eiusmod\",\n \"dsUpdtdt\": \"ea\",\n \"dsLocked\": \"nostrud commodo Duis\",\n \"output\": \"ut ullamco dolor Duis esse\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.input).to.eql('75906882668');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\" : \"75906882668\",\n    \"account\" : \"\",\n    \"custid\" : \"\",\n    \"custname\" : \"\",\n    \"iban\" : \"\",\n    \"bankid\" : \"\",\n    \"brnchid\" : 0,\n    \"cntrycd\" : \"\",\n    \"typcd\" : \"\",\n    \"subtypcd\" : \"\",\n    \"typename\" : \"\",\n    \"typedesc\" : \"\",\n    \"balance\" : 0,\n    \"currency\" : \"\",\n    \"crtdt\" : 0,\n    \"updtdt\" : 0,\n    \"locked\" : \"\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": \"laborum amet est\",\n    \"account\": \"sunt consectetur proident adipisicing\",\n    \"custid\": \"laborum et ut\",\n    \"custname\": \"adipisicing\",\n    \"iban\": \"dolore dolor nulla consectetur ea\",\n    \"bankid\": \"ex officia sed\",\n    \"brnchid\": -63844805,\n    \"cntrycd\": \"veniam minim Excepteur dolore\",\n    \"typcd\": \"aliqua nulla reprehenderit officia irure\",\n    \"subtypcd\": \"nostrud Ut aute reprehenderit dolore\",\n    \"typename\": \"amet ut culpa\",\n    \"typedesc\": \"i\",\n    \"balance\": -31449798.52330625,\n    \"currency\": \"culpa esse eiusmod\",\n    \"crtdt\": 21458117,\n    \"updtdt\": 78515199,\n    \"locked\": \"ipsum tempor nulla\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/getaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"getaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"input\": \"exercitation nostrud commodo el\",\n \"account\": \"nisi exercitation aute Ut\",\n \"custid\": \"id\",\n \"custname\": \"sed eiusmod amet velit\",\n \"iban\": \"eu Duis\",\n \"bankid\": \"sed cupidatat \",\n \"brnchid\": 76644033,\n \"cntrycd\": \"nostrud aliquip in\",\n \"typcd\": \"dolor id magna consectetur culpa\",\n \"subtypcd\": \"sunt qui fugiat\",\n \"typename\": \"in occaecat ut dolore\",\n \"typedesc\": \"consequat deserunt\",\n \"balance\": 16996803.309888482,\n \"currency\": \"deserunt dolore\",\n \"crtdt\": -97586262,\n \"updtdt\": -47999696,\n \"locked\": \"nostrud tempor Ut qui\"\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.output).to.eql('Accout updated');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dsAccount\" : \"75906882668\",\n    \"dsCustid\" : \"100520053005400\",\n    \"dsCustname\" : \"Jane Doe\",\n    \"dsIban\" : \"0002000009\",\n    \"dsBankid\" : \"02\",\n    \"dsBranchid\" : \"647292130\",\n    \"dsCntrycd\" : \"00\",\n    \"dsTypcd\" : \"P\",\n    \"dsSubtypcd\" : \"6\",\n    \"dsTypename\" : \"Business\",\n    \"dsTypedesc\" : \"Market\",\n    \"dsBalance\" : \"1835\",\n    \"dsCurrency\" : \"USD\",\n    \"dsCrtdt\" : \"\",\n    \"dsUpdtdt\" : \"\",\n    \"dsLocked\" : \"N\",\n    \"output\" : \"\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updateaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updateaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"dsAccount\": \"aute incididunt minim\",\n    \"dsCustid\": \"anim fugiat veniam\",\n    \"dsCustname\": \"labore fugiat\",\n    \"dsIban\": \"in commodo amet\",\n    \"dsBankid\": \"commodo pariatur\",\n    \"dsBranchid\": \"et minim magna quis\",\n    \"dsCntrycd\": \"Duis\",\n    \"dsTypcd\": \"cillum magna\",\n    \"dsSubtypcd\": \"amet esse aliqua\",\n    \"dsTypename\": \"occaecat laboris\",\n    \"dsTypedesc\": \"ex minim\",\n    \"dsBalance\": \"fugiat in esse\",\n    \"dsCurrency\": \"Ut \",\n    \"dsCrtdt\": \"dolor laboris aliqua\",\n    \"dsUpdtdt\": \"eu\",\n    \"dsLocked\": \"deserunt eiusmod in do\",\n    \"output\": \"nostrud ad velit enim in\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/updateaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"updateaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"dsAccount\": \"proident consectetur Excepteur\",\n \"dsCustid\": \"non enim in est\",\n \"dsCustname\": \"Ut ea Lorem minim et\",\n \"dsIban\": \"tempor anim sunt\",\n \"dsBankid\": \"sint\",\n \"dsBranchid\": \"amet pariatur in labore\",\n \"dsCntrycd\": \"culpa pariatur\",\n \"dsTypcd\": \"e\",\n \"dsSubtypcd\": \"Lorem\",\n \"dsTypename\": \"enim amet voluptate\",\n \"dsTypedesc\": \"ex nisi enim\",\n \"dsBalance\": \"ad\",\n \"dsCurrency\": \"sit reprehenderit eu\",\n \"dsCrtdt\": \"consequat ea eu mollit eiusmod\",\n \"dsUpdtdt\": \"ea\",\n \"dsLocked\": \"nostrud commodo Duis\",\n \"output\": \"ut ullamco dolor Duis esse\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.expect(responseJson.input).to.eql('75906882668');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"input\" : \"75906882668\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deleteaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deleteaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": \"irure quis ex elit\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/deleteaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"deleteaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"input\": \"ullamco\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

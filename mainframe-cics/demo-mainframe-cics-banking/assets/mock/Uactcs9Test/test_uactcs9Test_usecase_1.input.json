@@ -1,0 +1,24 @@
+{
+    "dfhcommarea": {
+        "updateIn": {
+            "inputRecord": {
+                "actiAccountId": "69941327752",
+                "actiCustomerId": "1002200230024992",
+                "actiCustomerName": "Jonn Doe U",
+                "actiIban": "US2I0002000001",
+                "actiCntryCd": "US",
+                "actiBnkId": "0002",
+                "actiBrnchId": 1334,
+                "actiTypcd": "P",
+                "actiTypeName": "Personal",
+                "actiSubTypcd": "MM",
+                "actiTypeDescription": "Money Market Account",
+                "actiBalance": 999999990,
+                "actiCurrency": "USD",
+                "actiCrtDt": "20210123",
+                "actiUpdtDt": "20210123",
+                "actiLocked": "N"
+            }
+        }
+    }
+}

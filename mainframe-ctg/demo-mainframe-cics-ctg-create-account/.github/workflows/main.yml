@@ -1,0 +1,116 @@
+name: Jenkins Trigger
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  pull_request:
+    types: [opened, closed, edited, synchronize, reopened ]
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+jobs:
+#   This workflow contains jobs called "build", "docker" & "tagging-on-merge"
+  build:
+    if: github.actor != 'ol-demo-admin' && github.head_ref != 'master' && github.event.pull_request.merged == false
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Extract Repository Name
+        shell: bash
+        run: echo "##[set-output name=repository;]$(echo ${GITHUB_REPOSITORY#openlegacy/})"
+        id: extract_repository
+      - name: Install JQ
+        run: sudo apt-get install jq
+      - name: Get Version from Label
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        id: label_pr
+        run: echo "##[set-output name=version;]$(echo ${GITHUB_CONTEXT} | jq -r '.event | .pull_request | .labels | .[]? | .name')"
+      - name: test
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo $GITHUB_CONTEXT | jq -r '.event | .pull_request | .labels | .[]? | .name'
+      - name: jenkins-action-parametrized
+        uses: enflo/jenkins-action@0.1.2
+        with:
+          url: http://jenkins.demos.openlegacy.com:8080
+          user: github-demos
+          token: 116dfa82714296d34db3ad7a363fefdcf2
+          job: /job/rcp-testing-pipeline
+          parameters: repository=${{ steps.extract_repository.outputs.repository }}&branchName=${{ github.head_ref }}&olversion=${{ steps.label_pr.outputs.version }}
+
+  docker:
+    if: github.event_name == 'pull_request' && github.actor == 'ol-demo-admin' && github.event.pull_request.merged == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: test
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo $GITHUB_CONTEXT | jq -r '.event | .pull_request | .labels | .[]? | .name'
+      - name: print context
+        shell: bash
+        run: echo ${GITHUB_CONTEXT}
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Github Action for wget
+        uses: wei/wget@v1.1.1
+        with:
+          args: -O settings.xml "https://solutions-resources.s3.amazonaws.com/settings.xml"
+      - name: Build with Maven
+        run: find . -name "pom.xml" -exec grep -l 'provider\|DB.Driver' {} + | xargs -I '{}' mvn clean install -s ./settings.xml -DskipTests -f '{}' && find . -name "pom.xml" -exec grep -l 'security' {} + | xargs -I '{}' mvn clean install -s ./settings.xml  -DskipTests -f '{}'
+      - name: Get version
+        id: get_tag
+        shell: bash
+        run: echo "##[set-output name=tag;]$(cd ./assets && echo $(perl -pe '($_)=/([0-9]+([.][0-9]+)+)/' badge.svg))"
+      - name: Extract Git Tag
+        run: echo ::set-env name=GIT_TAG::${GITHUB_REF/refs\/tags\//}
+      - name: Echo git tag
+        run: echo "Git tag is ${GIT_TAG}"
+      - name: Get version
+        id: get_version
+        shell: bash
+        run: echo ::set-env name=TAG_VERSION::$(cd ./assets && echo $(perl -pe '($_)=/([0-9]+([.][0-9]+)+)/' badge.svg))
+      - name: Echo git version
+        run: echo "TAG version is ${TAG_VERSION}"
+      - name: Log registry & Push the image to Github Packages Repository
+        run: |
+              docker login docker.pkg.github.com -u github-demos -p "${GITHUB_TOKEN}"
+              dockerFileLocation=$(find . -name Dockerfile -exec dirname {} \;)
+              IMAGE_NAME="docker.pkg.github.com/openlegacy/${{ github.event.repository.name }}/${{ github.event.repository.name }}:${TAG_VERSION}"
+              docker build -t $IMAGE_NAME $dockerFileLocation
+              docker tag ${IMAGE_NAME} ${IMAGE_NAME}
+              docker images
+              docker push ${IMAGE_NAME}
+        env:
+         GITHUB_TOKEN: ${{secrets.TOKEN}}
+  tagging-on-merge: 
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Get version
+        id: get_version
+        shell: bash
+        run: echo ::set-env name=TAG_VERSION::$(cd ./assets && echo $(perl -pe '($_)=/([0-9]+([.][0-9]+)+)/' badge.svg))
+      - name: Echo git version
+        run: echo "Git version is ${TAG_VERSION}"
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+         GITHUB_TOKEN: ${{secrets.TOKEN}}
+        with:
+          tag_name: v${{ env.TAG_VERSION }}
+          release_name: Release v${{ env.TAG_VERSION }}
+          body: |
+            This is a v${{ env.TAG_VERSION }} release
+          draft: false
+          prerelease: false

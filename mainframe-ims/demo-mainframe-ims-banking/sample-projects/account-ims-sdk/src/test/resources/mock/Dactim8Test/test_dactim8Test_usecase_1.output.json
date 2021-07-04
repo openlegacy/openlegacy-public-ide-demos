@@ -1,0 +1,24 @@
+{
+  "dactim8Output" : {
+    "convTran" : "",
+    "rtMsg" : "DELETE   SUCCESSFUL:",
+    "accountOut" : {
+      "actoAccountId" : "",
+      "actoCustomerId" : "",
+      "actoCustomerName" : "",
+      "actoIban" : "",
+      "actoCntryCd" : "",
+      "actoBnkId" : "",
+      "actoBrnchId" : 0,
+      "actoTypcd" : "",
+      "actoTypeName" : "",
+      "actoSubTypcd" : "",
+      "actoTypeDescription" : "",
+      "actoBalance" : 0.0,
+      "actoCurrency" : "",
+      "actoCrtDt" : "",
+      "actoUpdtDt" : "",
+      "actoLocked" : ""
+    }
+  }
+}

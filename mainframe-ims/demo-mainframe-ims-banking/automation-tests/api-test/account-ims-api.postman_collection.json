@@ -1,0 +1,553 @@
+{
+	"info": {
+		"_postman_id": "8e984666-0170-49dc-b959-fa27a234ca16",
+		"name": "account-ims-api",
+		"description": "account-ims-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ResetAccounts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.ractim8Output.rtMsg;\r",
+									"    pm.expect(resp).to.eql('08   ACCOUNTS ADDED');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ractim8Input\": {\n    \"accountArray\" : [ {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"59707720911\",\t\n      \"actiCustomerId\" : \"1001200130014001\",\n      \"actiCustomerName\" : \"FRANK GRANT\",\n      \"actiTypcd\" : \"P\",                 \n      \"actiSubTypcd\" : \"MM\",             \n      \"actiCntryCd\" : \"US\",              \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 1234,\n      \"actiInitialDeposit\" : 5555.99,\n      \"actiCurrency\" : \"USD\"  \n        }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"68841327752\",\t\n      \"actiCustomerId\" : \"1002200230024002\",\n      \"actiCustomerName\" : \"GEORGE MANSFIELD\",\n      \"actiTypcd\" : \"P\",                 \n      \"actiSubTypcd\" : \"IRA\",            \n      \"actiCntryCd\" : \"IS\",               \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 1234,\n      \"actiInitialDeposit\" : 8642.23,\n      \"actiCurrency\" : \"SHK\"       \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"89618973088\",\t\n      \"actiCustomerId\" : \"1003200330034003\",\n      \"actiCustomerName\" : \"AMANDA LITTLE\",\n      \"actiTypcd\" : \"P\",                \n      \"actiSubTypcd\" : \"S\",            \n      \"actiCntryCd\" : \"UK\",            \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 1234,\n      \"actiInitialDeposit\" : 703.40,\n      \"actiCurrency\" : \"LBS\"         \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"14775538273\",\t\n      \"actiCustomerId\" : \"1004200430044004\",\n      \"actiCustomerName\" : \"SAMANTHA JACOBS\",\n      \"actiTypcd\" : \"P\",                  \n      \"actiSubTypcd\" : \"IR\",            \n      \"actiCntryCd\" : \"US\",              \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 4568,\n      \"actiInitialDeposit\" : 6543.31,\n      \"actiCurrency\" : \"USD\"        \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"75906882668\",\t\n      \"actiCustomerId\" : \"1005200530054005\",\n      \"actiCustomerName\" : \"MARTY BOSMAN\",\n      \"actiTypcd\" : \"P\",                \n      \"actiSubTypcd\" : \"MM\",            \n      \"actiCntryCd\" : \"IS\",             \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 4568,\n      \"actiInitialDeposit\" : 867.28,\n      \"actiCurrency\" : \"SHK\"       \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"57640110254\",\t\n      \"actiCustomerId\" : \"1006200630064006\",\n      \"actiCustomerName\" : \"FRED MAXWELL\",\n      \"actiTypcd\" : \"P\",                 \n      \"actiSubTypcd\" : \"S\",            \n      \"actiCntryCd\" : \"US\",              \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 9876,\n      \"actiInitialDeposit\" : 1835.28,\n      \"actiCurrency\" : \"USD\"        \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"88652641002\",\n      \"actiCustomerId\" : \"1007200730074007\",\n      \"actiCustomerName\" : \"BARNEY JONES\",\n      \"actiTypcd\" : \"B\",\n      \"actiSubTypcd\" : \"MM\",\n      \"actiCntryCd\" : \"US\",\n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 1234,\n      \"actiInitialDeposit\" : 1234.56,\n      \"actiCurrency\" : \"USD\"\t      \n         }\n      }, {\n        \"actiDetails\" : {\n      \"actiAccountId\" : \"22277234914\",\n      \"actiCustomerId\" : \"1008200830084008\",\n      \"actiCustomerName\" : \"MAX LIPTON\",\n      \"actiTypcd\" : \"P\",                 \n      \"actiSubTypcd\" : \"S\",             \n      \"actiCntryCd\" : \"US\",             \n      \"actiBnkId\" : \"0002\",\n      \"actiBrnchId\" : 1368,\n      \"actiInitialDeposit\" : 99835.28,\n      \"actiCurrency\" : \"USD\"        \n         }\n      }, {\n        \"actiDetails\" : { }\n      }, {\n        \"actiDetails\" : { }\n      } ]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/resetaccounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resetaccounts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ractim8Input\": {\n        \"accountArray\": [\n            {\n                \"actiDetails\": {\n                    \"actiAccountId\": \"in eu minim anim\",\n                    \"actiCustomerId\": \"cupidatat tempor in proident magna\",\n                    \"actiCustomerName\": \"in consequat in\",\n                    \"actiTypcd\": \"elit aliqua ullamco\",\n                    \"actiSubTypcd\": \"enim consequat dolor aute et\",\n                    \"actiCntryCd\": \"aute irure officia proident\",\n                    \"actiBnkId\": \"minim aute dolor\",\n                    \"actiBrnchId\": 64654964,\n                    \"actiInitialDeposit\": -90548675.36678484,\n                    \"actiCurrency\": \"dolor voluptate ex\"\n                }\n            },\n            {\n                \"actiDetails\": {\n                    \"actiAccountId\": \"tempor et irure Lorem\",\n                    \"actiCustomerId\": \"enim ea id\",\n                    \"actiCustomerName\": \"adipis\",\n                    \"actiTypcd\": \"nisi eu mollit\",\n                    \"actiSubTypcd\": \"dolor sed mollit\",\n                    \"actiCntryCd\": \"ea minim\",\n                    \"actiBnkId\": \"aliqua voluptate\",\n                    \"actiBrnchId\": -7574134,\n                    \"actiInitialDeposit\": -92938478.50397809,\n                    \"actiCurrency\": \"Lorem id\"\n                }\n            }\n        ]\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/resetaccounts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"resetaccounts"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"ractim8Output\": {\n  \"convTran\": \"eiusmod\",\n  \"rtMsg\": \"quis\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAllAccounts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.lactim8Output;\r",
+									"    pm.expect(resp.rtMsg).to.eql('FETCH    SUCCESSFUL:');\r",
+									"    pm.expect(resp.accountArray).to.be.an(\"array\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"lactim8Input\": {\n    \"onechar\": \"a\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getallaccounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getallaccounts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lactim8Input\": {\n        \"onechar\": \"in anim dolore\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/getallaccounts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"getallaccounts"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"lactim8Output\": {\n  \"convTran\": \"est et Excepteur\",\n  \"rtMsg\": \"quis ipsum consequat ad\",\n  \"accountArray\": [\n   {\n    \"actoDetails\": {\n     \"actoAccountId\": \"in Excepteur sunt nisi\",\n     \"actoCustomerId\": \"aute ipsum dolor\",\n     \"actoCustomerName\": \"sunt\",\n     \"actoIban\": \"occaecat aliqua commodo proident\",\n     \"actoCntryCd\": \"deserunt in\",\n     \"actoBnkId\": \"do nostrud\",\n     \"actoBrnchId\": -67261628,\n     \"actoTypcd\": \"sit ex labore quis\",\n     \"actoTypeName\": \"tempor officia\",\n     \"actoSubTypcd\": \"dolor reprehenderit culpa est\",\n     \"actoTypeDescription\": \"dolore magna in incididunt dolore\",\n     \"actoBalance\": 61144588.03498614,\n     \"actoCurrency\": \"ad ut aliqua\",\n     \"actoCrtDt\": \"eu quis\",\n     \"actoUpdtDt\": \"sunt aliquip adipisicing magna\",\n     \"actoLocked\": \"eiusmod qui elit\"\n    }\n   },\n   {\n    \"actoDetails\": {\n     \"actoAccountId\": \"eiusmod reprehenderit\",\n     \"actoCustomerId\": \"fugiat\",\n     \"actoCustomerName\": \"Lorem\",\n     \"actoIban\": \"sed in nulla quis\",\n     \"actoCntryCd\": \"in fugiat ex consectetur dolo\",\n     \"actoBnkId\": \"mollit eu\",\n     \"actoBrnchId\": -91038516,\n     \"actoTypcd\": \"tempor officia Duis eu aute\",\n     \"actoTypeName\": \"ipsum\",\n     \"actoSubTypcd\": \"reprehenderit voluptate adipisicing sed\",\n     \"actoTypeDescription\": \"est non\",\n     \"actoBalance\": 15685218.89221768,\n     \"actoCurrency\": \"aliquip enim proident qui\",\n     \"actoCrtDt\": \"id sunt dolor\",\n     \"actoUpdtDt\": \"Lorem incididunt\",\n     \"actoLocked\": \"aute tempor\"\n    }\n   }\n  ]\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "OpenAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.oactim8Output;\r",
+									"    pm.expect(resp.rtMsg).to.eql('OPEN     SUCCESSFUL:');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"oactim8Input\" : {\n    \"actiAccountId\" : \"65906882668\",\n    \"actiCustomerId\" : \"2105200530054005\",\n    \"actiCustomerName\" : \"John Smith\",\n    \"actiTypcd\" : \"P\",\n    \"actiSubTypcd\" : \"MM\",\n    \"actiCntryCd\" : \"IS\",\n    \"actiBnkId\" : \"0002\",\n    \"actiBrnchId\" : 1234,\n    \"actiInitialDeposit\" : 100.79,\n    \"actiCurrency\" : \"SHK\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"oactim8Input\": {\n        \"actiAccountId\": \"ad inci\",\n        \"actiCustomerId\": \"est cupidatat ea eu\",\n        \"actiCustomerName\": \"amet cupidatat velit\",\n        \"actiTypcd\": \"in\",\n        \"actiSubTypcd\": \"amet si\",\n        \"actiCntryCd\": \"cupidatat occaecat Excepteur officia in\",\n        \"actiBnkId\": \"dolore Ut do\",\n        \"actiBrnchId\": -85946086,\n        \"actiInitialDeposit\": 78807030.32731766,\n        \"actiCurrency\": \"dolor anim esse\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/openaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"openaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"oactim8Output\": {\n  \"convTran\": \"adipisicing\",\n  \"accountDetails\": {\n   \"actoAccountId\": \"ut magna Lorem ullamco in\",\n   \"actoCustomerId\": \"sunt mollit id\",\n   \"actoCustomerName\": \"fugiat rep\",\n   \"actoIban\": \"et\",\n   \"actoCntryCd\": \"Ut veniam quis ea\",\n   \"actoBnkId\": \"in Excepteur laborum consequat\",\n   \"actoBrnchId\": 82133465,\n   \"actoTypcd\": \"ipsum in\",\n   \"actoTypeName\": \"ut fugiat\",\n   \"actoSubTypcd\": \"laboris esse\",\n   \"actoTypeDescription\": \"magna cillum sed voluptate nulla\",\n   \"actoBalance\": 8536489.325019538,\n   \"actoCurrency\": \"adipisicing do sed\",\n   \"actoCrtDt\": \"sit do cupid\",\n   \"actoUpdtDt\": \"sint ex dolor pariatur culpa\",\n   \"actoLocked\": \"non tempor veniam cillum\"\n  },\n  \"rtcd\": -71702271,\n  \"rtMsg\": \"nostrud\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.gactim8Output;\r",
+									"    pm.expect(resp.rtMsg).to.eql('GET      SUCCESSFUL:');\r",
+									"    pm.expect(resp.accountOut.actoAccountId).to.eql('65906882668');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"gactim8Input\": {\n    \"actiAccountId\" : \"65906882668\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"gactim8Input\": {\n        \"actiAccountId\": \"exercitation\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/getaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"getaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"gactim8Output\": {\n  \"convTran\": \"elit adipisicing sit consectet\",\n  \"rtMsg\": \"dolor nisi non dolor\",\n  \"accountOut\": {\n   \"actoAccountId\": \"Ut\",\n   \"actoCustomerId\": \"Duis sunt culpa\",\n   \"actoCustomerName\": \"ipsum tempo\",\n   \"actoIban\": \"velit commodo\",\n   \"actoCntryCd\": \"irure ipsum pariatur laboris nos\",\n   \"actoBnkId\": \"ad non\",\n   \"actoBrnchId\": 78421064,\n   \"actoTypcd\": \"enim officia consectetur amet\",\n   \"actoTypeName\": \"est et ut nisi laborum\",\n   \"actoSubTypcd\": \"sin\",\n   \"actoTypeDescription\": \"ut\",\n   \"actoBalance\": 36356906.17245504,\n   \"actoCurrency\": \"Ut nisi amet qui ullamco\",\n   \"actoCrtDt\": \"sint nulla amet id Excepteur\",\n   \"actoUpdtDt\": \"nisi veniam\",\n   \"actoLocked\": \"ut cupidatat anim\"\n  }\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.uactim8Output;\r",
+									"    pm.expect(resp.rtMsg).to.eql('UPDATE   SUCCESSFUL:');\r",
+									"    pm.expect(resp.actoAccountId).to.eql('65906882668');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"uactim8Input\": {\n    \"actiAccountId\" : \"65906882668\",\n    \"actiCustomerId\" : \"2105200530054005\",\n    \"actiCustomerName\" : \"John Smith U\",\n    \"actiIban\" : \"IS2I000200000127352000000\",\n    \"actiCntryCd\" : \"US\",\n    \"actiBnkId\" : \"0002\",\n    \"actiBrnchId\" : 2345,\n    \"actiTypcd\" : \"P\",\n    \"actiTypeName\" : \"Personal\",\n    \"actiSubTypcd\" : \"MM\",\n    \"actiTypeDescription\" : \"Money Market Account\",\n    \"actiBalance\" : 150.55,\n    \"actiCurrency\" : \"USD\",\n    \"actiCrtDt\" : \"\",\n    \"actiUpdtDt\" : \"\",\n    \"actiLocked\" : \"N\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updateaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updateaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uactim8Input\": {\n        \"actiAccountId\": \"nisi esse dolor\",\n        \"actiCustomerId\": \"dolor eu aute\",\n        \"actiCustomerName\": \"ex occaecat do\",\n        \"actiIban\": \"Ut id\",\n        \"actiCntryCd\": \"voluptate exercitation\",\n        \"actiBnkId\": \"ad elit minim do\",\n        \"actiBrnchId\": 86929334,\n        \"actiTypcd\": \"consectetur dolor velit\",\n        \"actiTypeName\": \"cillum cupidatat officia nulla\",\n        \"actiSubTypcd\": \"sed cillum ipsum quis\",\n        \"actiTypeDescription\": \"eu sunt sed aliqua nisi\",\n        \"actiBalance\": -59997633.65762596,\n        \"actiCurrency\": \"cillum veniam sed Ut non\",\n        \"actiCrtDt\": \"Ut velit\",\n        \"actiUpdtDt\": \"aliqua esse\",\n        \"actiLocked\": \"minim ex Excepteur dolore\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/updateaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"updateaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"uactim8Output\": {\n  \"convTran\": \"pariatur ullamco officia\",\n  \"rtMsg\": \"minim ea\",\n  \"actoAccountId\": \"qui adipisicing reprehenderit do sit\",\n  \"actoCustomerId\": \"Excepteur\",\n  \"actoCustomerName\": \"sunt in officia\",\n  \"actoIban\": \"ad culpa\",\n  \"actoCntryCd\": \"do ullamco veniam ex\",\n  \"actoBnkId\": \"velit culpa Duis do\",\n  \"actoBrnchId\": -74124983,\n  \"actoTypcd\": \"ipsum commodo sint\",\n  \"actoTypeName\": \"consectetur mollit\",\n  \"actoSubTypcd\": \"nulla ea velit\",\n  \"actoTypeDescription\": \"pariatur laboris dolor magna\",\n  \"actoBalance\": -69588908.43007985,\n  \"actoCurrency\": \"velit ex\",\n  \"actoCrtDt\": \"sit voluptate nulla\",\n  \"actoUpdtDt\": \"non dolore consequat in\",\n  \"actoLocked\": \"voluptate reprehenderit enim dolore anim\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The response has all properties\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const resp = responseJson.dactim8Output.rtMsg;\r",
+									"    pm.expect(resp).to.eql('DELETE   SUCCESSFUL:');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"dactim8Input\": {\n    \"actiAccountId\" : \"65906882668\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deleteaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deleteaccount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "default response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"dactim8Input\": {\n        \"actiAccountId\": \"Excepteur deserunt\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/deleteaccount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"deleteaccount"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"dactim8Output\": {\n  \"convTran\": \"sit eu commodo\",\n  \"rtMsg\": \"aliqua Lorem aliquip ex\",\n  \"accountOut\": {\n   \"actoAccountId\": \"velit officia enim sint\",\n   \"actoCustomerId\": \"adipisicing cupidatat\",\n   \"actoCustomerName\": \"laboris culpa eiusmod ut\",\n   \"actoIban\": \"deserunt qui incididunt amet ipsum\",\n   \"actoCntryCd\": \"sunt esse c\",\n   \"actoBnkId\": \"sed Duis laborum\",\n   \"actoBrnchId\": -74130301,\n   \"actoTypcd\": \"et Duis\",\n   \"actoTypeName\": \"officia amet\",\n   \"actoSubTypcd\": \"velit in Ut sunt exercitation\",\n   \"actoTypeDescription\": \"ut incididunt ut\",\n   \"actoBalance\": -66177974.23478504,\n   \"actoCurrency\": \"est velit\",\n   \"actoCrtDt\": \"dolor sint qui quis\",\n   \"actoUpdtDt\": \"non et nostrud\",\n   \"actoLocked\": \"do\"\n  }\n }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

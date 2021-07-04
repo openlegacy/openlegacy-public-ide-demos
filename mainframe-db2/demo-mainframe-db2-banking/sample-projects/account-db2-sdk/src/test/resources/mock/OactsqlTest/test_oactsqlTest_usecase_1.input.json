@@ -1,0 +1,18 @@
+{
+    "accountId": "31135334775",
+    "customerId": "1001211132214333",
+    "customerName": "JOHN DOE",
+    "iban": "US2I0002111131",
+    "bnkId": "2345",
+    "brnchId": 2222,
+    "cntryCd": "US",
+    "typcd": "L",
+    "subTypcd": "MM",
+    "typeName": "Personal",
+    "typeDescription": "Money Market Account",
+    "balance": 44433,
+    "currency": "USD",
+    "crtDt": "20210333",
+    "updtDt": "20210123",
+    "locked": "N"
+}

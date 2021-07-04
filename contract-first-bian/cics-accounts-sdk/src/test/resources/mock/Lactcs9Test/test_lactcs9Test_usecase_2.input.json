@@ -1,0 +1,201 @@
+{
+  "dfhcommarea" : {
+    "inPut" : {
+      "onechar" : ""
+    },
+    "outPut" : {
+      "rtMsg" : "",
+      "accountArray" : [ {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      }, {
+        "actoDetails" : {
+          "actoAccountId" : "",
+          "actoCustomerId" : "",
+          "actoCustomerName" : "",
+          "actoIban" : "",
+          "actoCntryCd" : "",
+          "actoBnkId" : "",
+          "actoBrnchId" : 0,
+          "actoTypcd" : "",
+          "actoTypeName" : "",
+          "actoSubTypcd" : "",
+          "actoTypeDescription" : "",
+          "actoBalance" : 0,
+          "actoCurrency" : "",
+          "actoCrtDt" : "",
+          "actoUpdtDt" : "",
+          "actoLocked" : ""
+        }
+      } ]
+    }
+  }
+}

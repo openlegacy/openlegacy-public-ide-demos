@@ -1,0 +1,11 @@
+ol:
+  cics:
+    project:
+      policyCicsSdk:
+        base-url: http://mainframe.openlegacy.com
+        port: 12345
+        uri-map: ol/demos
+        code-page: CP037
+  license:
+    key: 
+

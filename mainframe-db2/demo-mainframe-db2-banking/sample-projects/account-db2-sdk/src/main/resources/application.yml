@@ -1,0 +1,12 @@
+ol:
+  storedproc:
+    project:
+      accountDb2Sdk:
+        url: jdbc:db2://mainframe.openlegacy.com:5035/DALLASB
+        driverClassName: com.ibm.db2.jcc.DB2Driver
+        username: DEMO001
+        password: '{cipher}277876d800aa69adc4492f9bc0b386680cc501c425bf68ff7f0f10711bece7ca'
+        connectionTestQuery: SELECT current date FROM sysibm.sysdummy1
+  license:
+    key: 
+

@@ -1,0 +1,19 @@
+{
+  "resultSet" : [ {
+    "acctPolicyNum" : "",
+    "acctCustName" : "",
+    "acctCustAddr" : "",
+    "acctCustCity" : "",
+    "acctCustState" : "",
+    "acctCustZip" : "",
+    "acctCustPhone" : "",
+    "acctBirthDate" : "",
+    "acctCreateDate" : "",
+    "acctEndDate" : "",
+    "acctPolicyType" : "",
+    "acctMonthlyPymt" : "0",
+    "acctQuarterlyPymt" : "0",
+    "acctYearlyPymt" : "0",
+    "acctIsactive" : ""
+  } ]
+}

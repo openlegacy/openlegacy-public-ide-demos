@@ -1,0 +1,20 @@
+{
+  "bankAccountObjList" : [ {
+    "accountId" : "",
+    "customerId" : "",
+    "customerName" : "",
+    "iban" : "",
+    "countryCode" : "",
+    "bankId" : "",
+    "brnchId" : "",
+    "typcd" : "",
+    "typeName" : "",
+    "subTypcd" : "",
+    "typeDescription" : "",
+    "balance" : "0",
+    "currency" : "",
+    "createdDate" : "2020-10-01 12:00:00",
+    "lastUpdate" : "2020-10-01 12:00:00",
+    "locked" : ""
+  } ]
+}

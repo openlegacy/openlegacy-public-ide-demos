@@ -1,0 +1,37 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.cics_accounts_sdk.openlegacy"
+    webPackage: "com.cics_accounts_sdk.openlegacy.web"
+    generateTest: true
+    provider: "openlegacy-rpc-mf"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "MF_RPC"
+    frontendSolution: "JAVA"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

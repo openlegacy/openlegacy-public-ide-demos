@@ -1,0 +1,16 @@
+ol:
+  mq:
+    project:
+      mainframeMqSdk:
+        hostname: 192.86.32.238
+        port: 1414
+        user: 
+        password: 
+        code-page: CP037
+        defaultQueueManager: CSQ9
+        channel: CSQ9.SVRCONN
+        sendQueue: DEV.OUT.QUEUE
+        receiveQueue: DEV.OUT.QUEUE
+  license:
+    key: 
+

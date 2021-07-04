@@ -1,0 +1,24 @@
+<pcml version="4.0">
+   <!-- RPG program: GACTCS6X  -->
+   <!-- created: 2021-02-25-12.34.02 -->
+   <!-- source: RMR2L1/QRPGLESRC(GACTCS6X) -->
+   <program name="GACTCS6X" path="/QSYS.LIB/RMR2L1.lib/GACTCS6X.PGM">
+      <data name="INPUT" type="char" length="11" usage="inputoutput" />
+      <data name="ACCOUNT" type="char" length="11" usage="inputoutput" />
+      <data name="CUSTID" type="char" length="16" usage="inputoutput" />
+      <data name="CUSTNAME" type="char" length="16" usage="inputoutput" />
+      <data name="IBAN" type="char" length="32" usage="inputoutput" />
+      <data name="BANKID" type="char" length="4" usage="inputoutput" />
+      <data name="BRNCHID" type="packed" length="9" precision="0" usage="inputoutput" />
+      <data name="CNTRYCD" type="char" length="2" usage="inputoutput" />
+      <data name="TYPCD" type="char" length="1" usage="inputoutput" />
+      <data name="SUBTYPCD" type="char" length="3" usage="inputoutput" />
+      <data name="TYPENAME" type="char" length="12" usage="inputoutput" />
+      <data name="TYPEDESC" type="char" length="40" usage="inputoutput" />
+      <data name="BALANCE" type="packed" length="14" precision="3" usage="inputoutput" />
+      <data name="CURRENCY" type="char" length="3" usage="inputoutput" />
+      <data name="CRTDT" type="packed" length="8" precision="0" usage="inputoutput" />
+      <data name="UPDTDT" type="packed" length="8" precision="0" usage="inputoutput" />
+      <data name="LOCKED" type="char" length="1" usage="inputoutput" />
+   </program>
+</pcml>

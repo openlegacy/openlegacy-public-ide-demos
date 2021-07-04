@@ -1,0 +1,45 @@
+{
+  "dfhcommarea" : {
+    "updateIn" : {
+      "inputRecord" : {
+        "actiAccountId" : "",
+        "actiCustomerId" : "",
+        "actiCustomerName" : "",
+        "actiIban" : "",
+        "actiCntryCd" : "",
+        "actiBnkId" : "",
+        "actiBrnchId" : 0,
+        "actiTypcd" : "",
+        "actiTypeName" : "",
+        "actiSubTypcd" : "",
+        "actiTypeDescription" : "",
+        "actiBalance" : 0,
+        "actiCurrency" : "",
+        "actiCrtDt" : "",
+        "actiUpdtDt" : "",
+        "actiLocked" : ""
+      }
+    },
+    "updateOut" : {
+      "rtMsg" : "",
+      "outputRecord" : {
+        "actoAccountId" : "",
+        "actoCustomerId" : "",
+        "actoCustomerName" : "",
+        "actoIban" : "",
+        "actoCntryCd" : "",
+        "actoBnkId" : "",
+        "actoBrnchId" : 0,
+        "actoTypcd" : "",
+        "actoTypeName" : "",
+        "actoSubTypcd" : "",
+        "actoTypeDescription" : "",
+        "actoBalance" : 0,
+        "actoCurrency" : "",
+        "actoCrtDt" : "",
+        "actoUpdtDt" : "",
+        "actoLocked" : ""
+      }
+    }
+  }
+}

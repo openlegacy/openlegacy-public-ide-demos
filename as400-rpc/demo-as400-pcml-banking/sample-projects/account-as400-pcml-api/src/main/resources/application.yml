@@ -1,0 +1,69 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: 
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# accountAs400PcmlSdk
+ol:
+  jt400:
+    project:
+      accountAs400PcmlSdk:
+        external-libs:
+        - RMR2L1
+        host: as400j.openlegacy.com
+        user: OPENLEGA1
+        password: '{cipher}74212c90661fc8428075c5ef2bbb63b34e6efe9b52c82d44572293f38e4bc7c7'
+        code-page: 37
+  license:
+    key: 
+
+
+
+

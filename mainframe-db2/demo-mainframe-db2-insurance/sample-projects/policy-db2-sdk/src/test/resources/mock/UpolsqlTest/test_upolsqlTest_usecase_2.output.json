@@ -1,0 +1,17 @@
+{
+  "policyNum" : "",
+  "custName" : "",
+  "custAddr" : "",
+  "custCity" : "",
+  "custState" : "",
+  "custZip" : "",
+  "custPhone" : "",
+  "birthDate" : "",
+  "createDate" : "",
+  "endDate" : "",
+  "policyType" : "",
+  "monthlyPymt" : "0",
+  "quarterlyPymt" : "0",
+  "yearlyPymt" : "0",
+  "isactive" : ""
+}

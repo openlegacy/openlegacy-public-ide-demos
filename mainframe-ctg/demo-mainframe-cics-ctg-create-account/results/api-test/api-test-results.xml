@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mainframe-CICS-TG-Create-Account" tests="1" time="0.710">
+  <testsuite name="createaccount" id="dd638f9e-7668-432b-a621-78afea1435a6" timestamp="2020-07-16T10:38:08.479Z" tests="2" failures="0" errors="0" time="0.710">
+    <testcase name="Response 200 test" time="0.710" classname="MainframeCicsTgCreateAccount"/>
+    <testcase name="Compare response JSON with expected JSON" time="0.710" classname="MainframeCicsTgCreateAccount"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,26 @@
+{
+    "pol2updOutput" : {
+      "policyRecOut" : {
+        "policyNumOut" : "11",
+        "custNameOut" : "Avi Zehavi",
+        "custAddrOut" : "Hashalom",
+        "custCityOut" : "Tel Aviv",
+        "custStateOut" : "IL",
+        "custZipOut" : "90210",
+        "custPhoneOut" : "123-456-789",
+        "birthDateOut" : "19900309",
+        "createDateOut" : "20210309",
+        "endDateOut" : "20220309",
+        "policyTypeOut" : "Car",
+        "monthlyPymtOut" : 10.0,
+        "quarteryPymtOut" : 40.0,
+        "yearlyPymtOut" : 120.0,
+        "isActiveOut" : "N"
+      },
+      "success" : "Y",
+      "resultSqlcodeSign" : "",
+      "resultSqlcode" : "00000",
+      "resultSqlstate" : "00000",
+      "resultSqlerrmc" : "POLICY    \u0000POLICY"
+    }
+  }

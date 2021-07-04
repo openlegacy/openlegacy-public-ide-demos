@@ -1,0 +1,24 @@
+{
+  "accountOut" : {
+    "accountDetails" : {
+      "actoIban" : "1003200330034003AMANDA LITTLE",
+      "actoAccountId" : "PS  UK00021",
+      "actoCntryCd" : "23",
+      "actoBnkId" : "4",
+      "actoBranchId" : "ø",
+      "actoCustomerId" : "LBS",
+      "actoCustomerName" : null,
+      "actoTypcd" : null,
+      "actoTypeName" : null,
+      "actoSubTypcd" : null,
+      "actoTypeDescription" : null,
+      "actoBalance" : null,
+      "actoCurrency" : null,
+      "actoCrtDt" : null,
+      "actoUpdtDt" : null,
+      "actoLocked" : null
+    },
+    "rtcd" : null,
+    "rtMsg" : "0"
+  }
+}

@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "1d47e736-36e1-4db4-9ea1-8f0e8f15406a",
+		"name": "account-oracle-api",
+		"description": "account-oracle-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ResetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"GetAllCustomerAccountList\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/resetaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resetaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllCustomerAccountList",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {bankAccountObjList} = responseJson.getAllCustomerBankAccounts;\r",
+									"    pm.expect(bankAccountObjList).to.be.an('array');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"OpenAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/getallcustomeraccountlist",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getallcustomeraccountlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {accountId} = responseJson.bankAccountObj;\r",
+									"    pm.expect(accountId).to.eql(\"29572000010\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"GetAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"paccountId\": \"29572000010\",\n    \"pcustomerId\": \"1001200130014010\",\n    \"pcustomerName\": \"John Doe\",\n    \"piban\": \"IL2I000200000129572000009\",\n    \"pcountryCode\": \"IL\",\n    \"pbankId\": \"01\",\n    \"pbrnchId\": \"89930018\",\n    \"ptypcd\": \"P\",\n    \"ptypeName\": \"MM Personal\",\n    \"psubTypcd\": \"A\",\n    \"ptypeDescription\": \"Money Market Account\",\n    \"pbalance\": 115555.99,\n    \"pcurrency\": \"USD\",\n    \"plocked\": \"N\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/openaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"openaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {accountId} = responseJson.pbankAccountObj;\r",
+									"    pm.expect(accountId).to.eql(\"29572000010\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"UpdateAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"paccountId\": \"29572000010\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/getaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"getaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Assert by values\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const {accountId,customerName} = responseJson.bankAccountObj;\r",
+									"    pm.expect(accountId).to.eql(\"29572000010\");\r",
+									"    pm.expect(customerName).to.eql(\"John Doe U\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"DeleteAccount\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"paccountId\": \"29572000010\",\n    \"pcustomerId\": \"1001200130013333\",\n    \"pcustomerName\": \"John Doe U\",\n    \"piban\": \"IL2I000200000129572003333\",\n    \"pcountryCode\": \"US\",\n    \"pbankId\": \"01\",\n    \"pbrnchId\": \"89930333\",\n    \"ptypcd\": \"P\",\n    \"ptypeName\": \"IRAPersonal\",\n    \"psubTypcd\": \"A\",\n    \"ptypeDescription\": \"Investment Retirement Account\",\n    \"pbalance\": 113333.99,\n    \"pcurrency\": \"EUR\",\n    \"plocked\": \"N\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/updateaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"updateaccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAccount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"postman.setNextRequest(\"null\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"paccountId\": \"29572000010\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/deleteaccount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"deleteaccount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

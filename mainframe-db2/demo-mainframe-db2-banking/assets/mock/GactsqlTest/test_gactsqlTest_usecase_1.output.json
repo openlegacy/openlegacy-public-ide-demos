@@ -1,0 +1,20 @@
+{
+  "resultSet" : {
+    "acctAccountId" : "34435234914",
+    "acctCustomerId" : "1008200830084011",
+    "acctCustomerName" : "JANE DOE        ",
+    "acctIban" : "IS2I0001000001                  ",
+    "acctBnkId" : "0001",
+    "acctBrnchId" : 1333,
+    "acctCntryCd" : "IS",
+    "acctTypcd" : "P",
+    "acctSubTypcd" : "S  ",
+    "acctTypeName" : "Personal    ",
+    "acctTypeDescription" : "Savings Account                         ",
+    "acctBalance" : "99835.280",
+    "acctCurrency" : "USD",
+    "acctCrtDt" : "20210213",
+    "acctUpdtDt" : "20210213",
+    "acctLocked" : "N"
+  }
+}

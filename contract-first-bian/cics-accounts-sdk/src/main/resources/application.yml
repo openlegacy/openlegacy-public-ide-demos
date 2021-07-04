@@ -1,0 +1,14 @@
+ol:
+  cics:
+    project:
+      cicsAccountsSdk:
+        base-url:  http://192.86.32.238
+#        base-url:  http://mainframe.openlegacy.com
+        port: 12345
+        uri-map: ol/demos
+        code-page: CP037
+        user: 
+        password: 
+  license:
+    key: 
+

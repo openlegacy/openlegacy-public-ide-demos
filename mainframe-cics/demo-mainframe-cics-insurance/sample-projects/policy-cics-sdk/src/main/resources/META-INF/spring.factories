@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.policy_cics_sdk.openlegacy.PolicyCicsSdkAutoConfiguration

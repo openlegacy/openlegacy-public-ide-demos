@@ -1,0 +1,25 @@
+{
+  "gpolcs2Output" : {
+    "inPut" : {
+      "actiPolicyNum" : "5693001545"
+    },
+    "outPut" : {
+      "actoPolicyNum" : "5693001545",
+      "actoCustName" : "JERRY Cohen",
+      "actoCustAddr" : "20 MAIN STREET",
+      "actoCustCity" : "TAMPA",
+      "actoCustState" : "FL",
+      "actoCustZip" : "33605",
+      "actoCustPhone" : "813-550-2344",
+      "actoBirthDate" : "03031965",
+      "actoCreateDate" : "03062018",
+      "actoEndDate" : "03062022",
+      "actoPolicyType" : "TERM LIFE",
+      "actoMonthlyPymt" : 643.44,
+      "actoQuarteryPymt" : 1930.32,
+      "actoYearlyPymt" : 7721.28,
+      "actoIsactive" : "Y",
+      "rtMsg" : "GET POLICY SUCCESSFUL."
+    }
+  }
+}

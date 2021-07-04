@@ -1,0 +1,20 @@
+{
+  "bankAccountObj" : {
+    "accountId" : "29572000010",
+    "customerId" : "1001200130013333",
+    "customerName" : "John Doe U",
+    "iban" : "IL2I000200000129572003333",
+    "countryCode" : "US",
+    "bankId" : "01",
+    "brnchId" : "89930333",
+    "typcd" : "P",
+    "typeName" : "IRAPersonal",
+    "subTypcd" : "A",
+    "typeDescription" : "Investment Retirement Account",
+    "balance" : "113333.99",
+    "currency" : "EUR",
+    "createdDate" : "2021-03-29 12:00:00",
+    "lastUpdate" : "2021-03-29 12:00:00",
+    "locked" : "N"
+  }
+}

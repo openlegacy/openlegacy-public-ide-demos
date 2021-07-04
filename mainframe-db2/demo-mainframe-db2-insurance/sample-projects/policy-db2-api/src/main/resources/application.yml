@@ -1,0 +1,68 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: 
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# policyDb2Sdk
+ol:
+  storedproc:
+    project:
+      policyDb2Sdk:
+        url: jdbc:db2://mainframe.openlegacy.com:5035/DALLASB
+        driverClassName: com.ibm.db2.jcc.DB2Driver
+        username: DEMO001
+        password: '{cipher}46d395754e8c39bfb6b8684ca065c6dce03505fcd49fb18f10e5554f2eeea757'
+        connectionTestQuery: SELECT current date FROM sysibm.sysdummy1
+  license:
+    key: 
+
+
+
+

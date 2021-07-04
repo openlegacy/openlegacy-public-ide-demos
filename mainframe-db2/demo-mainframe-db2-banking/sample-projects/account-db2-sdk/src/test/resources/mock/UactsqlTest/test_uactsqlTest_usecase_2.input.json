@@ -1,0 +1,18 @@
+{
+  "accountId" : "",
+  "customerId" : "",
+  "customerName" : "",
+  "iban" : "",
+  "bnkId" : "",
+  "brnchId" : 0,
+  "cntryCd" : "",
+  "typcd" : "",
+  "subTypcd" : "",
+  "typeName" : "",
+  "typeDescription" : "",
+  "balance" : "0",
+  "currency" : "",
+  "crtDt" : "",
+  "updtDt" : "",
+  "locked" : ""
+}

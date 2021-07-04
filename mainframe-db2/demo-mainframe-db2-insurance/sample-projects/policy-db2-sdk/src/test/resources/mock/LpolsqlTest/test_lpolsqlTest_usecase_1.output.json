@@ -1,0 +1,51 @@
+{
+  "resultSet" : [ {
+    "acctPolicyNum" : "1498640006 ",
+    "acctCustName" : "FRANK BRADY     ",
+    "acctCustAddr" : "156 CHERRY LANE ",
+    "acctCustCity" : "COLUMBUS        ",
+    "acctCustState" : "OH",
+    "acctCustZip" : "43201",
+    "acctCustPhone" : "614-668-3343    ",
+    "acctBirthDate" : "06021974",
+    "acctCreateDate" : "02022020",
+    "acctEndDate" : "02022022",
+    "acctPolicyType" : "FULL LIFE   ",
+    "acctMonthlyPymt" : "1340.430",
+    "acctQuarterlyPymt" : "5361.720",
+    "acctYearlyPymt" : "16085.160",
+    "acctIsactive" : "Y"
+  }, {
+    "acctPolicyNum" : "5693001544 ",
+    "acctCustName" : "JERRY MOSSMAN   ",
+    "acctCustAddr" : "20 MAIN STREETE ",
+    "acctCustCity" : "TAMPA           ",
+    "acctCustState" : "FL",
+    "acctCustZip" : "33605",
+    "acctCustPhone" : "813-550-2344    ",
+    "acctBirthDate" : "03031965",
+    "acctCreateDate" : "03062018",
+    "acctEndDate" : "03062022",
+    "acctPolicyType" : "TERM LIFE   ",
+    "acctMonthlyPymt" : "643.440",
+    "acctQuarterlyPymt" : "1930.320",
+    "acctYearlyPymt" : "7721.280",
+    "acctIsactive" : "Y"
+  }, {
+    "acctPolicyNum" : "5569823033 ",
+    "acctCustName" : "WALLACE MACKIE  ",
+    "acctCustAddr" : "55 VENTURA BLVD ",
+    "acctCustCity" : "LOS ANGELESE    ",
+    "acctCustState" : "CA",
+    "acctCustZip" : "90006",
+    "acctCustPhone" : "213-664-1456    ",
+    "acctBirthDate" : "02091973",
+    "acctCreateDate" : "01052020",
+    "acctEndDate" : "01052022",
+    "acctPolicyType" : "FULL LIFE   ",
+    "acctMonthlyPymt" : "873.650",
+    "acctQuarterlyPymt" : "2620.950",
+    "acctYearlyPymt" : "16085.160",
+    "acctIsactive" : "Y"
+  } ]
+}

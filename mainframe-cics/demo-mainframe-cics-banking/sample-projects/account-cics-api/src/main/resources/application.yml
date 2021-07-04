@@ -1,0 +1,67 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: 
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# accountCicsSdk
+ol:
+  cics:
+    project:
+      accountCicsSdk:
+        base-url: http://192.86.32.238
+        port: 12345
+        uri-map: ol/demos
+        code-page: CP037
+  license:
+    key: 
+
+
+
+
