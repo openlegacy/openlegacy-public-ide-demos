@@ -4,7 +4,7 @@
 - Openlegacy IDE 4.6.10+ (Full installation including JDK 11 and all Maven dependencies)
 
 
-## Demo definitions:
+## Demo Definitions:
 Create an API from a BIAN contract on top of a CICS SDK. 
 
 ## Demo Resources
@@ -123,7 +123,7 @@ Your Input/Output tab should look like this:
 
 - In the Input mapping, map `gactcs9.inPut.actiAccountId` to `crReferenceId`. 
 
-- In the Output section, map the oputput fields as follows:
+- In the Output section, map the output fields as follows:
 
 | Service Method Output field                                                                                                                              | Mapping Expression                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
