@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The following demonstrates how to create an API that creates accounts by forwarding the request to an underlying CICS program using the OpenLegacy adapter.
+The following demo shows how to create an API that creates accounts by forwarding the request to an underlying CICS program using the OpenLegacy adapter.
 
 ## Architecture
 
-![Mainframe Transaction Gateway Cobol](./assets/images/mainframe-ctg.png)
+![Mainframe Transaction Gateway COBOL](./assets/images/mainframe-ctg.png)
 
 ## Pre-Requirements
 
@@ -54,12 +54,12 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 
 ![step1](./assets/images/step1.gif)
 
-## Step 2 – Generate Java Model (Entity) from the Cobol Source
+## Step 2 – Generate Java Model (Entity) from the COBOL Source
 
 1. Create a sample folder at `src/main/resources`
 2. Copy the following resource to your samples folder at `src/main/resources/sample`:
     - [OPNACT31.cbl](./assets/resources/OPNACT31.cbl)
-3. **Right-Click** on the `OPNACT31.cbl` file → OpenLegacy → Generate Model
+3. **Right-click** on the `OPNACT31.cbl` file → OpenLegacy → Generate Model
 4. **Execution Path**: `OPNACT31`
 5. **Entity Name**: `Opnact31`
 6. Check **Generate JUnit Test checkbox**
@@ -131,9 +131,9 @@ import static org.junit.Assert.assertTrue;
 1. Open the New Project Wizard:
    - File → New → OpenLegacy API Project
 2. Define the **Project name** as `mainframe-ctg-api`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click in the **Default Package** field, to automatically populate it.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
-5. **Right-Click** on `mainframe-ctg-api` project → OpenLegacy → Generate API from SDK
+5. **Right-click** on `mainframe-ctg-api` project → OpenLegacy → Generate API from SDK
     - Name the service `CreateAccount`
     - Go to mainframe-ctg-sdk -> Opnact31 and move `dfhcommarea` right as **input**.
     - Go to mainframe-ctg-sdk -> Opnact31 and move `dfhcommarea` right as **output**.
