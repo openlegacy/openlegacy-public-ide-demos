@@ -156,7 +156,7 @@ Create a new OpenLegacy AS/400 RPC project:
 
 ## Step 5 - Run and Test your API
 
-1. **Right-Click** on the **banking API** project → OpenLegacy → Run Application
+1. **Right-Click** on the **Banking API** project → OpenLegacy → Run Application
 2. Open the browser on http://localhost:8080/swagger
 3. Authorize through **Oauth2**
    - **Client Id:** `client_id`
