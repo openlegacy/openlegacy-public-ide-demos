@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This demo shows generation of Java models from a **copy book** using OpenLegacy IDE's, test connectivity and data retrieval from host and how to expose it as a **REST API**.
+This demo shows generation of Java models from a **copybook** using OpenLegacy IDE's, test connectivity and data retrieval from host and how to expose it as a **REST API**.
 
 ## Pre-Requirements
 
