@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This demo shows generation of Java models from **MS SQL Stored Procedure** using OpenLegacy IDE's built in **MS SQL Procedure Fetcher**, and how to expose it as a **REST API**.
+This demo shows how to generate Java models from **MS SQL Stored Procedure** using OpenLegacy IDE's built-in **MS SQL Procedure Fetcher**, and how to expose them as **REST APIs**.
 
 ## Architecture
 
@@ -15,11 +15,11 @@ This demo shows generation of Java models from **MS SQL Stored Procedure** using
 
 ## Demo Definition
 
-- Creation of a new SDK Project.
+- Create a new SDK Project.
 - Import **MS SQL Procedure** using **MS SQL Procedure Fetcher**.
 - Develop and run unit tests on the fly.
 - Test the connectivity and data retrieval from the **Microsoft SQL Server**.
-- Creation of an API Project on the top of your SDK Project.
+- Create an API project on the top of your SDK project.
 
 ## Step 1 – Create a New SDK Project
 
@@ -29,7 +29,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 1. Open the New Project Wizard:
    - File → New → OpenLegacy SDK Project
 2. Define the **Project Name** as `microsoft-sqlserver-sp-sdk`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click in the **Default Package** field, to automatically populate it.
 4. Select **Stored Procedures** as the backend and click **Next**.
 5. From the **drop-down menu** , choose **Microsoft SQL Server**.
 6. Enter the following database credentials:
@@ -46,20 +46,20 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 
 1. Right click on the project → OpenLegacy → Import MS SQL Stored Procedure/Function
 2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the MS SQL Server.
-3. From the drop-down of **Stored procedure / function** choose **proc_get_all_expired_creditcards**
+3. Choose **proc_get_all_expired_creditcards** from the drop-down of **Stored procedure / function** 
 4. Check **Generate JUnit Test checkbox**.
 5. Click **OK**.
 6. After the successful generation of the `ProcGetAllExpiredCreditcards.java` with **Rpc Entity Editor**:
    1. Go to **Fields**
    2. Choose `expiryDate` and change **Pattern** to `yyyy-MM-dd HH:mm:ss`.
-7. Within the regular java editor:
+7. In the Java editor:
    1. Go to `resultSet` → `expiryDate`.
    2. Replace `private Date expiryDate;` with `private java.sql.Date expiryDate;`.
    3. Add the following annotation: `@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")`.
    4. Remove the following annotation: `@RpcDateField(pattern = "yyyy-MM-dd HH:mm:ss")` (if needed).
    5. Maven clean and maven install. 
 
-![How to fetch stored procedure](./assets/images/fetchSP.gif)
+![How to Fetch Stored Procedure](./assets/images/fetchSP.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -301,16 +301,16 @@ We can extend this test suite with additional unit tests to validate our connect
 
    ```
    </details>    
-2. Run the JUnit by Right Clicking on the project -> Run As -> JUnit Tests. The expected result is two tests passing.
+2. Run the JUnit by right-clicking on the project -> Run As -> JUnit Tests. The expected result is two tests passing.
 
 ## Step 4 – Create APIs from SDK
 
 1. Open the New Project Wizard:
    - File → New → OpenLegacy API Project.
 2. Define the project name as `microsoft-sqlserver-sp-api`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click in the **Default Package** field, to automatically populate it.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
-5. Right click on the project and navigate to Openlegacy → Generate API from SDK
+5. Right-click on the project and navigate to Openlegacy → Generate API from SDK
 6. Define the Service name as `ExpiredCards`.
 7. Open the SDK folder
 8. Add the **ProcGetAllExpiredCreditCards** to the **Output box** then click **OK**.
@@ -320,10 +320,10 @@ We can extend this test suite with additional unit tests to validate our connect
 ## Step 5 - Run and Test your API
 
 
-1. **Right-Click** on the **microsoft-sqlserver-sp-api** project → OpenLegacy → Run Application
-2. Open the browser on http://localhost:8080/swagger
+1. **Right-click** on the **microsoft-sqlserver-sp-api** project → OpenLegacy → Run Application
+2. Open the browser to http://localhost:8080/swagger
 3. **Click** on the API we've created → Try it out
-   - You should see successful respond returned directly from the MS SQL Server Stored Procedure!
+   - You should see a successful response returned directly from the MS SQL Server Stored Procedure!
      ```json
      {
        "resultSet": [
@@ -349,5 +349,5 @@ We can extend this test suite with additional unit tests to validate our connect
 
 ## Summary
 
-In this demo we have presented an end to end integration with **MS SQL Server** using OpenLegacy IDE within just a couple of minutes. We have started with fetching procedure metadata from a MS SQL Server, based on the metadata we automatically generated Java SDK that enables calling the Stored Procedure, later on we have presented the creation of a REST API utilizing the MS SQL Stored Procedure SDK.
+In this demo we presented an end to end integration with **MS SQL Server** using the OpenLegacy IDE within just a couple of minutes. We started by fetching metadata from a MS SQL Server. Based on the metadata, we automatically generated a Java SDK that enables calling the Stored Procedure. We then created a REST API utilizing the MS SQL Stored Procedure SDK.
 We used the IDE to better model and design the API and showed how it works with a standard Swagger page.
