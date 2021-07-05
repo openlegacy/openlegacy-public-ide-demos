@@ -5,7 +5,7 @@
 
 
 ## Demo definitions:
-Create an api from BIAN contract on top of cics SDK. 
+Create an API from a BIAN contract on top of a CICS SDK. 
 
 ## Demo Resources
 - [CurrentAccount.json](/assets/CurrentAccount.json)
@@ -18,23 +18,23 @@ Create an api from BIAN contract on top of cics SDK.
 
    - File → New → OpenLegacy SDK Project.
 2. Define **Project Name** as **cics-account-sdk**
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click in the **Default Package** field, to automatically populate it.
 4. Select Mainframe **CICS TS** as the backend and click **Next**.
-5. Set the connection details to the backend based on following parameters:
+5. Set the connection details to the backend with the following parameters:
     - **CICS Base URL:** `http://192.86.32.238`
     - **URI Map:** `ol/demos`
     - **CICS Port:** `12345`
     - **Code Page:** `CP037`
 6. Click **Finish**
 
-### Step 2 – Generate Java Model (Entity) from the Cobol Source
+### Step 2 – Generate Java Model (Entity) from the COBOL Source
 1. Copy the following resource to your samples folder at `src/main/resources/sample`:
     - - [GACTCS9.CBL](assets/GACTCS9.cbl)
 2. **Right-Click** on the `GACTCS9.cbl` file → OpenLegacy → Generate Model
 3. **Execution Path**: `GACTCS9`
 4. Check **Generate JUnit Test checkbox**
 5. Click **OK**
-6. Please test the entity before continue to the next step. 
+6. Please test the entity before continuing to the next step. 
 (an example input  `"actiAccountId" : "11122234914"`)
 
 ### Step 3: Create API from BIAN.
@@ -42,14 +42,14 @@ Create an api from BIAN contract on top of cics SDK.
 1. Open the New Project Wizard:
    - File → New → OpenLegacy API Project
 2. Define the **Project name** as `cics-account-api`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click in the **Default Package** field, to automatically populate it.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
 5. Click **OK**
 6. Right click on `cics-account-api` → openlegacy → Generate Sevice from Swagger Specification. 
 7. Click **Browse** and choose `CurrentAccount.json` from its location. 
 ![service from spec1](./assets/screenshots/api-swagger_1.png) ![service from spec2](./assets/screenshots/api-swagger.png)
 
-### Step 4: Map The Service Structure to The Entity Structure
+### Step 4: Map the Service Structure to the Entity Structure
 In this demo, we will work on the `RetrieveCurrentAccountService.java`.
 
 1. Create the response business entity (for version 4.6.10)
@@ -117,13 +117,13 @@ Your Input/Output tab should look like this:
 ![new output](./assets/screenshots/bian-io.png)
 
 
-3. Go to the Maping tab.
-- Add The `Gactcs.java` and `Response200CurrentAccount.java` entities to the entities section. 
+3. Go to the Mapping tab.
+- Add the `Gactcs.java` and `Response200CurrentAccount.java` entities to the Entities section. 
 ![new output](./assets/screenshots/add-entities.png)
 
-- In the input mapping map `gactcs9.inPut.actiAccountId` to `crReferenceId`. 
+- In the Input mapping, map `gactcs9.inPut.actiAccountId` to `crReferenceId`. 
 
-- In the output section map as the following table:
+- In the Output section, map the oputput fields as follows:
 
 | Service Method Output field                                                                                                                              | Mapping Expression                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -159,7 +159,7 @@ The mapping tab should look like this:
 ![new output](./assets/screenshots/mapping-tab.png)
 
 
-### Step 5: Test The API
+### Step 5: Test the API
 
 1. Right-click on the API project → Run Application. 
 2. Go to → http://localhost:8080/swagger-ui/index.html?configUrl=/swagger/swagger.json/swagger-config#/retrieve/retrieveCurrentAccount
