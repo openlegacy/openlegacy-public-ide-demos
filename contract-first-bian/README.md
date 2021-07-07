@@ -21,7 +21,7 @@ Create an API from a BIAN contract on top of a CICS SDK.
 3. Click in the **Default Package** field, to automatically populate it.
 4. Select Mainframe **CICS TS** as the backend and click **Next**.
 5. Set the connection details to the backend with the following parameters:
-    - **CICS Base URL:** `http://192.86.32.238`
+    - **CICS Base URL:** `http://mainframe.openlegacy.com`
     - **URI Map:** `ol/demos`
     - **CICS Port:** `12345`
     - **Code Page:** `CP037`
