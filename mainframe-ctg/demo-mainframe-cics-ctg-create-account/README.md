@@ -44,11 +44,9 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 7. Go to `src/main/resourse/application.yml` and define the  `default-ipic-server` as `IPCSSL`
 
    ```yaml
-      hostname: 192.86.32.238
+      hostname: mainframe.openlegacy.com
       port: 13200
       code-page: CP037
-      username: 
-      password: 
       default-ipic-server: IPCSSL
    ```
 
