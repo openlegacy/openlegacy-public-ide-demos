@@ -1,1 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.cics_accounts_sdk.openlegacy.CicsAccountsSdkAutoConfiguration

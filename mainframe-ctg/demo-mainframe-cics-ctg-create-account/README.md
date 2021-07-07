@@ -37,18 +37,16 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 3. Click at the **Default Package** field, to automatically fill it up.
 4. Select **Mainframe CICS TG** as the backend and click **Next**
 5. Set the connection details to the backend based on following parameters:
-    - **CICS Base URL:** `http://192.86.32.238`
+    - **CICS Base URL:** `mainframe.openlegacy.com`
     - **Host Port:** `13200`
     - **Code Page:** `CP037`
 6. Click **Finish**
 7. Go to `src/main/resourse/application.yml` and define the  `default-ipic-server` as `IPCSSL`
 
    ```yaml
-      hostname: 192.86.32.238
+      hostname: mainframe.openlegacy.com
       port: 13200
       code-page: CP037
-      username: 
-      password: 
       default-ipic-server: IPCSSL
    ```
 

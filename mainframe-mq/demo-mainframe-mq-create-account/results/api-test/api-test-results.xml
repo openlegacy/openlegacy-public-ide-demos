@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mainframe-MQ-Create-Account" tests="1" time="2.398">
-  <testsuite name="mainframe-mq-account" id="041b4383-6e6f-40be-bc3d-4a30d068904f" timestamp="2020-12-14T07:58:02.728Z" tests="2" failures="0" errors="0" time="1.199">
-    <testcase name="Successful GET request" time="1.199" classname="MainframeMqCreateAccount"/>
-    <testcase name="Assert by values" time="1.199" classname="MainframeMqCreateAccount"/>
-  </testsuite>
-</testsuites>
