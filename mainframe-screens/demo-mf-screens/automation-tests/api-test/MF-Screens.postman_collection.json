@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "37306a31-586d-4cad-9936-91a51f918f65",
+		"name": "mf-screens-api",
+		"description": "mf-screens-api API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Loan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful loan data retrieval\", () => {\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.loaninq2.applicantName).to.eql('JOHN SMITH');\r",
+							"    pm.expect(responseJson.loaninq2.loanAmount).to.eql(370000.0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"loanNumber\": \"string\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/loan",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "default response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: oauth2",
+								"key": "Authorization",
+								"value": "<token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"loanNumber\": \"aliquip eu nulla in\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/loan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"loan"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"loaninq2\": {\n  \"loanNumber\": 52149730,\n  \"loanAcNumber\": \"al\",\n  \"precloserNo\": \"adipisicing nulla est ut\",\n  \"precloserDate\": \"officia culpa eli\",\n  \"applDate\": \"dolore pariatur\",\n  \"applicantName\": \"ex sunt mollit\",\n  \"loanAmount\": -29382641.036058173,\n  \"loanTerm\": 32917836,\n  \"prncplBalance\": 46972781.02700207,\n  \"interestRate\": -30993443.540160522,\n  \"monthlyEmi\": -13952201.024950743,\n  \"penaltyAmount\": \"laboris d\",\n  \"loanStartDate\": \"et incididunt cillum ea deserunt\",\n  \"loanCloseDate\": \"ea esse\",\n  \"preclosereAmnt\": \"commodo est\",\n  \"cashchequeDd\": \"in magna\",\n  \"chequeDdNo\": \"tempor dolor commodo magna\",\n  \"chequeDdDate\": \"quis \",\n  \"focusField\": \"adipisicing labore quis anim laborum\"\n }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

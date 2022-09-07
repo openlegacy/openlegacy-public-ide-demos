@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AS400-Screens" tests="1" time="7.734">
+  <testsuite name="displayJobAttributes" id="78a01def-42b5-4f55-9a5f-806eeed61735" timestamp="2021-01-24T08:25:30.361Z" tests="2" failures="0" errors="0" time="3.867">
+    <testcase name="Successful GET request" time="3.867" classname="As400Screens"/>
+    <testcase name="Assert by values" time="3.867" classname="As400Screens"/>
+  </testsuite>
+</testsuites>

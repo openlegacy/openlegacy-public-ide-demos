@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MF-Screens" tests="1" time="1.049">
+  <testsuite name="Loan" id="6249f942-731e-458e-a041-238189636482" timestamp="2020-07-16T10:43:48.258Z" tests="2" failures="0" errors="0" time="1.049">
+    <testcase name="Successful GET request" time="1.049" classname="MfScreens"/>
+    <testcase name="Assert by values" time="1.049" classname="MfScreens"/>
+  </testsuite>
+</testsuites>

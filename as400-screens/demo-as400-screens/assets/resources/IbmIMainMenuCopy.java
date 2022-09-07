@@ -1,0 +1,42 @@
+package com.as400_5250_sdk.openlegacy;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.openlegacy.core.annotations.screen.*;
+import org.openlegacy.core.terminal.actions.TerminalActions;
+import org.openlegacy.core.model.entity.EntityType;
+import org.openlegacy.core.model.field.ScreenFieldType;
+import org.openlegacy.core.terminal.actions.TerminalAction.AdditionalKey;
+import org.openlegacy.core.model.entity.EntityType;
+import org.openlegacy.core.model.field.ScreenFieldType.MenuEntity;
+import org.openlegacy.core.annotations.screen.ScreenNavigation;
+import org.openlegacy.core.terminal.actions.TerminalActions.F12;
+import com.as400_5250_sdk.openlegacy.SignOn;
+import org.openlegacy.core.annotations.screen.AssignedField;
+
+@Getter
+@Setter
+@ScreenEntity(rows = 24, columns = 80, screenType = EntityType.Menu)
+@ScreenIdentifiers(identifiers = { 
+                @Identifier(row = 1, column = 33, value = "IBM i Main Menu"), 
+                @Identifier(row = 19, column = 2, value = "Selection or command") 
+                })
+@ScreenActions(actions = {
+                @Action(action = TerminalActions.F3.class, displayName = "Exit", alias = "exit"), 
+                @Action(action = TerminalActions.F4.class, displayName = "Prompt", alias = "prompt"), 
+                @Action(action = TerminalActions.F9.class, displayName = "Retrieve", alias = "retrieve"), 
+                @Action(action = TerminalActions.F12.class, displayName = "Cancel", alias = "cancel"), 
+                @Action(action = TerminalActions.F1.class, additionalKey= AdditionalKey.SHIFT, displayName = "Information Assistant", alias = "informationAssistant"), 
+                @Action(action = TerminalActions.F11.class, additionalKey= AdditionalKey.SHIFT, displayName = "Set initial menu", alias = "setInitialMenu") 
+                })
+@ScreenNavigation(exitAction = F12.class, accessedFrom = SignOn.class, assignedFields = {
+		@AssignedField(field = "user", value = "OPENLEGA1"), @AssignedField(field = "password", value = "OPENLEGA"),
+		@AssignedField(field = "user", value = ""), @AssignedField(field = "password", value = ""),
+		@AssignedField(field = "user", value = ""), @AssignedField(field = "password", value = "") })
+public class IbmIMainMenu implements org.openlegacy.core.terminal.ScreenEntity {
+
+    @ScreenField(row = 20, column = 7, endColumn= 79, editable= true, fieldType=ScreenFieldType.MenuEntity.class, displayName = "Menu Selection")
+    private String menuSelection;
+    
+    private String focusField;
+}
