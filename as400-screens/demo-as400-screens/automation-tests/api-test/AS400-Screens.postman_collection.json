@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "72f1a8a7-377a-4913-8f51-a245c6ce8573",
+		"name": "AS400-Screens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "displayJobAttributes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "74324433-4de1-4fb9-94df-0e2f15bddc92",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Assert by values\", function () {\r",
+							"    var jsonData = responseBody;\r",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");\r",
+							"    compareJsonsWithExlude(jsonData, jsonOutput, ['number', 'job','cpuTimeUsed', 'user'])\r",
+							"});\r",
+							"\r",
+							"function compareJsonsWithExlude(json1, json2, exclude = []) {\r",
+							"    const reviverFilter = (k, v) => exclude.includes(k) ? (v==undefined) : v\r",
+							"    const json1Excluded = JSON.parse(json1, reviverFilter)\r",
+							"    console.log(json1Excluded);\r",
+							"   \r",
+							"    const json2Excluded = JSON.parse(json2, reviverFilter)\r",
+							"     console.log(json2Excluded);\r",
+							"    pm.expect(_.isEqual(JSON.stringify(json1Excluded), JSON.stringify(json2Excluded))).to.be.true\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "31336c9c-fa40-498a-a32e-1404045c88be",
+						"exec": [
+							"\r",
+							"const tokenUrl = 'http://127.0.0.1:8080/oauth/token';\r",
+							"const clientId = 'client_id';\r",
+							"const clientSecret = 'client_secret';\r",
+							"\r",
+							"const getTokenRequest = {\r",
+							"  method: 'POST',\r",
+							"  url: tokenUrl,\r",
+							"  header:{\r",
+							"    'content-type': 'application/x-www-form-urlencoded',\r",
+							"    'Authorization': 'Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ='\r",
+							"  },\r",
+							"  body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"          { key: 'grant_type', value: 'client_credentials' },\r",
+							"          { key: 'client_id', value: clientId },\r",
+							"          { key: 'client_secret', value: clientSecret }\r",
+							"        //   { key: 'scope', value: 'read write trust ol_admin'}\r",
+							"\r",
+							"      ]\r",
+							"  }\r",
+							"};\r",
+							" \r",
+							"\r",
+							"pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"    if(err === null)\r",
+							"    {\r",
+							"  const jsonResponse = response.json();\r",
+							"  const newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"  pm.variables.set('access_token', newAccessToken);\r",
+							"    }\r",
+							"    else console.log(formdata);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/displayjobattributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"displayjobattributes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

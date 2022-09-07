@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<snapshot sequence="3" type="INCOMING">
+    <row rowNumber="1">
+        <field column="2" value="WELCOME TO CICS TS 5.5 06:51:25" length="79" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="2">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="3">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="4">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="5">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="6">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="7">
+        <field column="1" value="                     ******\  ******\  ******\   ******\(R)" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="8">
+        <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="9">
+        <field column="1" value="                    **\\\\**\   **\\\ **\\\\**\ **\\\\**\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="10">
+        <field column="1" value="                    **\    \\   **\   **\    \\ **\    \\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="11">
+        <field column="1" value="                    **\         **\   **\       *******\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="12">
+        <field column="1" value="                    **\         **\   **\        *******\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="13">
+        <field column="1" value="                    **\         **\   **\         \\\\**\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="14">
+        <field column="1" value="                    **\   **\   **\   **\   **\ **\   **\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="15">
+        <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="16">
+        <field column="1" value="                     ******\\ ******\  ******\\  ******\\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="17">
+        <field column="1" value="                      \\\\\\   \\\\\\   \\\\\\    \\\\\\" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="18">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="19">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="20">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="21">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="22">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="23">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <row rowNumber="24">
+        <field column="1" length="80" editable="true" type="java.lang.Double"/>
+    </row>
+    <size rows="24" columns="80"/>
+</snapshot>

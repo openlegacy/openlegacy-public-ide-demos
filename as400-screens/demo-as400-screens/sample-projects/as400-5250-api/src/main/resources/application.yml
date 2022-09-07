@@ -1,0 +1,73 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# as4005250Sdk
+ol:
+  tn5250:
+    project:
+      as4005250Sdk:
+        base-packages:
+          - com.as400_5250_sdk.openlegacy
+        hostname: as400.openlegacy.com
+        port: 23
+        code-page: 37
+        model: 2
+        ssl-type: 
+        user: OPENLEGA1
+        password: '{cipher}c50835ee751766c4fc6024f080fed9bb97d0c08e5ac5484e7846bd68034cbc3b'
+        enhanced: true
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+
+
+
+

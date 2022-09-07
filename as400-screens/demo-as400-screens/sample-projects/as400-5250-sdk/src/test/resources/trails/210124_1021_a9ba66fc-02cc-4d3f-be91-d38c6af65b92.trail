@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<terminal-trail>
+    <snapshot sequence="1" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="                    " length="20"/>
+            <field column="2" value="                    " length="20"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="57" value="                        " length="24"/>
+            <field column="57" value="                        " length="24"/>
+        </row>
+        <row rowNumber="2">
+            <field column="48" value="System  . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="79" value="  " length="2"/>
+            <field column="79" value="  " length="2"/>
+        </row>
+        <row rowNumber="3">
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QINTER    " length="10"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                              " length="46"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QPADEV0003" length="10"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="               " length="15"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true" uppercase="true"/>
+            <field column="53" length="10" editable="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="7">
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true" hidden="true" uppercase="true"/>
+            <field column="53" length="10" editable="true" hidden="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="8">
+            <field column="17" value="Program/procedure . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="9">
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="10">
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="1">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" value="                                      " length="38"/>
+            <field column="1" value="                                      " length="38"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="6" column="53"/>
+    </snapshot>
+    <snapshot sequence="2" type="OUTGOING" command="[enter]">
+        <row rowNumber="1">
+            <field column="2" value="                    " length="20"/>
+            <field column="2" value="                    " length="20"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="57" value="                        " length="24"/>
+            <field column="57" value="                        " length="24"/>
+        </row>
+        <row rowNumber="2">
+            <field column="48" value="System  . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="79" value="  " length="2"/>
+            <field column="79" value="  " length="2"/>
+        </row>
+        <row rowNumber="3">
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QINTER    " length="10"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                              " length="46"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QPADEV0003" length="10"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="               " length="15"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="OPENLEGA1" length="10" modified="true" editable="true" uppercase="true"/>
+            <field column="53" length="10" editable="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="7">
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="********" length="10" modified="true" editable="true" hidden="true" uppercase="true"/>
+            <field column="53" length="10" editable="true" hidden="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="8">
+            <field column="17" value="Program/procedure . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="9">
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="10">
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="1">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" value="                                      " length="38"/>
+            <field column="1" value="                                      " length="38"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="6" column="53"/>
+    </snapshot>
+    <snapshot sequence="3" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="                    " length="20"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="57" value="                        " length="24"/>
+        </row>
+        <row rowNumber="2">
+            <field column="48" value="System  . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="79" value="  " length="2"/>
+        </row>
+        <row rowNumber="3">
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QINTER    " length="10"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                              " length="46"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QPADEV0003" length="10"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="               " length="15"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="OPENLEGA1" length="10" editable="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="7">
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="OPENLEGA" length="10" editable="true" hidden="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="8">
+            <field column="17" value="Program/procedure . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="9">
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="10">
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" value="                                      " length="38"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="6" column="53"/>
+    </snapshot>
+    <snapshot sequence="2" type="OUTGOING" command="[enter]">
+        <row rowNumber="1">
+            <field column="2" value="                    " length="20"/>
+            <field column="23" value="             Sign On             " length="33" color="WHITE"/>
+            <field column="57" value="                        " length="24"/>
+        </row>
+        <row rowNumber="2">
+            <field column="48" value="System  . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="OPENLEG " length="8"/>
+            <field column="79" value="  " length="2"/>
+        </row>
+        <row rowNumber="3">
+            <field column="48" value="Subsystem . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QINTER    " length="10"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                              " length="46"/>
+            <field column="48" value="Display . . . . . :" length="19"/>
+            <field column="68" value=" " length="1"/>
+            <field column="70" value="QPADEV0003" length="10"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="               " length="15"/>
+            <field column="17" value="User  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="OPENLEGA1" length="10" editable="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="7">
+            <field column="17" value="Password  . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" value="OPENLEGA" length="10" editable="true" hidden="true" uppercase="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="8">
+            <field column="17" value="Program/procedure . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="9">
+            <field column="17" value="Menu  . . . . . . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="10">
+            <field column="17" value="Current library . . . . . . . . ." length="33"/>
+            <field column="51" value=" " length="1"/>
+            <field column="53" length="10" editable="true"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" value="                                      " length="38"/>
+            <field column="40" value=" (C) COPYRIGHT IBM CORP. 1980, 2009.    " length="40" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="6" column="53"/>
+    </snapshot>
+    <snapshot sequence="5" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" length="0" color="BLUE"/>
+            <field column="2" value="MAIN      " length="10" color="BLUE"/>
+            <field column="13" value="                   " length="19"/>
+            <field column="33" value="IBM i Main Menu" length="15" color="WHITE"/>
+            <field column="49" value="                                " length="32"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. User tasks" length="13"/>
+            <field column="21" value="                                                            " length="60"/>
+        </row>
+        <row rowNumber="6">
+            <field column="7" value="2. Office tasks" length="15"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="7">
+            <field column="7" value="3. General system tasks" length="23"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="4. Files, libraries, and folders" length="32"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="5. Programming" length="14"/>
+            <field column="22" value="                                                           " length="59"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="6. Communications" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="11">
+            <field column="7" value="7. Define or change the system" length="30"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="12">
+            <field column="7" value="8. Problem handling" length="19"/>
+            <field column="27" value="                                                      " length="54"/>
+        </row>
+        <row rowNumber="13">
+            <field column="7" value="9. Display a menu" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="14">
+            <field column="6" value="10. Information Assistant options" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="15">
+            <field column="6" value="11. IBM i Access tasks" length="22"/>
+            <field column="29" value="                                                    " length="52"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="90. Sign off" length="12"/>
+            <field column="19" value="                                                              " length="62"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="20">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="                                                                          &#10;" length="153" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+            <field column="49" value=" " length="1"/>
+            <field column="51" value="F13=Information Assistant" length="25" color="BLUE"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="F23=Set initial menu" length="20" color="BLUE"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="Type option number or command.                                              " length="76" color="WHITE"/>
+            <field column="79" value=" " length="1" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="20" column="7"/>
+    </snapshot>
+    <snapshot sequence="6" type="OUTGOING" command="[enter]">
+        <row rowNumber="1">
+            <field column="2" length="0" color="BLUE"/>
+            <field column="2" value="MAIN      " length="10" color="BLUE"/>
+            <field column="13" value="                   " length="19"/>
+            <field column="33" value="IBM i Main Menu" length="15" color="WHITE"/>
+            <field column="49" value="                                " length="32"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. User tasks" length="13"/>
+            <field column="21" value="                                                            " length="60"/>
+        </row>
+        <row rowNumber="6">
+            <field column="7" value="2. Office tasks" length="15"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="7">
+            <field column="7" value="3. General system tasks" length="23"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="4. Files, libraries, and folders" length="32"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="5. Programming" length="14"/>
+            <field column="22" value="                                                           " length="59"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="6. Communications" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="11">
+            <field column="7" value="7. Define or change the system" length="30"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="12">
+            <field column="7" value="8. Problem handling" length="19"/>
+            <field column="27" value="                                                      " length="54"/>
+        </row>
+        <row rowNumber="13">
+            <field column="7" value="9. Display a menu" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="14">
+            <field column="6" value="10. Information Assistant options" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="15">
+            <field column="6" value="11. IBM i Access tasks" length="22"/>
+            <field column="29" value="                                                    " length="52"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="90. Sign off" length="12"/>
+            <field column="19" value="                                                              " length="62"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="20">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="1" length="153" modified="true" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+            <field column="49" value=" " length="1"/>
+            <field column="51" value="F13=Information Assistant" length="25" color="BLUE"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="F23=Set initial menu" length="20" color="BLUE"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="Type option number or command.                                              " length="76" color="WHITE"/>
+            <field column="79" value=" " length="1" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="20" column="7"/>
+    </snapshot>
+    <snapshot sequence="7" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" length="0" color="BLUE"/>
+            <field column="2" value="USER      " length="10" color="BLUE"/>
+            <field column="13" value="                      " length="22"/>
+            <field column="36" value="User Tasks" length="10" color="WHITE"/>
+            <field column="47" value="                                  " length="34"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. Display or change your job" length="29"/>
+            <field column="37" value="                                            " length="44"/>
+        </row>
+        <row rowNumber="6">
+            <field column="7" value="2. Display messages" length="19"/>
+            <field column="27" value="                                                      " length="54"/>
+        </row>
+        <row rowNumber="7">
+            <field column="7" value="3. Send a message" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="4. Submit a job" length="15"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="5. Work with your spooled output files" length="38"/>
+            <field column="46" value="                                   " length="35"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="6. Work with your batch jobs" length="28"/>
+            <field column="36" value="                                             " length="45"/>
+        </row>
+        <row rowNumber="11">
+            <field column="7" value="7. Display or change your library list" length="38"/>
+            <field column="46" value="                                   " length="35"/>
+        </row>
+        <row rowNumber="12">
+            <field column="7" value="8. Change your password" length="23"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="13">
+            <field column="7" value="9. Change your user profile" length="27"/>
+            <field column="35" value="                                              " length="46"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="60. More user task options" length="26"/>
+            <field column="33" value="                                                " length="48"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="90. Sign off" length="12"/>
+            <field column="19" value="                                                              " length="62"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="20">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="                                                                          &#10;" length="153" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+            <field column="49" value=" " length="1"/>
+            <field column="51" value="F13=Information Assistant" length="25" color="BLUE"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="F16=System Main menu" length="20" color="BLUE"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="(C) COPYRIGHT IBM CORP. 1980, 2009.                                         " length="76" color="WHITE"/>
+            <field column="79" value=" " length="1" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="20" column="7"/>
+    </snapshot>
+    <snapshot sequence="8" type="OUTGOING" command="[enter]">
+        <row rowNumber="1">
+            <field column="2" length="0" color="BLUE"/>
+            <field column="2" value="USER      " length="10" color="BLUE"/>
+            <field column="13" value="                      " length="22"/>
+            <field column="36" value="User Tasks" length="10" color="WHITE"/>
+            <field column="47" value="                                  " length="34"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. Display or change your job" length="29"/>
+            <field column="37" value="                                            " length="44"/>
+        </row>
+        <row rowNumber="6">
+            <field column="7" value="2. Display messages" length="19"/>
+            <field column="27" value="                                                      " length="54"/>
+        </row>
+        <row rowNumber="7">
+            <field column="7" value="3. Send a message" length="17"/>
+            <field column="25" value="                                                        " length="56"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="4. Submit a job" length="15"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="5. Work with your spooled output files" length="38"/>
+            <field column="46" value="                                   " length="35"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="6. Work with your batch jobs" length="28"/>
+            <field column="36" value="                                             " length="45"/>
+        </row>
+        <row rowNumber="11">
+            <field column="7" value="7. Display or change your library list" length="38"/>
+            <field column="46" value="                                   " length="35"/>
+        </row>
+        <row rowNumber="12">
+            <field column="7" value="8. Change your password" length="23"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="13">
+            <field column="7" value="9. Change your user profile" length="27"/>
+            <field column="35" value="                                              " length="46"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="60. More user task options" length="26"/>
+            <field column="33" value="                                                " length="48"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="90. Sign off" length="12"/>
+            <field column="19" value="                                                              " length="62"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="20">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="1" length="153" modified="true" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+            <field column="49" value=" " length="1"/>
+            <field column="51" value="F13=Information Assistant" length="25" color="BLUE"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="F16=System Main menu" length="20" color="BLUE"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="(C) COPYRIGHT IBM CORP. 1980, 2009.                                         " length="76" color="WHITE"/>
+            <field column="79" value=" " length="1" color="WHITE"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="20" column="7"/>
+    </snapshot>
+    <snapshot sequence="9" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="                               " length="31"/>
+            <field column="34" value="Work with Job" length="13" color="WHITE"/>
+            <field column="48" value="                                 " length="33"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0"/>
+            <field column="2" value="Job:" length="4"/>
+            <field column="7" value=" " length="1"/>
+            <field column="9" value="QPADEV0003" length="10"/>
+            <field column="20" value="   " length="3"/>
+            <field column="24" value="User:" length="5"/>
+            <field column="30" value=" " length="1"/>
+            <field column="32" value="OPENLEGA1 " length="10"/>
+            <field column="43" value="   " length="3"/>
+            <field column="47" value="Number:" length="7"/>
+            <field column="55" value=" " length="1"/>
+            <field column="57" value="240574" length="6"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. Display job status attributes" length="32"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="2. Display job definition attributes" length="36"/>
+            <field column="44" value="                                     " length="37"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="3. Display job run attributes, if active" length="40"/>
+            <field column="48" value="                                 " length="33"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="4. Work with spooled files" length="26"/>
+            <field column="34" value="                                               " length="47"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="10. Display job log, if active, on job queue, or pending" length="56"/>
+            <field column="63" value="                  " length="18"/>
+        </row>
+        <row rowNumber="13">
+            <field column="6" value="11. Display call stack, if active" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="14">
+            <field column="6" value="12. Work with locks, if active" length="30"/>
+            <field column="37" value="                                            " length="44"/>
+        </row>
+        <row rowNumber="15">
+            <field column="6" value="13. Display library list, if active" length="35"/>
+            <field column="42" value="                                       " length="39"/>
+        </row>
+        <row rowNumber="16">
+            <field column="6" value="14. Display open files, if active" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="17">
+            <field column="6" value="15. Display file overrides, if active" length="37"/>
+            <field column="44" value="                                     " length="37"/>
+        </row>
+        <row rowNumber="18">
+            <field column="6" value="16. Display commitment control status, if active" length="48"/>
+            <field column="55" value="                          " length="26"/>
+        </row>
+        <row rowNumber="19">
+            <field column="66" value=" " length="1" hidden="true"/>
+            <field column="68" value="     More..." length="12" color="WHITE"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="21">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="                                                                          &#10;" length="153" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="21" column="7"/>
+    </snapshot>
+    <snapshot sequence="10" type="OUTGOING" command="[enter]">
+        <row rowNumber="1">
+            <field column="2" value="                               " length="31"/>
+            <field column="34" value="Work with Job" length="13" color="WHITE"/>
+            <field column="48" value="                                 " length="33"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0"/>
+            <field column="2" value="Job:" length="4"/>
+            <field column="7" value=" " length="1"/>
+            <field column="9" value="QPADEV0003" length="10"/>
+            <field column="20" value="   " length="3"/>
+            <field column="24" value="User:" length="5"/>
+            <field column="30" value=" " length="1"/>
+            <field column="32" value="OPENLEGA1 " length="10"/>
+            <field column="43" value="   " length="3"/>
+            <field column="47" value="Number:" length="7"/>
+            <field column="55" value=" " length="1"/>
+            <field column="57" value="240574" length="6"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+            <field column="31" value="                                                  " length="50"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="     " length="5"/>
+            <field column="7" value="1. Display job status attributes" length="32"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="8">
+            <field column="7" value="2. Display job definition attributes" length="36"/>
+            <field column="44" value="                                     " length="37"/>
+        </row>
+        <row rowNumber="9">
+            <field column="7" value="3. Display job run attributes, if active" length="40"/>
+            <field column="48" value="                                 " length="33"/>
+        </row>
+        <row rowNumber="10">
+            <field column="7" value="4. Work with spooled files" length="26"/>
+            <field column="34" value="                                               " length="47"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="    " length="4"/>
+            <field column="6" value="10. Display job log, if active, on job queue, or pending" length="56"/>
+            <field column="63" value="                  " length="18"/>
+        </row>
+        <row rowNumber="13">
+            <field column="6" value="11. Display call stack, if active" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="14">
+            <field column="6" value="12. Work with locks, if active" length="30"/>
+            <field column="37" value="                                            " length="44"/>
+        </row>
+        <row rowNumber="15">
+            <field column="6" value="13. Display library list, if active" length="35"/>
+            <field column="42" value="                                       " length="39"/>
+        </row>
+        <row rowNumber="16">
+            <field column="6" value="14. Display open files, if active" length="33"/>
+            <field column="40" value="                                         " length="41"/>
+        </row>
+        <row rowNumber="17">
+            <field column="6" value="15. Display file overrides, if active" length="37"/>
+            <field column="44" value="                                     " length="37"/>
+        </row>
+        <row rowNumber="18">
+            <field column="6" value="16. Display commitment control status, if active" length="48"/>
+            <field column="55" value="                          " length="26"/>
+        </row>
+        <row rowNumber="19">
+            <field column="66" value=" " length="1" hidden="true"/>
+            <field column="68" value="     More..." length="12" color="WHITE"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="0"/>
+            <field column="2" value="Selection or command" length="20"/>
+            <field column="23" value="                                                          " length="58"/>
+        </row>
+        <row rowNumber="21">
+            <field column="2" value="===&gt;" length="4"/>
+            <field column="7" value="3" length="153" modified="true" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+            <field column="22" value=" " length="1"/>
+            <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+            <field column="36" value=" " length="1"/>
+            <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="21" column="7"/>
+    </snapshot>
+    <snapshot sequence="11" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="          " length="10"/>
+            <field column="13" value="               Display Job Run Attributes              " length="55" color="WHITE"/>
+            <field column="69" value="            " length="12"/>
+        </row>
+        <row rowNumber="2">
+            <field column="3" value=" " length="1" hidden="true"/>
+            <field column="5" value="      " length="6"/>
+            <field column="12" value=" " length="1" hidden="true"/>
+            <field column="14" value="                                               " length="47"/>
+            <field column="62" value="System:" length="7"/>
+            <field column="70" value=" " length="1"/>
+            <field column="72" value="OPENLEG " length="8"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="0"/>
+            <field column="2" value="Job:" length="4"/>
+            <field column="7" value=" " length="1"/>
+            <field column="9" value="QPADEV0003" length="10"/>
+            <field column="20" value="   " length="3"/>
+            <field column="24" value="User:" length="5"/>
+            <field column="30" value=" " length="1"/>
+            <field column="32" value="OPENLEGA1 " length="10"/>
+            <field column="43" value="   " length="3"/>
+            <field column="47" value="Number:" length="7"/>
+            <field column="55" value=" " length="1"/>
+            <field column="57" value="240574" length="6"/>
+            <field column="64" value="                 " length="17"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="0"/>
+            <field column="2" value="Run priority  . . . . . . . . . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="20        " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="6">
+            <field column="2" value="Time slice in milliseconds  . . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="2000      " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="7">
+            <field column="2" value="Eligible for purge  . . . . . . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*YES" length="4"/>
+            <field column="61" value="                    " length="20"/>
+        </row>
+        <row rowNumber="8">
+            <field column="2" value="Default wait time in seconds  . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="30        " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="9">
+            <field column="2" value="Maximum CPU time in milliseconds  . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NOMAX    " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="10">
+            <field column="4" value="CPU time used . . . . . . . . . . . . . . . . . :" length="49"/>
+            <field column="54" value="   " length="3"/>
+            <field column="58" value="11        " length="10"/>
+            <field column="69" value="            " length="12"/>
+        </row>
+        <row rowNumber="11">
+            <field column="2" value="Maximum temporary storage in megabytes  . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NOMAX    " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="12">
+            <field column="4" value="Temporary storage used  . . . . . . . . . . . . :" length="49"/>
+            <field column="54" value="   " length="3"/>
+            <field column="58" value="2         " length="10"/>
+            <field column="69" value="            " length="12"/>
+        </row>
+        <row rowNumber="13">
+            <field column="2" value="Maximum threads . . . . . . . . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NOMAX    " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="14">
+            <field column="4" value="Threads . . . . . . . . . . . . . . . . . . . . :" length="49"/>
+            <field column="54" value="   " length="3"/>
+            <field column="58" value="1         " length="10"/>
+            <field column="69" value="            " length="12"/>
+        </row>
+        <row rowNumber="15">
+            <field column="2" value="Thread resources affinity:" length="26"/>
+            <field column="29" value="                                                    " length="52"/>
+        </row>
+        <row rowNumber="16">
+            <field column="4" value="Group . . . . . . . . . . . . . . . . . . . . . :" length="49"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NOGROUP  " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="17">
+            <field column="4" value="Level . . . . . . . . . . . . . . . . . . . . . :" length="49"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NORMAL   " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="18">
+            <field column="2" value="Resources affinity group  . . . . . . . . . . . . :" length="51"/>
+            <field column="54" value=" " length="1"/>
+            <field column="56" value="*NO       " length="10"/>
+            <field column="67" value="              " length="14"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="Press Enter to continue." length="24" color="BLUE"/>
+            <field column="27" value="                                                      " length="54"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="0" color="BLUE"/>
+            <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+            <field column="10" value=" " length="1"/>
+            <field column="12" value="F5=Refresh" length="10" color="BLUE"/>
+            <field column="23" value=" " length="1"/>
+            <field column="25" value="F9=Change job" length="13" color="BLUE"/>
+            <field column="39" value=" " length="1"/>
+            <field column="41" value="F12=Cancel" length="10" color="BLUE"/>
+            <field column="52" value=" " length="1"/>
+            <field column="54" value="F16=Job menu" length="12" color="BLUE"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="1" column="1"/>
+    </snapshot>
+</terminal-trail>

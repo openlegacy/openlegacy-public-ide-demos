@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<snapshot sequence="5" type="INCOMING">
+    <row rowNumber="1">
+        <field column="2" length="0" color="BLUE"/>
+        <field column="2" value="MAIN      " length="10" color="BLUE"/>
+        <field column="13" value="                   " length="19"/>
+        <field column="33" value="IBM i Main Menu" length="15" color="WHITE"/>
+        <field column="49" value="                                " length="32"/>
+    </row>
+    <row rowNumber="2">
+        <field column="3" value=" " length="1" hidden="true"/>
+        <field column="5" value="      " length="6"/>
+        <field column="12" value=" " length="1" hidden="true"/>
+        <field column="14" value="                                               " length="47"/>
+        <field column="62" value="System:" length="7"/>
+        <field column="70" value=" " length="1"/>
+        <field column="72" value="OPENLEG " length="8"/>
+    </row>
+    <row rowNumber="3">
+        <field column="1" length="0" color="BLUE"/>
+        <field column="2" value="Select one of the following:" length="28" color="BLUE"/>
+        <field column="31" value="                                                  " length="50"/>
+    </row>
+    <row rowNumber="4">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="5">
+        <field column="1" value="     " length="5"/>
+        <field column="7" value="1. User tasks" length="13"/>
+        <field column="21" value="                                                            " length="60"/>
+    </row>
+    <row rowNumber="6">
+        <field column="7" value="2. Office tasks" length="15"/>
+        <field column="23" value="                                                          " length="58"/>
+    </row>
+    <row rowNumber="7">
+        <field column="7" value="3. General system tasks" length="23"/>
+        <field column="31" value="                                                  " length="50"/>
+    </row>
+    <row rowNumber="8">
+        <field column="7" value="4. Files, libraries, and folders" length="32"/>
+        <field column="40" value="                                         " length="41"/>
+    </row>
+    <row rowNumber="9">
+        <field column="7" value="5. Programming" length="14"/>
+        <field column="22" value="                                                           " length="59"/>
+    </row>
+    <row rowNumber="10">
+        <field column="7" value="6. Communications" length="17"/>
+        <field column="25" value="                                                        " length="56"/>
+    </row>
+    <row rowNumber="11">
+        <field column="7" value="7. Define or change the system" length="30"/>
+        <field column="38" value="                                           " length="43"/>
+    </row>
+    <row rowNumber="12">
+        <field column="7" value="8. Problem handling" length="19"/>
+        <field column="27" value="                                                      " length="54"/>
+    </row>
+    <row rowNumber="13">
+        <field column="7" value="9. Display a menu" length="17"/>
+        <field column="25" value="                                                        " length="56"/>
+    </row>
+    <row rowNumber="14">
+        <field column="6" value="10. Information Assistant options" length="33"/>
+        <field column="40" value="                                         " length="41"/>
+    </row>
+    <row rowNumber="15">
+        <field column="6" value="11. IBM i Access tasks" length="22"/>
+        <field column="29" value="                                                    " length="52"/>
+    </row>
+    <row rowNumber="16">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="17">
+        <field column="1" value="    " length="4"/>
+        <field column="6" value="90. Sign off" length="12"/>
+        <field column="19" value="                                                              " length="62"/>
+    </row>
+    <row rowNumber="18">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="19">
+        <field column="1" length="0"/>
+        <field column="2" value="Selection or command" length="20"/>
+        <field column="23" value="                                                          " length="58"/>
+    </row>
+    <row rowNumber="20">
+        <field column="2" value="===&gt;" length="4"/>
+        <field column="7" value="                                                                          &#10;" length="153" editable="true"/>
+    </row>
+    <row rowNumber="22">
+        <field column="1" length="0" color="BLUE"/>
+        <field column="2" value="F3=Exit" length="7" color="BLUE"/>
+        <field column="10" value=" " length="1"/>
+        <field column="12" value="F4=Prompt" length="9" color="BLUE"/>
+        <field column="22" value=" " length="1"/>
+        <field column="24" value="F9=Retrieve" length="11" color="BLUE"/>
+        <field column="36" value=" " length="1"/>
+        <field column="38" value="F12=Cancel" length="10" color="BLUE"/>
+        <field column="49" value=" " length="1"/>
+        <field column="51" value="F13=Information Assistant" length="25" color="BLUE"/>
+        <field column="77" value="    " length="4"/>
+    </row>
+    <row rowNumber="23">
+        <field column="2" value="F23=Set initial menu" length="20" color="BLUE"/>
+        <field column="23" value="                                                          " length="58"/>
+    </row>
+    <row rowNumber="24">
+        <field column="2" value="Type option number or command.                                              " length="76" color="WHITE"/>
+        <field column="79" value=" " length="1" color="WHITE"/>
+    </row>
+    <size rows="24" columns="80"/>
+    <cursor row="20" column="7"/>
+</snapshot>

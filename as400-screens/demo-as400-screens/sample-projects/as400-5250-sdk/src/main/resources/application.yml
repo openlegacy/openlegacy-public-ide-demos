@@ -1,0 +1,17 @@
+ol:
+  tn5250:
+    project:
+      as4005250Sdk:
+        base-packages:
+          - com.as400_5250_sdk.openlegacy
+        hostname: as400.openlegacy.com
+        port: 23
+        code-page: 37
+        model: 2
+        ssl-type: 
+        user: OPENLEGA1
+        password: '{cipher}c50835ee751766c4fc6024f080fed9bb97d0c08e5ac5484e7846bd68034cbc3b'
+        enhanced: true
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+

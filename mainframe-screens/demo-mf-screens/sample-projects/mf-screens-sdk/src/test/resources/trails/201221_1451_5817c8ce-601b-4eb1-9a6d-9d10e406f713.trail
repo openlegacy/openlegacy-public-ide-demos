@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<terminal-trail>
+    <snapshot sequence="1" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" length="79" editable="true"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" value="            =======   ============     ======       ======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" value="            =======   ==============   =======     =======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="              ===       ===     ====     ======   ======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="              ===       ==WELCOME==TO  THE====== =======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="              ===   IBM Innovation Center - Dallas== ===" length="80" editable="true"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="              ===       ===     ====     ===  =====  ===" length="80" editable="true"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="            =======   ==============   =====   ===   =====" length="80" editable="true"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" value="            =======   ============     =====    =    =====" length="80" editable="true"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" length="1" editable="true"/>
+            <field column="3" value="    MVR24GA       ***  z/OS V2 R4   via TCPIP Telnet ***" length="78" editable="true"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" length="2" editable="true"/>
+            <field column="4" length="77" editable="true"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" length="3" editable="true"/>
+            <field column="5" value="  Choose from the following commands:" length="76" editable="true"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" length="4" editable="true"/>
+            <field column="6" value=" (Not all applications are available in every system.)" length="75" editable="true"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="      TSO    - Logon TSO (24x80)" length="80" editable="true"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="      IMS    - Logon IMS" length="80" editable="true"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="      CICS   - Logon CICS TS 5.5" length="80" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="      CICS42 - Logon CICS TS 4.2" length="80" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" length="48" editable="true"/>
+            <field column="51" length="30" editable="true"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="24" column="2"/>
+    </snapshot>
+    <snapshot sequence="2" type="OUTGOING" command="enter">
+        <row rowNumber="1">
+            <field column="2" length="79" editable="true"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" value="            =======   ============     ======       ======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" value="            =======   ==============   =======     =======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="              ===       ===     ====     ======   ======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" value="              ===       ==WELCOME==TO  THE====== =======" length="80" editable="true"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="              ===   IBM Innovation Center - Dallas== ===" length="80" editable="true"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="              ===       ===     ====     ===  =====  ===" length="80" editable="true"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="            =======   ==============   =====   ===   =====" length="80" editable="true"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" value="            =======   ============     =====    =    =====" length="80" editable="true"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" length="1" editable="true"/>
+            <field column="3" value="    MVR24GA       ***  z/OS V2 R4   via TCPIP Telnet ***" length="78" editable="true"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" length="2" editable="true"/>
+            <field column="4" length="77" editable="true"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" length="3" editable="true"/>
+            <field column="5" value="  Choose from the following commands:" length="76" editable="true"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" length="4" editable="true"/>
+            <field column="6" value=" (Not all applications are available in every system.)" length="75" editable="true"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="      TSO    - Logon TSO (24x80)" length="80" editable="true"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="      IMS    - Logon IMS" length="80" editable="true"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="      CICS   - Logon CICS TS 5.5" length="80" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="      CICS42 - Logon CICS TS 4.2" length="80" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="CICS" length="48" modified="true" editable="true"/>
+            <field column="51" length="30" editable="true"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="24" column="2"/>
+    </snapshot>
+    <snapshot sequence="3" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="WELCOME TO CICS TS 5.5 06:51:25" length="79" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="                     ******\  ******\  ******\   ******\(R)" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" value="                    **\\\\**\   **\\\ **\\\\**\ **\\\\**\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" value="                    **\    \\   **\   **\    \\ **\    \\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                    **\         **\   **\       *******\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                    **\         **\   **\        *******\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                    **\         **\   **\         \\\\**\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                    **\   **\   **\   **\   **\ **\   **\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                     ******\\ ******\  ******\\  ******\\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                      \\\\\\   \\\\\\   \\\\\\    \\\\\\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <size rows="24" columns="80"/>
+    </snapshot>
+    <snapshot sequence="4" type="OUTGOING" command="clear">
+        <row rowNumber="1">
+            <field column="2" value="WELCOME TO CICS TS 5.5 06:51:25" length="79" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" value="                     ******\  ******\  ******\   ******\(R)" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" value="                    **\\\\**\   **\\\ **\\\\**\ **\\\\**\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" value="                    **\    \\   **\   **\    \\ **\    \\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                    **\         **\   **\       *******\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                    **\         **\   **\        *******\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                    **\         **\   **\         \\\\**\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                    **\   **\   **\   **\   **\ **\   **\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                    ********\ ******\ ********\ ********\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                     ******\\ ******\  ******\\  ******\\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                      \\\\\\   \\\\\\   \\\\\\    \\\\\\" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" length="80" editable="true" type="java.lang.Double"/>
+        </row>
+        <size rows="24" columns="80"/>
+    </snapshot>
+    <snapshot sequence="5" type="INCOMING">
+        <row rowNumber="1">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="1" column="1"/>
+    </snapshot>
+    <snapshot sequence="6" type="OUTGOING" command="enter">
+        <row rowNumber="1">
+            <field column="1" value="INQ1" length="80" modified="true" editable="true"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="3">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="5">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="7">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="9">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="23">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <row rowNumber="24">
+            <field column="1" length="80" editable="true"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="1" column="1"/>
+    </snapshot>
+    <snapshot sequence="7" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="LOANINQ1                        " length="32"/>
+            <field column="35" value="Loans Inquiry                            " length="41"/>
+            <field column="77" value="LNQ1" length="4"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="3">
+            <field column="2" value="Type search criteria. Then press ENTER.                                        " length="79"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="2" value="Loan number. . . . . . :" length="24"/>
+            <field column="27" length="10" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="7">
+            <field column="2" value="Customer Number. . . . :" length="24"/>
+            <field column="27" length="10" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="9">
+            <field column="2" value="Loan Date. . . . . . . :" length="24"/>
+            <field column="27" value="  /  /" length="10" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="                                                                               " length="79"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="PF3=Exit PF12=Cancel                                                           " length="79"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="5" column="27"/>
+    </snapshot>
+    <snapshot sequence="8" type="OUTGOING" command="enter">
+        <row rowNumber="1">
+            <field column="2" value="LOANINQ1                        " length="32"/>
+            <field column="35" value="Loans Inquiry                            " length="41"/>
+            <field column="77" value="LNQ1" length="4"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="3">
+            <field column="2" value="Type search criteria. Then press ENTER.                                        " length="79"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="2" value="Loan number. . . . . . :" length="24"/>
+            <field column="27" value="1000" length="10" modified="true" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="7">
+            <field column="2" value="Customer Number. . . . :" length="24"/>
+            <field column="27" length="10" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="9">
+            <field column="2" value="Loan Date. . . . . . . :" length="24"/>
+            <field column="27" value="  /  /" length="10" editable="true"/>
+            <field column="38" value="                                           " length="43"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="11">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="                                                                               " length="79"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="PF3=Exit PF12=Cancel                                                           " length="79"/>
+        </row>
+        <size rows="24" columns="80"/>
+        <cursor row="5" column="27"/>
+    </snapshot>
+    <snapshot sequence="9" type="INCOMING">
+        <row rowNumber="1">
+            <field column="2" value="LOANINQ2                        " length="32"/>
+            <field column="35" value="Loans Inquiry                            " length="41"/>
+            <field column="77" value="LNQ1" length="4"/>
+        </row>
+        <row rowNumber="2">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="3">
+            <field column="2" value="B/R Customer Loan Details                                                      " length="79"/>
+        </row>
+        <row rowNumber="4">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="5">
+            <field column="2" value="Loan number. . :" length="16"/>
+            <field column="19" value="1000" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Loan A/C number. . :" length="20"/>
+            <field column="66" value="N/A" length="10" editable="true"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="6">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="7">
+            <field column="2" value="Precloser No . :" length="16"/>
+            <field column="19" value="PR88731001" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Precloser Date. . .:" length="20"/>
+            <field column="66" value="01/01/2016" length="10" editable="true"/>
+            <field column="77" value="    " length="4"/>
+        </row>
+        <row rowNumber="8">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="9">
+            <field column="2" value="Appl Date. . . :" length="16"/>
+            <field column="19" value="28/09/2015" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Applicant Name. . .:" length="20"/>
+            <field column="66" value="JOHN SMITH" length="14" editable="true"/>
+        </row>
+        <row rowNumber="10">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="11">
+            <field column="2" value="Loan Amount. . :" length="16"/>
+            <field column="19" value="370000.00" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Loan Term. . . . . :" length="20"/>
+            <field column="66" value="36" length="14" editable="true"/>
+        </row>
+        <row rowNumber="12">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="13">
+            <field column="2" value="Prncpl Balance :" length="16"/>
+            <field column="19" value="374850.02" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Interest Rate. . . :" length="20"/>
+            <field column="66" value="12.5" length="14" editable="true"/>
+        </row>
+        <row rowNumber="14">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="15">
+            <field column="2" value="Monthly EMI. . :" length="16"/>
+            <field column="19" value="12540.09" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Penalty Amount. . .:" length="20"/>
+            <field column="66" length="14" editable="true"/>
+        </row>
+        <row rowNumber="16">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="17">
+            <field column="2" value="Loan Start Date:" length="16"/>
+            <field column="19" value="01/01/2016" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Loan Close Date. . :" length="20"/>
+            <field column="66" value="  /  /" length="14" editable="true"/>
+        </row>
+        <row rowNumber="18">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="19">
+            <field column="2" value="Preclosere Amnt:" length="16"/>
+            <field column="19" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Cash/Cheque DD. . .:" length="20"/>
+            <field column="66" value="CASH" length="14" editable="true"/>
+        </row>
+        <row rowNumber="20">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="21">
+            <field column="2" value="Cheque DD No. .:" length="16"/>
+            <field column="19" length="10" editable="true"/>
+            <field column="30" value="              " length="14"/>
+            <field column="45" value="Cheque DD Date. . .:" length="20"/>
+            <field column="66" length="14" editable="true"/>
+        </row>
+        <row rowNumber="22">
+            <field column="1" value="                                                                                " length="80"/>
+        </row>
+        <row rowNumber="23">
+            <field column="2" value="                                                                               " length="79"/>
+        </row>
+        <row rowNumber="24">
+            <field column="2" value="PF3=Exit PF12=Cancel PF7=Payment Schedule                                      " length="79"/>
+        </row>
+        <size rows="24" columns="80"/>
+    </snapshot>
+</terminal-trail>

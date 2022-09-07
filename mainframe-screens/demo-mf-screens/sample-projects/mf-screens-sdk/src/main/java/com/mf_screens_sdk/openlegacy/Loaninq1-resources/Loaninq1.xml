@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<snapshot sequence="7" type="INCOMING">
+    <row rowNumber="1">
+        <field column="2" value="LOANINQ1                        " length="32"/>
+        <field column="35" value="Loans Inquiry                            " length="41"/>
+        <field column="77" value="LNQ1" length="4"/>
+    </row>
+    <row rowNumber="2">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="3">
+        <field column="2" value="Type search criteria. Then press ENTER.                                        " length="79"/>
+    </row>
+    <row rowNumber="4">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="5">
+        <field column="2" value="Loan number. . . . . . :" length="24"/>
+        <field column="27" length="10" editable="true"/>
+        <field column="38" value="                                           " length="43"/>
+    </row>
+    <row rowNumber="6">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="7">
+        <field column="2" value="Customer Number. . . . :" length="24"/>
+        <field column="27" length="10" editable="true"/>
+        <field column="38" value="                                           " length="43"/>
+    </row>
+    <row rowNumber="8">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="9">
+        <field column="2" value="Loan Date. . . . . . . :" length="24"/>
+        <field column="27" value="  /  /" length="10" editable="true"/>
+        <field column="38" value="                                           " length="43"/>
+    </row>
+    <row rowNumber="10">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="11">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="12">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="13">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="14">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="15">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="16">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="17">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="18">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="19">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="20">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="21">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="22">
+        <field column="1" value="                                                                                " length="80"/>
+    </row>
+    <row rowNumber="23">
+        <field column="2" value="                                                                               " length="79"/>
+    </row>
+    <row rowNumber="24">
+        <field column="2" value="PF3=Exit PF12=Cancel                                                           " length="79"/>
+    </row>
+    <size rows="24" columns="80"/>
+    <cursor row="5" column="27"/>
+</snapshot>

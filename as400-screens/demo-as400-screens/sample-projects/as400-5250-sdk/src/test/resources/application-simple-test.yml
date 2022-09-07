@@ -1,0 +1,11 @@
+ol:
+  tn5250:
+    project:
+      as4005250Sdk:
+        hostname: as400.openlegacy.com
+        port: 23
+        code-page: "37"
+        live: true
+        mock:
+          # Use generated trail file to check internal API
+          trail-file: /trails/demo_session.trail

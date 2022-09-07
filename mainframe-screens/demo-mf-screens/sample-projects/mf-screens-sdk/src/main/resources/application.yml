@@ -1,0 +1,16 @@
+ol:
+  h3270:
+    project:
+      mfScreensSdk:
+        base-packages:
+          - com.mf_screens_sdk.openlegacy
+        hostname: 192.86.32.238
+        port: 623
+        code-page: 37
+        model: 2
+        ssl-type: 
+        # Use for MainFrame additional settings: http://x3270.bgp.nu/Unix/s3270-man.html
+        additional-params: -xrm ws3270.unlockDelay:false
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTAxLTIwVDE3OjAwOjAwLjAxWiIsInZhbGlkX2ZvciI6LTF9.K46QmdrFjI3n0yhytMtQB2598jYrJsnWEuFGl8BTJGuc2O20u_XfpJBG9RR2vgWRCpxsNttCg-HGKkgFe5erjvQPz6wC90avvrtJjydLxX82v1zgTbNgAtzuV9zoeu3oI-TMppjE8s0WHT1pLyjva8GXXDbAdCWiO8BfF0Vr-GrFJ2YQw4jW61KzeIPv30GtmYNCrcGxHHstIcf_D6WGCmDivkRWejMLwdVyeAN9oi0IOrrP8obi6FCrSPhh5MhQEHyKvUA1tXxlC1UkMH4avSPdzSqn2DIbo8WUdRJb_OnII9Xg8IPlCrZuuOvwkBFfHMF1JXxhOAaM8bvwKhR3KA
+

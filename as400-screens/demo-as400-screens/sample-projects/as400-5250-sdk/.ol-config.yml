@@ -1,0 +1,37 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.as400_5250_sdk.openlegacy"
+    webPackage: "com.as400_5250_sdk.openlegacy.web"
+    generateTest: true
+    provider: "openlegacy-tn5250j"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "AS400_SCREENS"
+    frontendSolution: "JAVA"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}
