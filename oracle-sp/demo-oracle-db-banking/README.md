@@ -29,7 +29,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 4. Select **Stored Procedures** as the backend and click **Next**.
 5. From the **drop-down menu**, choose **Oracle**.
 6. Enter the following database credentials:
-   - **Database URL:** `jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL`
+   - **Database URL:** `jdbc:oracle:thin:@//oracle.openlegacy.com:15221/ORCL`
    - **Database Username:** `openlegacy_team`
    - **Database Password:** `gp#6KN!yBiV`
 7. Click **Finish**
