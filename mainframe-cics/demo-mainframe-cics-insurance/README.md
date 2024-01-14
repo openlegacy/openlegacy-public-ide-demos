@@ -32,7 +32,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 5. Set the connection details to the backend with the following parameters:
     - **CICS Base URL:** `http://mainframe.openlegacy.com`
     - **URI Map:** `ol/demos`
-    - **CICS Port:** `12345`
+    - **CICS Port:** `12344`
     - **Code Page:** `CP037`
 6. Click **Finish**
 
