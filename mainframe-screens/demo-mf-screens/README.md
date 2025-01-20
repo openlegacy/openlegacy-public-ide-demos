@@ -68,7 +68,7 @@ The Trail file has two purposes:
 2. Type **`CICS61`** and press **enter**
 ![Screenshot1](./assets/images/1.png)
 
-3. In the following screen press **Escape**:
+3. Inside **Userid** field type: `DEMO001`, inside **Password** field type: `LEGACY` and  press **enter**:
 ![Screenshot2](./assets/images/2.png)
 
 4. Type **`INQ1`** and press **Enter**.
