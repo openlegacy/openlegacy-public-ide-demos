@@ -50,7 +50,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 4. Select **Stored Procedures** as the backend and click **Next**.
 5. From the **Database Type** drop-down menu, choose **DB2 Z/OS**.
 6. Enter the following database credentials:
-   - **Database URL:** `jdbc:db2://mainframe.openlegacy.com:5035/DALLASB`
+   - **Database URL:** `jdbc:db2://mainframe.openlegacy.com:5045/DALLASD`
    - **Database Username:** `DEMO001`
    - **Database Password:** `LEGACY`
 7. Click **Finish**.

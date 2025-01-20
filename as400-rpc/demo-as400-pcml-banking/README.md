@@ -28,7 +28,7 @@ Create a new OpenLegacy AS/400 RPC project:
 2.  Define the **Project name** as `account-as400-pcml-sdk`.
 3.  Select AS/400 RPC as the backend and click Next
 4.  Enter the following AS/400 host credentials:
-    -   Host Name/IP: `as400j.openlegacy.com`
+    -   Host Name/IP: `ibmi75.openlegacy.com`
     -   Code Page: 37
     -   User name: `OPENLEGA1`
     -   Password: `OPENLEGA`

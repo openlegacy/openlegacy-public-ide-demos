@@ -65,7 +65,7 @@ The Trail file has two purposes:
 1. Right click on the SDK project→ OpenLegacy → Run emulation
     > **_NOTE:_** This will open up a terminal connection to the host that can be accessed at http://localhost:1512 via a web browser
 
-2. Type **`CICS`** and press **enter**
+2. Type **`CICS61`** and press **enter**
 ![Screenshot1](./assets/images/1.png)
 
 3. In the following screen press **Escape**:

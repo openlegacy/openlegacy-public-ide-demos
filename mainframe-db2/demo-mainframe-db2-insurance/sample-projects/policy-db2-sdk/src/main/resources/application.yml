@@ -2,7 +2,7 @@ ol:
   storedproc:
     project:
       policyDb2Sdk:
-        url: jdbc:db2://mainframe.openlegacy.com:5035/DALLASB
+        url: jdbc:db2://mainframe.openlegacy.com:5045/DALLASD
         driverClassName: com.ibm.db2.jcc.DB2Driver
         username: DEMO001
         password: '{cipher}46d395754e8c39bfb6b8684ca065c6dce03505fcd49fb18f10e5554f2eeea757'

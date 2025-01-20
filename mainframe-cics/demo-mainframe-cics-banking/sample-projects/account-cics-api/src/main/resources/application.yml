@@ -55,8 +55,8 @@ ol:
   cics:
     project:
       accountCicsSdk:
-        base-url: http://192.86.32.238
-        port: 12345
+        base-url: http://mainframe.openlegacy.com
+        port: 12344
         uri-map: ol/demos
         code-page: CP037
   license:

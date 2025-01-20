@@ -59,7 +59,7 @@ ol:
     project:
       policyAs400CobolSdk:
       
-        host: as400.openlegacy.com
+        host: ibmi75.openlegacy.com
         user: OPENLEGA1
         password: '{cipher}43322df098e953b247979d9b08532e9a2b2ee78fb83128b11e88883b1012ddb5'
         code-page: 37

@@ -55,7 +55,7 @@ ol:
   ctg:
     project:
       mainframeCtgSdk:
-        hostname: 192.86.32.238
+        hostname: mainframe.openlegacy.com
         port: 13200
         code-page: CP037
         username: 

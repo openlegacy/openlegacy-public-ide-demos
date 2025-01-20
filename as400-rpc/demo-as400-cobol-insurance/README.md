@@ -41,7 +41,7 @@ The SDK project allows easy access to legacy backends, using standard and easy t
 3. Click in the **Default Package** field, to automatically populate it.
 4. Select **AS/400 RPC** as the backend and click Next.
 5. Set the connection details to the backend with the following parameters:
-   - **Host Name/IP:** `as400.openlegacy.com`
+   - **Host Name/IP:** `ibmi75.openlegacy.com`
    - **Code Page:** `37`
    - **Username:** `OPENLEGA1`
    - **Password:** `OPENLEGA`

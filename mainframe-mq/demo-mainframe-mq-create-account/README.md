@@ -30,7 +30,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 3. Click in the **Default Package** field, to automatically populate it.
 4. Select **IBM MQ** as the backend and click **Next**.
 5. Set the connection details to the backendwith the following parameters:
-    - **Host:** `192.86.32.238`
+    - **Host:** `mainframe.openlegacy.com`
     - **Port:** `1414`
     - **Queue channel:** `CSQ9.SVRCONN`
     - **Queue manager:** `CSQ9`

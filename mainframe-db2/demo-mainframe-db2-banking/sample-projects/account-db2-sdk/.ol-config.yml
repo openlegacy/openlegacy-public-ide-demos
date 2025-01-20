@@ -11,7 +11,7 @@ ol:
     frontendSolution: "JAVA"
     userName: "DEMO001"
     password: "LEGACY"
-    hostName: "jdbc:db2://mainframe.openlegacy.com:5035/DALLASB"
+    hostName: "jdbc:db2://mainframe.openlegacy.com:5045/DALLASD"
     dbDialect: "org.hibernate.dialect.DB2Dialect"
     db2Type: "ZOS"
     rpc:

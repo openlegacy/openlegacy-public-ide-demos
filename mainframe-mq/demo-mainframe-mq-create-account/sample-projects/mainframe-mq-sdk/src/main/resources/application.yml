@@ -2,7 +2,7 @@ ol:
   mq:
     project:
       mainframeMqSdk:
-        hostname: 192.86.32.238
+        hostname: mainframe.openlegacy.com
         port: 1414
         user: 
         password: 
