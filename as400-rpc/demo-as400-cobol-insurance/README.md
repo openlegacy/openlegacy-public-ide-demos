@@ -55,20 +55,6 @@ The SDK project allows easy access to legacy backends, using standard and easy t
 
 1. Copy the COBOL resources from the - [resources](./assets/resources) folder into the `src/main/resources/sample` folder.
 2. Generate Java modules:
-   - **Add Policy**:
-     - Select `POL2IN.in.cpy` and `POL2OUT.out.cpy`.
-     - Right-click on the file → OpenLegacy → Generate Model.
-     - **Entity Name** : `POL2ADD`
-     - **Execute Action Path**: `/QSYS.LIB/POLICY.LIB/POL2ADD.pgm`
-     - Check **Generate JUnit Test** checkbox.
-     - Click **OK**.
-   - **Update Policy**:
-     - Select `POL2IN.in.cpy` and `POL2OUT.out.cpy`.
-     - Right-click on the file → OpenLegacy → Generate Model.
-     - **Entity Name** : `POL2UPT`
-     - **Execute Action Path**: `/QSYS.LIB/POLICY.LIB/POL2UPD.pgm`
-     - Check **Generate JUnit Test** checkbox.
-     - Click **OK**.
    - **Get Policy**:
      - Select `POL2NUMI.in.cpy` and `POL2OUT.out.cpy`.
      - Right-click on the file → OpenLegacy → Generate Model.
@@ -76,17 +62,10 @@ The SDK project allows easy access to legacy backends, using standard and easy t
      - **Execute Action Path**: `/QSYS.LIB/POLICY.LIB/POL2GET.pgm `
      - Check **Generate JUnit Test** checkbox.
      - Click **OK**.
-   - **Delete Policy**:
-     - Select `POL2NUMI.in.cpy` and `POL2OUT.out.cpy`.
-     - Right-click on the file → OpenLegacy → Generate Model.
-     - **Entity Name** : `POL2DEL`
-     - **Execute Action Path**: `/QSYS.LIB/POLICY.LIB/POL2DEL.pgm  `
-     - Check **Generate JUnit Test** checkbox.
-     - Click **OK**.
    - **Get All Policies**:
      - Select `POL2OUTL.cbl`.
      - Right-click on the file → OpenLegacy → Generate Model.
-     - **Entity Name** : `POL2DEL`
+     - **Entity Name** : `POL2LST`
      - **Execute Action Path**: `/QSYS.LIB/POLICY.LIB/POL2LST.pgm`
      - Check **Generate JUnit Test** checkbox.
      - Click **OK**.
@@ -107,34 +86,14 @@ The SDK project allows easy access to legacy backends, using standard and easy t
    - Copy into it [get all policies output](./assets/resources/list-out.json).
    - Open `src/test/java/tests/POL2OUTLTest.java` and commenct the second test. 
    - Right-click on the test → run as → JunitTests. 
-2. **Add Policy**
-   - Open `src/test/resources/mock/POL2ADDTest/test_poL2ADDTest_usecase_1.input.json`
-   - Copy into it [add policy input](./assets/resources/add-in.json).
-   - Open `/policy-as400-cobol-sdk/src/test/resources/mock/POL2ADDTest/test_poL2ADDTest_usecase_1.output.json`.
-   - Copy into it [add policy output](./assets/resources/add-out.json).
-   - Open `src/test/java/tests/POL2ADDTest.java` and commenct the second test. 
-   - Right-click on the test → run as → JunitTests. 
-3. **Update Policy**
-   - Open `src/test/resources/mock/POL2UPDTest/test_poL2UPDTest_usecase_1.input.json`
-   - Copy into it [update policy input](./assets/resources/update-in.json).
-   - Open `src/test/resources/mock/POL2ADDTest/test_poL2ADDTest_usecase_1.output.json`.
-   - Copy into it [update policy output](./assets/resources/update-out.json).
-   - Open `src/test/java/tests/POL2UPDTest.java` and commenct the second test. 
-   - Right-click on the test → run as → JunitTests. 
-4. **Get Policy**
+2. **Get Policy**
    - Open `src/test/resources/mock/POL2GETTest/test_poL2GETTest_usecase_1.input.json`
    - Copy into it [get policy input](./assets/resources/get-in.json).
    - Open `src/test/resources/mock/POL2GETTest/test_poL2GETTest_usecase_1.output.json`.
    - Copy into it [get policy output](./assets/resources/get-out.json).
    - Open `src/test/java/tests/POL2GETTest.java` and commenct the second test. 
    - Right-click on the test → run as → JunitTests. 
-5. **Delete Policy**
-   - Open `src/test/resources/mock/POL2DELTest/test_poL2DELTest_usecase_1.input.json`
-   - Copy into it [delete policy input](./assets/resources/delete-in.json).
-   - Open `src/test/resources/mock/POL2DELTest/test_poL2DELTest_usecase_1.output.json`.
-   - Copy into it [delete policy output](./assets/resources/delete-out.json).
-   - Open `src/test/java/tests/POL2DELTest.java` and commenct the second test. 
-   - Right-click on the test → run as → JunitTests. 
+
 
 
    If you followed all the steps correctly, the tests should pass.
@@ -171,29 +130,11 @@ The SDK project allows easy access to legacy backends, using standard and easy t
      - Name the service `AllPolicies`
      - Select  `policyOut` from the `POL2OUTL` model as the output. 
      - **Click OK**
-  - **Add Policy**:
-     - **Right-Click** on the **policy-as400-cobol-api** project → OpenLegacy → Generate API from SDK
-     - Name the service `AddPolicy`
-     - Select `pol2addInput` from the `POL2ADD` model as the input. 
-     - Select `pol2addOutput` from the `POL2ADD` model as the output. 
-     - **Click OK**
-  - **Upadte Policy**:
-     - **Right-Click** on the **policy-as400-cobol-api** project → OpenLegacy → Generate API from SDK
-     - Name the service `UpdatePolicy`
-     - Select `pol2updInput` from the `POL2UPT` model as the input. 
-     - Select `pol2updOutput` from the `POL2UPT` model as the output. 
-     - **Click OK**
   - **Get Policy**:
      - **Right-Click** on the **policy-as400-cobol-api** project → OpenLegacy → Generate API from SDK
      - Name the service `GetPolicy`
      - Select `pol2getInput` from the `POL2GET` model as the input. 
      - Select `pol2getOutput` from the `POL2GET` model as the output. 
-     - **Click OK**
-  - **Get Policy**:
-     - **Right-Click** on the **policy-as400-cobol-api** project → OpenLegacy → Generate API from SDK
-     - Name the service `DeletePolicy`
-     - Select `pol2delInput` from the `POL2DEL` model as the input. 
-     - Select `pol2delOutput` from the `POL2DEL` model as the output. 
      - **Click OK**
 
 
